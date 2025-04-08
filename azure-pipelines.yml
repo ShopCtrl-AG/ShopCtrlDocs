@@ -50,20 +50,12 @@ stages:
         scriptType: 'bash'
         scriptLocation: 'inlineScript'
         inlineScript: |
-          
+        
           # Upload files with cache control for static assets
           az storage blob upload-batch \
             --account-name $(azureStorageAccount) \
             --destination $(containerName) \
-            --source $(Pipeline.Workspace)/docusaurus-build \
+            --source $(Pipeline.Workspace) \
             --overwrite \
-            --content-cache 'max-age=1800' \
+            --content-type "text/html" \
             --pattern '*.js|*.css|*.html|*.json|*.txt|*.ico|*.png|*.jpg|*.jpeg|*.gif|*.svg|*.woff|*.woff2'
-          
-          # Set content types for HTML files
-          az storage blob update-batch \
-            --account-name $(azureStorageAccount) \
-            --destination $(containerName) \
-            --source $(Pipeline.Workspace)/docusaurus-build \
-            --content-type 'text/html' \
-            --pattern '*.html'
