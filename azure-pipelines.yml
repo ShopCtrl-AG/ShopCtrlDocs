@@ -40,9 +40,9 @@ stages:
     pool:
       vmImage: 'ubuntu-latest'
     steps:
+    - checkout: none
     - download: current
       artifact: docusaurus-build
-    
     - task: AzureCLI@2
       displayName: 'Upload to Azure Storage'
       inputs:
@@ -50,12 +50,11 @@ stages:
         scriptType: 'bash'
         scriptLocation: 'inlineScript'
         inlineScript: |
-        
           # Upload files with cache control for static assets
           az storage blob upload-batch \
-            --account-name $(azureStorageAccount) \
-            --destination $(containerName) \
-            --source $(Pipeline.Workspace) \
+            --account-name "$(azureStorageAccount)" \
+            --destination "$(containerName)" \
+            --source "$(Pipeline.Workspace)/docusaurus-build" \
             --overwrite \
             --content-type "text/html" \
             --pattern '*.js|*.css|*.html|*.json|*.txt|*.ico|*.png|*.jpg|*.jpeg|*.gif|*.svg|*.woff|*.woff2'
