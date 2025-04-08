@@ -50,9 +50,31 @@ stages:
         scriptType: 'bash'
         scriptLocation: 'inlineScript'
         inlineScript: |
-          echo "Contents of artifact directory:"
-          ls -R "$(Pipeline.Workspace)/docusaurus-build"
 
-          echo "Contents of Workspace directory:"
-          ls -R "$(Pipeline.Workspace)"
-          
+          declare -A content_types=(
+              [".html"]="text/html"
+              [".css"]="text/css"
+              [".js"]="application/javascript"
+              [".json"]="application/json"
+              [".xml"]="application/xml"
+              [".png"]="image/png"
+              [".jpg"]="image/jpeg"
+              [".jpeg"]="image/jpeg"
+              [".ico"]="image/x-icon"
+              [".svg"]="image/svg+xml"
+              [".gif"]="image/gif"
+              [".mp4"]="video/mp4"
+              [".txt"]="text/plain"
+          )
+
+          for extension in "${!content_types[@]}"; do
+              echo "Uploading files with extension $extension (Content-Type: ${content_types[$extension]})"
+              
+              az storage blob upload-batch \
+                  --account-name "$(azureStorageAccount)" \
+                  --destination "$(containerName)" \
+                  --source "$(Pipeline.Workspace)/docusaurus-build" \
+                  --overwrite \
+                  --content-type "${content_types[$extension]}" \
+                  --pattern "*$extension"
+          done
