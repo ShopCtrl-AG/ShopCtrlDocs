@@ -20,13 +20,33 @@ stages:
       inputs:
         versionSpec: $(nodeVersion)
       displayName: 'Install Node.js'
-    # Install dependencies, build Docusaurus
+    - task: Cache@2
+      displayName: 'Cache NPM dependencies'
+      inputs:
+        key: '"node_modules" | "$(Agent.OS)" | package-lock.json'
+        path: '$(System.DefaultWorkingDirectory)/node_modules'
+        cacheHitVar: 'NPM_CACHE_RESTORED'
+        restoreKeys: |
+          "node_modules" | "$(Agent.OS)"
+          "node_modules"
+    - task: Cache@2
+      displayName: 'Cache Docusaurus output'
+      inputs:
+        key: '"docusaurus_output" | "$(Agent.OS)" | docusaurus.config.js | package-lock.json'
+        path: '$(System.DefaultWorkingDirectory)/.docusaurus'
+        cacheHitVar: 'DOCUSAURUS_CACHE_RESTORED'
+        restoreKeys: |
+          "docusaurus_output" | "$(Agent.OS)"
+          "docusaurus_output"
     - script: |
         npm install
-        npm run build
-      displayName: 'Install dependencies and build'
+      displayName: 'Install NPM dependencies'
+      condition: ne(variables.NPM_CACHE_RESTORED, true)
       workingDirectory: $(System.DefaultWorkingDirectory)
-    # Publish the artifact
+    - script: |
+        npm run build
+      displayName: 'Build Docusaurus'
+      workingDirectory: $(System.DefaultWorkingDirectory)
     - publish: $(System.DefaultWorkingDirectory)/build
       artifact: docusaurus-build
 
