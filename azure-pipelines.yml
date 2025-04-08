@@ -46,7 +46,7 @@ stages:
     - task: AzureCLI@2
       displayName: 'Upload to Azure Storage'
       inputs:
-        azureSubscription: 'Your-Azure-Service-Connection'
+        azureSubscription: '92577f71-89c4-4dd8-8685-2e5d159e18c5'
         scriptType: 'bash'
         scriptLocation: 'inlineScript'
         inlineScript: |
