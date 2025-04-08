@@ -1,0 +1,69 @@
+trigger:
+- main
+
+variables:
+  nodeVersion: '18.x'
+  azureStorageAccount: 'shopctrldocs'
+  containerName: '$web' # Static websites use $web container
+
+stages:
+- stage: Build
+  displayName: Build Docusaurus
+  jobs:
+  - job: Build
+    displayName: Build
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+    # Install NodeJS 
+    - task: NodeTool@0
+      inputs:
+        versionSpec: $(nodeVersion)
+      displayName: 'Install Node.js'
+    # Install dependencies, build Docusaurus
+    - script: |
+        npm install
+        npm run build
+      displayName: 'Install dependencies and build'
+      workingDirectory: $(System.DefaultWorkingDirectory)
+    # Publish the artifact
+    - publish: $(System.DefaultWorkingDirectory)/build
+      artifact: docusaurus-build
+
+- stage: Deploy
+  displayName: 'Deploy to Azure Storage'
+  dependsOn: Build
+  condition: succeeded()
+  jobs:
+  - job: Deploy
+    displayName: 'Deploy'
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+    - download: current
+      artifact: docusaurus-build
+    
+    - task: AzureCLI@2
+      displayName: 'Upload to Azure Storage'
+      inputs:
+        azureSubscription: 'Your-Azure-Service-Connection'
+        scriptType: 'bash'
+        scriptLocation: 'inlineScript'
+        inlineScript: |
+          
+          # Upload files with cache control for static assets
+          az storage blob upload-batch \
+            --account-name $(azureStorageAccount) \
+            --destination $(containerName) \
+            --source $(Pipeline.Workspace)/docusaurus-build \
+            --overwrite \
+            --content-cache 'max-age=1800' \
+            --pattern '*.js|*.css|*.html|*.json|*.txt|*.ico|*.png|*.jpg|*.jpeg|*.gif|*.svg|*.woff|*.woff2'
+          
+          # Set content types for HTML files
+          az storage blob update-batch \
+            --account-name $(azureStorageAccount) \
+            --destination $(containerName) \
+            --source $(Pipeline.Workspace)/docusaurus-build \
+            --content-type 'text/html' \
+            --pattern '*.html'
