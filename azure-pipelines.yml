@@ -71,14 +71,7 @@ stages:
         scriptLocation: 'inlineScript'
         inlineScript: |
 
-          # Install AzCopy if not already present
-          if ! command -v azcopy &> /dev/null; then
-            echo "Installing AzCopy..."
-            curl -sL https://aka.ms/installazcopy-v10-linux | bash
-            export PATH=$PATH:~/.azcopy
-          fi
-          
-          ./azcopy sync "$(Pipeline.Workspace)/docusaurus-build/" \
+          azcopy sync "$(Pipeline.Workspace)/docusaurus-build/" \
           "https://$(azureStorageAccount).blob.core.windows.net/$(containerName)" \
           --recursive \
           --compare-hash="MD5" \
