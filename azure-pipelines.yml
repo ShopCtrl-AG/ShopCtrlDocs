@@ -58,7 +58,7 @@ stages:
   - job: Deploy
     displayName: 'Deploy'
     pool:
-      vmImage: 'ubuntu-latest'
+      vmImage: 'windows-latest'
     steps:
     - checkout: none
     - download: current
@@ -71,3 +71,4 @@ stages:
         storage: 'shopctrldocs'
         ContainerName: '$(containerName)'
         CleanTargetBeforeCopy: true
+        AdditionalArgumentsForBlobCopy: '--compare-hash=MD5'
