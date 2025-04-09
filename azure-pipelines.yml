@@ -71,4 +71,3 @@ stages:
         storage: 'shopctrldocs'
         ContainerName: '$(containerName)'
         CleanTargetBeforeCopy: true
-        AdditionalArgumentsForBlobCopy: '--compare-hash=MD5'
