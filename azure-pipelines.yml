@@ -4,7 +4,7 @@ trigger:
 variables:
   nodeVersion: '18.x'
   azureStorageAccount: 'shopctrldocs'
-  containerName: '$web' # Static websites use $web container
+  containerName: '\$web' # Static websites use $web container
 
 stages:
 - stage: Build
@@ -58,16 +58,29 @@ stages:
   - job: Deploy
     displayName: 'Deploy'
     pool:
-      vmImage: 'windows-latest'
+      vmImage: 'ubuntu-latest'
     steps:
     - checkout: none
     - download: current
       artifact: docusaurus-build
-    - task: AzureFileCopy@6
+    - task: AzureCLI@2
+      displayName: 'Upload to Azure Storage'
       inputs:
-        SourcePath: '$(Pipeline.Workspace)/docusaurus-build'
         azureSubscription: '92577f71-89c4-4dd8-8685-2e5d159e18c5'
-        Destination: 'AzureBlob'
-        storage: 'shopctrldocs'
-        ContainerName: '$(containerName)'
-        CleanTargetBeforeCopy: true
+        scriptType: 'bash'
+        scriptLocation: 'inlineScript'
+        inlineScript: |
+
+          # Install AzCopy if not already present
+          if ! command -v azcopy &> /dev/null; then
+            echo "Installing AzCopy..."
+            curl -sL https://aka.ms/installazcopy-v10-linux | bash
+            export PATH=$PATH:~/.azcopy
+          fi
+          
+          ./azcopy sync "$(Pipeline.Workspace)/docusaurus-build/" \
+          "https://$(azureStorageAccount).blob.core.windows.net/$(containerName)" \
+          --recursive \
+          --compare-hash="MD5" \
+          --put-md5 \
+          --delete-destination="true"
