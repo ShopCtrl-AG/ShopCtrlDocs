@@ -70,7 +70,8 @@ stages:
         scriptType: 'bash'
         scriptLocation: 'inlineScript'
         inlineScript: |
-
+          azcopy login --identity
+          
           azcopy sync "$(Pipeline.Workspace)/docusaurus-build/" \
           "https://$(azureStorageAccount).blob.core.windows.net/$(containerName)" \
           --recursive \
