@@ -70,10 +70,17 @@ stages:
         scriptType: 'bash'
         scriptLocation: 'inlineScript'
         inlineScript: |
-          export AZCOPY_AUTO_LOGIN_TYPE=AZCLI
+          end=$(date -u -d "1 hour" '+%Y-%m-%dT%H:%MZ')
+          sas=$(az storage container generate-sas \
+            --account-name $(azureStorageAccount) \
+            --name $(containerName) \
+            --permissions acdlrw \
+            --expiry $end \
+            --auth-mode key \
+            --output tsv)
           
           azcopy sync "$(Pipeline.Workspace)/docusaurus-build/" \
-          "https://$(azureStorageAccount).blob.core.windows.net/$(containerName)" \
+          "https://$(azureStorageAccount).blob.core.windows.net/$(containerName)?$sas" \
           --recursive \
           --compare-hash="MD5" \
           --put-md5 \
