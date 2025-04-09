@@ -70,7 +70,7 @@ stages:
         scriptType: 'bash'
         scriptLocation: 'inlineScript'
         inlineScript: |
-          azcopy login --identity
+          export AZCOPY_AUTO_LOGIN_TYPE=AZCLI
           
           azcopy sync "$(Pipeline.Workspace)/docusaurus-build/" \
           "https://$(azureStorageAccount).blob.core.windows.net/$(containerName)" \
