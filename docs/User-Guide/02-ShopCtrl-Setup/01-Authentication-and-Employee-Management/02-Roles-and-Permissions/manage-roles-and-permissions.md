@@ -74,7 +74,7 @@ To enable back the role click the **Enable** button and select a role name that 
 
 To delete the previously created role, go to the **Shop Owner details page > Authorization** tab and click the **Delete** button. Select a role from the list that you would like to delete. The role will be deleted immediately, and a confirming popup window will be displayed.
 
-:::warning[**Please note**]
+:::danger[**Please note**]
 
 It is not possible to delete the role if an employee is assigned to shop with this role. Please change the assignment before proceeding with deleting the role.
 

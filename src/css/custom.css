@@ -6,13 +6,13 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #1d4090;
-  --ifm-color-primary-dark: #1a3a82;
-  --ifm-color-primary-darker: #19367a;
-  --ifm-color-primary-darkest: #142d65;
-  --ifm-color-primary-light: #20469e;
-  --ifm-color-primary-lighter: #214aa6;
-  --ifm-color-primary-lightest: #2653bb;
+  --ifm-color-primary: #136969;
+  --ifm-color-primary-dark: #115e5f;
+  --ifm-color-primary-darker: #105959;
+  --ifm-color-primary-darkest: #0d494a;
+  --ifm-color-primary-light: #157373;
+  --ifm-color-primary-lighter: #167979;
+  --ifm-color-primary-lightest: #198888;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
@@ -21,16 +21,42 @@
 }
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #2b53ca;
-  --ifm-color-primary-dark: #274bb6;
-  --ifm-color-primary-darker: #2547ac;
-  --ifm-color-primary-darkest: #1e3a8d;
-  --ifm-color-primary-light: #3960d5;
-  --ifm-color-primary-lighter: #4368d7;
-  --ifm-color-primary-lightest: #6180dd;
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
 .hidden {
   display: none !important;
 }
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('/font/Nunito Regular 400.ttf');
+}
+
+html {
+  font-family: 'Nunito';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito";
+}
+
+/**
+.navbar {
+*  background-color: #136969;
+*}
+ */
+
+

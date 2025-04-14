@@ -54,6 +54,6 @@ Follow these steps to enable this feature:
 4. Click **Save** to apply changes to your account.
 5. Refresh the page to enable the Favorites tab, or the changes will be applied after re-login.
 
-   <img src={require("/img/last-session-folder.png").default} height="" width="" />
+   ![](/img/last-session-folder.png)
 
 Both specific order tabs and general ones will be added to the list, but new pages and changes within current tabs are not stored.
