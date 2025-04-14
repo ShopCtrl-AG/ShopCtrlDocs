@@ -17,6 +17,7 @@ You can configure per shop which days of the week and at what hours there will b
 See also: [Ticket Configuration](/docs/User-Guide/06-Communication/Tickets/ticket-configuration.md) and [Working with Tickets](/docs/User-Guide/06-Communication/Tickets/working-with-tickets.md) for more information.
 
 ## How to set service level for a shop
+
 ![service-level](/img/service-level.png)
 
 1. Go to the **Shop Details Page > Service Level**.
