@@ -25,7 +25,7 @@ To set up the integration, you first need to create an API key for your producti
 
 :::warning[Before start]
 
-Before enabling synchronization with Mirakl, please set up the corresponding shop currency, VAT tariffs, and payment types for your [ShopCtrl shop](/docs/User-Guide/02-ShopCtrl-Setup/create-shop.md).
+Before enabling synchronization with Mirakl, please set up the corresponding shop currency, VAT tariffs, and payment types for your [ShopCtrl shop](/docs/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/create-shop.md).
 
 :::
 
