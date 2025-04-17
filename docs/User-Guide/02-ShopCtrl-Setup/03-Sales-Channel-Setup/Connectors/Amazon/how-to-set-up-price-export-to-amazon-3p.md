@@ -3,6 +3,9 @@ sidebar_position: 3
 slug: /docs/how-to-set-up-price-export-to-amazon-3p
 ---
 
+# How to Set Up Price Export to Amazon 3P
+
+
 Setting up an efficient price export system is crucial for maintaining consistency and accuracy across your sales channels. ShopCtrl serves as the point of truth, exporting prices to all marketplaces and sales channels to ensure the correct Product Information Management (PIM) across all points of sale. This tutorial will guide you through the steps needed to set up price export to Amazon 3P, ensuring your prices are always up-to-date and synchronized with Amazon. Follow the steps below to get started.
 
 ## Step 1. Verify Product Prices in ShopCtrl

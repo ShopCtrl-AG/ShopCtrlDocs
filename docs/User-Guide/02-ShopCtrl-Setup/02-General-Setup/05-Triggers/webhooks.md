@@ -73,6 +73,38 @@ For example, for order type event, the `{"OrderId":"$$Order.ID$$","OrderCode":"$
 
 :::
 
+### Default webhook payloads
+
+When webhooks are triggered, the payload sent by our system can vary depending on the type of entity and the event. If the payload configuration is not manually set, the system sends the default JSON payload for the event.
+
+Key Notes:
+* Payload fields differ based on the event and entity type.
+* Fields are populated only if the relevant data is available at the time of the event. If not, they will appear as null.
+
+Below is a detailed list of the trigger events and their corresponding fields in the entityData object:
+
+| Trigger Event | Fields in entityData |
+| --- | --- |
+| Product Created<br />Product Changed<br />Product Deleted<br />Product Available Stock Changed<br />Product Locked<br />Product Unlocked<br />Product Dimensions Changed | ProductId<br /> ProductCode<br /> ShopGroupId |
+| Product Package Created<br />Product Package Changed | ProductPackageId<br /> ProductId<br /> ShopGroupId |
+| Product Package Deleted | ProductPackageId<br /> ProductId<br /> ShopGroupId |
+| Product Selection Product Changed<br />Product Selection Product Deleted | ProductId<br /> ProductCode<br /> ProductSelectionProductId<br /> ShopId |
+| Product Group Changed<br />Product Group Deleted | ProductGroupId<br /> ProductGroupName |
+| Order Customer Rating Changed | OrderId<br /> OrderCode<br /> CustomerRating |
+| Order Comment Changed | OrderCommentId<br /> OrderId<br /> OrderCode<br /> TicketId<br /> TicketCode |
+| Invoice Payments Done<br />Order Invoices All Paid<br />Invoice Payments Not Done<br />Invoice Payments Partial Done<br />Non Draft Invoice Saved<br />Non Draft Credit Invoice Saved<br />Order Invoices Created | InvoiceId<br /> InvoiceCode<br /> OrderId<br /> OrderCode |
+| New Shop Saved<br />Init New Shop | ShopId |
+| Purchase Order Created<br />Purchase Order Delivery Provisioned<br />Purchase Order Delivery Received<br />Purchase Order Handed Over<br />Purchase Order Provisioned<br />Purchase Order Received<br />Purchase Order Main Status Changed<br />Purchase Order Submit Status Changed<br />Purchase Order Payment Status Changed<br />Purchase Order Provision Status Changed<br />Purchase Order Custom Status Changed | PurchaseOrderId<br /> PurchaseOrderCode<br /> SupplierId<br /> WarehouseId<br /> OrderId<br /> OrderCode<br /> ShopId |
+| Shipment Created<br />Shipment Delivered<br />Parcel Status Change<br />Parcel Pickup Done<br />New Parcel Added<br />Shipment Picked<br />Shipment Packed<br />Shipment Shipped<br />Order Shipment Status hanged<br />Order Fully Shipped<br />Shipment Handover | ParcelId<br /> TrackingCode<br /> OrderShipmentId<br /> OrderShipmentCode<br /> OrderId<br /> OrderCode |
+| Main Order Return Status Changed<br />Order Return Changed<br />Order Return Created | OrderReturnId<br /> OrderReturnCode<br /> OrderId<br /> OrderCode |
+| Product Property Def Changed<br />Product Property Def Deleted | Id<br /> Code |
+| Product Brand Changed<br />Product Brand Deleted | Id<br /> Name |
+| Voip Call Changed | Id |
+| Ticket Main Status Changed<br />Ticket Created | TicketId<br /> TicketCode<br /> OrderId<br /> OrderCode<br /> ShopId |
+| Ticket Handling Employee Group Changed<br />Ticket Handling Employee Changed | TicketId<br /> TicketCode<br /> OrderId<br /> OrderCode<br /> HandlingEmployeeGroupId<br /> HandlingEmployeeId<br /> OldHandlingEmployeeGroupId<br /> OldHandlingEmployeeId |
+| Ticket Incoming Message<br />Ticket Outcoming Message | TicketId<br /> TicketCode<br /> OrderId<br /> OrderCode<br /> ShopId<br /> TicketMessageDirection |
+| Default (other events) | OrderId<br /> OrderCode |
+
 ## Webhook Queue
 
 After the trigger fires, the webhook will be added to the webhook queue and performed in the background. You can access the **Webhook Queue** table from the **System > Webhook Queue page**.

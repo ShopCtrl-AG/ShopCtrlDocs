@@ -28,7 +28,7 @@ You can also **search** by template name and **filter** templates by type.
 Double click on the template row to open the template for editing in a new tab.
 You can now:
 
-- Edit the template. Learn more in [Creating and Editing document templates]/User-Guide/02-ShopCtrl-Setup/02-General-Setup/04-Templates/Document-Templates/creating-and-editing-document-templates.md.
+- Edit the template. Learn more in [Creating and Editing document templates](/User-Guide/02-ShopCtrl-Setup/02-General-Setup/04-Templates/Document-Templates/creating-and-editing-document-templates.md).
 - Mark the **Publish** checkbox to make a template available for selecting.
 - Change a **Shop Owner** or **Shop** for which a template will be used
 

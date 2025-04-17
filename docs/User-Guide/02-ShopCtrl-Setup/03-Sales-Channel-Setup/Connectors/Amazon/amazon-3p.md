@@ -23,7 +23,7 @@ With the Amazon module you can:
 - [Create returns](/User-Guide/07-Fulfillment/Returns/manage-returns.md#exporting-returns-to-amazon)
 - [Update Amazon inventory](/User-Guide/08-Product-Management/Product-Export/exporting-inventory.md#updating-amazon-inventory)
 - [Export changed product prices](/User-Guide/08-Product-Management/Product-Export/exporting-product-details-to-amazon.md#export-changed-product-prices)
-- [Change product publication status](/User-Guide/08-Product-Management/Product-Export/exporting-product-details-to-amazon.md#change-product-publication-status)
+- [Change product publication status](/User-Guide/08-Product-Management/Product-Export/exporting-product-details-to-amazon.md)
 
 ## Setting up integration with Amazon
 

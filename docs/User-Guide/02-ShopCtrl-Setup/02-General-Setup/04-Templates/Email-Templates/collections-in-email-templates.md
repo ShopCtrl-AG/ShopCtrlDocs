@@ -47,6 +47,7 @@ For example, a table with products ordered:
 ```
 
 Example of generated products list:
+
 ![email-template-product-table](/img/email-template-product-table.png)
 
 ### Nested field collections

@@ -1,19 +1,53 @@
 # Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project.
 
-test2
+Docusaurus is a static-site-generator (also called Jamstack).
+
+It builds your site as simple static HTML, JavaScript and CSS files.
+
 
 # Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+What you'll need:
+Node.js version 18.0
+
+`npm install`
+
+Install plugin for images
+`npm install docusaurus-plugin-image-zoom`
+
+https://www.npmjs.com/package/docusaurus-plugin-image-zoom
+
+# Start your site
+
+Run the development server:
+
+```
+cd my-website
+npm run start
+```
+
+The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+
+The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+
+# Build and test
+
+Build your site for production:
+```
+npm run build
+```
+The static files are generated in the build folder.
+
+Test your production build locally:
+
+```
+npm run serve
+```
+
+The build folder is now served at http://localhost:3000/.
 
 # Contribute
+
 TODO: Explain how other users and developers can contribute to make your code better. 
 
 If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:

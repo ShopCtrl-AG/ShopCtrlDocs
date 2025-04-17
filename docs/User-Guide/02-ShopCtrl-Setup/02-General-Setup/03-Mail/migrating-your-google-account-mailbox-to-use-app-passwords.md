@@ -60,6 +60,7 @@ Enabling 2-step verification will disable [Less secure app access](https://suppo
 
 ## Step 3. Create App Password for ShopCtrl
 
+
 1. Go to your [Google Account](https://myaccount.google.com/).
 2. Select **Security**.
 3. Under "Signing in to Google," click on **2-Step Verification**.

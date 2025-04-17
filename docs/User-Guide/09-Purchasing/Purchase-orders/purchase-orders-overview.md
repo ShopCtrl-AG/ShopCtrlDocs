@@ -24,7 +24,7 @@ Buttons become visible when a purchase order row is selected.
 Here is the full list of **actions** applicable to the purchase orders:
 | Action | Description |
 | --- | --- |
-| Add | Opens a new tab for [Creating a new regular purchase order](/User-Guide/09-Purchasing/Purchase-orders/creating-a-purchase-order.md#Creating-a-regular-Purchase-Order) |
+| Add | Opens a new tab for [Creating a new regular purchase order](/User-Guide/09-Purchasing/Purchase-orders/creating-a-purchase-order.md#creating-a-regular-purchase-order) |
 | Edit | Opens an existing purchase order for editing. |
 | Mail Supplier | Creates an email to the supplier based on a chosen email template. Check [Email Templates](/User-Guide/02-ShopCtrl-Setup/02-General-Setup/04-Templates/Email-Templates/managing-email-templates.md) for details. |
 | Provision | Opens a new window for [Provisioning](/User-Guide/09-Purchasing/Purchase-orders/provisioning.md) a particular purchase order. |

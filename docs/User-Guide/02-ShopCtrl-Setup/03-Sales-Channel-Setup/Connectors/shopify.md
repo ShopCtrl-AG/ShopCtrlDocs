@@ -18,7 +18,7 @@ Shopify integration connector lets you import orders and products from your Shop
 Shopify integration connector lets you import orders and products from your Shopify online store using API integration directly to ShopCtrl.
 
 - [Importing orders from Shopify](/docs/User-Guide/04-Order-Management/02-Orders/Create-Orders/importing-orders.md#importing-orders-from-shopify)
-- [Tracking update](/User-Guide/07-Fulfillment/tracking-update.md#exporting-shipments-tracking-info-to-shopify)
+- [Tracking update](/User-Guide/07-Fulfillment/tracking-update.md#fulfilling-orders-and-exporting-tracking-info-to-shopify)
 - [Updating Shopify inventory](/docs/User-Guide/08-Product-Management/Product-Export/exporting-inventory.md#updating-shopify-inventory)
 - Importing product details
 - Exporting product details

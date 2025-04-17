@@ -27,15 +27,11 @@ You can also access the Azure Active Directory admin center from the [Microsoft 
 
 2. In the Azure Active Directory admin center, go to the **Enterprise applications > All applications** and click **New application**.
 3. On the Browse Azure AD Gallery page click **Create your own application**.
-
 ![](/img/create-your-own-application-azure-active-directory-admin-center.png)
-
 4. In the **What's the name of your app field**, enter any name you want to use to find the added app in the list of Active Directory apps.
 5. Select **Register an application to integrate with Azure AD (App you're developing)**.
 6. Click **Create**. The added program will appear in the workspace in the Enterprise applications section. The **Register an application** window will open.
-
 ![](/img/register-an-application-azure-active-directory-admin-center.png)
-
 7. On the **Supported account types** section select: **Accounts in this organizational directory only (Single tenant)**.
 8. On the Redirect URI select **Web** and enter your ShopCtrl environment URL with a path to the mail authorization: `https://{HOST}/Mail/Microsoft365/Auth.aspx`.
 9. Click **Register**.
@@ -58,18 +54,12 @@ To add minimal required API permissions to the new app:
 2. Click on the app you just created. The application details will open.
 3. On the left menu, select **Properties**.
 4. Click on the **application registration** to manage additional properties.
-
 ![](/img/application-complete-registration-azure-active-directory-admin-center.png)
-
 5. On the menu on the left select **API permissions**.
 6. On the API permissions page click **Add a permission**.
-
 ![](/img/application-complete-registration-add-permissions.png)
-
 7. On the new **Request API permissions** window on the **Microsoft APIs** tab select **Microsoft Graph API**.
-
 ![](/img/application-registration-request-graph-api-permissions.png)
-
 8. Choose **Delegated permissions** for the Microsoft Graph.
 9. Use the search in the **Select permissions** field to find and tick the following permissions:
    - User.Read
@@ -102,15 +92,11 @@ To create and get credentials:
 6. On the left menu, select **Overview**.
 7. Copy the **Application (client) ID** and save it to a secure place. It is your **Client ID**.
 8. Copy the **Directory (tenant) ID** and save it to the secure place. It is your **Tenant ID**.
-
 ![](/img/application-complete-registration-getting-client-id-tenant-id.png)
-
 9. On the left menu, select **Certificates & secrets**.
 10. Click **New client secret**.
 11. On the **Add a client secret pane**, enter the **Description** for a secret.
-
 ![](/img/application-complete-registration-generate-client-secret.png)
-
 12. Select the **Expires** period for the secret. Consider setting up a bigger period.
 
 :::warning[**Important**]
@@ -121,7 +107,6 @@ Once the client secret expires, the mail synchronization in ShopCtrl will **stop
 
 13. Click **Add** to generate the client secret.
 14. Copy the **Value** field of the client secret and save it as you would normally do with passwords.
-
 ![](/img/application-complete-registration-getting-client-secret-value.png)
 
 :::warning[**Note**]

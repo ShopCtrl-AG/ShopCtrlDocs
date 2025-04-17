@@ -41,7 +41,7 @@ If the product quantity is not set in the file, it's lowered to 0 and sent to Am
 Automatic Shipment Creation: As part of the WMS integration, ShopCtrl offers the option to create shipments automatically upon processing the pick file. The order should be allocated by the moment shipment is created.
 Allocation and shipment creation processes can also be managed by [triggers](/User-Guide/02-ShopCtrl-Setup/02-General-Setup/05-Triggers/index.md), allowing for customization based on internal processes and requirements.
 
-Both shipment creation and also deletion of previously created shipment on reacknowledgement are configured on warehouse level.  Please check Picking configuration. [Integration with WMS via FTP](/User-Guide/02-ShopCtrl-Setup/02-General-Setup/06-Fulfillment/integration-with-wms-via-ftp.md#ShopCtrl:-Warehouse-Integration-Configuration)
+Both shipment creation and also deletion of previously created shipment on reacknowledgement are configured on warehouse level.  Please check Picking configuration. [Integration with WMS via FTP](/User-Guide/02-ShopCtrl-Setup/02-General-Setup/06-Fulfillment/integration-with-wms-via-ftp.md#shopctrl-warehouse-integration-configuration)
 
 
 ### Undefined orders acknowledgement

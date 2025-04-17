@@ -23,15 +23,15 @@ This process will consist of two steps.
 
 1. Sign in to your developer account on [Vendor Central](https://vendorcentral.amazon.co.uk).
 2. From the top right navigation menu, select **Integration > API integration**.
-<img src={require("/img/amazon-go-to-api-integration.png").default} height="" width="800" />
+    <img src={require("/img/amazon-go-to-api-integration.png").default} height="" width="800" />
 3. On the **API Integration Developer Central** page you can see all of your applications listed.
-<img src={require("/img/Amazon-api-integrations-list.png").default} height="" width="800" /> 
+    <img src={require("/img/Amazon-api-integrations-list.png").default} height="" width="800" /> 
 4. Locate the ShopCtrl application and on the **LWA credentials** column  click **View**.
-<img src={require("/img/amazon-lwa-creds-not-rotated.png").default} height="" width="400" />
+    <img src={require("/img/amazon-lwa-creds-not-rotated.png").default} height="" width="400" />
 5. Choose **Rotate secret**, read the warning, then choose **Rotate secret** again.
-<img src={require("/img/amazon-rotate-lwa-creds-confirm.png").default} height="" width="400" /> 
+    <img src={require("/img/amazon-rotate-lwa-creds-confirm.png").default} height="" width="400" /> 
 6. Copy the newly generated **Client Secret**. Store it like you would normally do with passwords.
-<img src={require("/img/amazon-rotate-lwa-creds-new.png").default} height="" width="400" />
+    <img src={require("/img/amazon-rotate-lwa-creds-new.png").default} height="" width="400" />
 
 
 :::danger[**Amazon requires:**]
@@ -47,7 +47,7 @@ To update ShopCtrl shop Synchronization with a new LWA client secret;
 1. Log in to your ShopCtrl account as a user with the **Shop Owner Admin** role.
 2. In the sales channel pane click on the Amazon 1P shop icon (a shop for which Amazon 1P synchronization is configured) and select **Settings**.
 3. On the shop details page go the topic menu, select **Shop synchronization > Amazon 1P Synchronization**.
-<img src={require("/img/amazon-shopctrl-1p-shop-sync.png").default} height="" width="800" />
+    <img src={require("/img/amazon-shopctrl-1p-shop-sync.png").default} height="" width="800" />
 4. In the **LWA Client Secret** field enter the new value generated for the ShopCtrl private app in Amazon.
 5. Click **Save and Close** to apply changes to the Amazon 1P synchronization.
 

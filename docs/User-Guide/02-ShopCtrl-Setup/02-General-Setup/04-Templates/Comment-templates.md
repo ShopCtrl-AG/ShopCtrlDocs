@@ -39,9 +39,11 @@ By default, shop admins and power users have full permissions to manage comment 
 
 1. Log in as a user with **Power User** permissions.
 2. Navigate to **Configuration > Templates > Comment Templates**.
-<img src={require("/img/managing-comment-templates.png").default} height="" width="400" />
+
+    <img src={require("/img/managing-comment-templates.png").default} height="" width="400" />
 3. Click **Add** to create a new template.
-<img src={require("/img/create-comment-template-formatting.png").default} height="" width="400" />
+
+    <img src={require("/img/create-comment-template-formatting.png").default} height="" width="400" />
 4. (Optionally) Select a shop for which this template should be used. Or leave the field empty to be able to apply it to any shop.
 5. Fill out the following fields:
     1. **Name**: Enter a descriptive name for the template.
@@ -52,13 +54,14 @@ By default, shop admins and power users have full permissions to manage comment 
 6. Enable the **Publish** checkbox to make the template selectable from the list.
 7. Click **Save or Save and Close** to finalize the template.
 
-<img src={require("/img/comment-template-example.png").default} height="" width="600" />
+    <img src={require("/img/comment-template-example.png").default} height="" width="600" />
 
 ### Step 2: Configure Default Templates for the Shop
 
 1. Log in as a user with **Shop Admin** permissions.
 2. Navigate to **Shop Settings > Comment Templates**.
-<img src={require("/img/comment-template-ticket-type-shop-configuration.png").default} height="" width="400" />
+
+    <img src={require("/img/comment-template-ticket-type-shop-configuration.png").default} height="" width="400" />
 3. Assign default templates for the following entities:
     1. **Order** comment template
     2. **Order return** comment template
@@ -77,13 +80,15 @@ By default, shop admins and power users have full permissions to manage comment 
 When you're adding a comment for an entity (e.g., an order, order return, ticket, or task), the default template will automatically appear in the comment field. 
 This pre-filled text provides a starting point for your comment. 
 
-<img src={require("/img/ticket-comment-template-prefilled.png").default} height="" width="400" />
+    <img src={require("/img/ticket-comment-template-prefilled.png").default} height="" width="400" />
+
 
 If you wish to use a different template:
 1. Click the **Select Comment Template** button near the comment field.
 2. A list of all available templates for the selected entity will be displayed.
 3. Use the search and filter options to quickly find the template that suits your needs.
-<img src={require("/img/select-different-comment-template.png").default} height="" width="400" />
+
+    <img src={require("/img/select-different-comment-template.png").default} height="" width="400" />
 4. Select the desired template, and its content will replace the default text in the comment field.
 5. Review or edit the template text as needed to tailor it to the specific situation.
 6. Once satisfied, submit the comment as usual.

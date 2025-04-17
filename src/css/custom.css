@@ -6,31 +6,151 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #1d4090;
-  --ifm-color-primary-dark: #1a3a82;
-  --ifm-color-primary-darker: #19367a;
-  --ifm-color-primary-darkest: #142d65;
-  --ifm-color-primary-light: #20469e;
-  --ifm-color-primary-lighter: #214aa6;
-  --ifm-color-primary-lightest: #2653bb;
+  --ifm-color-primary: #574CA8;
+  --ifm-color-primary-dark: #4d4397;
+  --ifm-color-primary-darker: #473f8e;
+  --ifm-color-primary-darkest: #3a3475;
+  --ifm-color-primary-light: #655bb1;
+  --ifm-color-primary-lighter: #6d63b5;
+  --ifm-color-primary-lightest: #847bc2;
+  --ifm-link-color: #574CA8;
+  --ifm-link-hover-color: #3a3475;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
+
 :root { 
   --doc-sidebar-width: 400px !important;
 }
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #2b53ca;
-  --ifm-color-primary-dark: #274bb6;
-  --ifm-color-primary-darker: #2547ac;
-  --ifm-color-primary-darkest: #1e3a8d;
-  --ifm-color-primary-light: #3960d5;
-  --ifm-color-primary-lighter: #4368d7;
-  --ifm-color-primary-lightest: #6180dd;
+  --ifm-color-primary: #847bc2;
+  --ifm-color-primary-dark: #756bb8;
+  --ifm-color-primary-darker: #6d63b5;
+  --ifm-color-primary-darkest: #574CA8;
+  --ifm-color-primary-light: #938bcc;
+  --ifm-color-primary-lighter: #9b94d0;
+  --ifm-color-primary-lightest: #b2acdd;
+  --ifm-link-color: #847bc2;
+  --ifm-link-hover-color: #b2acdd;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Gradient Navbar Styles */
+.navbar {
+  background: linear-gradient(90deg, #574CA8 0%, #136969 100%);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  min-height: 4rem;
+  padding: 0.5rem 1rem;
+}
+
+[data-theme='dark'] .navbar {
+  background: linear-gradient(90deg, #3A2E8E 0%, #0d494a 100%);
+}
+
+/* Documentation link styling */
+.docItemContainer article a:not(.menu__link, .navbar__item, .card, .breadcrumbs__link),
+.markdown a:not(.menu__link, .navbar__item, .card, .breadcrumbs__link) {
+  color: var(--ifm-link-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.docItemContainer article a:not(.menu__link, .navbar__item, .card, .breadcrumbs__link):hover,
+.markdown a:not(.menu__link, .navbar__item, .card, .breadcrumbs__link):hover {
+  color: var(--ifm-link-hover-color);
+  text-decoration: underline;
+}
+
+/* Navbar elements */
+.navbar__title.text--truncate {
+  color: white !important;
+  margin: 0 0.5rem;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.navbar__brand .navbar__title.text--truncate {
+  margin-left: 0.5rem;
+}
+
+.navbar__items {
+  font-weight: 600;
+}
+
+.navbar__item, .navbar__link {
+  color: white;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+.navbar__item:hover, .navbar__link:hover {
+  color: white;
+  opacity: 1;
+  text-decoration: none;
+}
+
+.dropdown__menu {
+  background: #136969;
+  border: none;
+  border-radius: 8px;
+}
+
+[data-theme='dark'] .dropdown__menu {
+  background: #0d494a;
+}
+
+.navbar__search input {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar__search input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar__toggle {
+  color: white;
+}
+
+.navbar__logo {
+  height: 2rem;
+}
+
+.navbar__link--active {
+  position: relative;
+  opacity: 1;
+}
+
+.navbar__link--active::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: white;
+  border-radius: 3px;
 }
 
 .hidden {
   display: none !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+:root {
+  --ifm-font-family-base: 'Nunito', system-ui, -apple-system, sans-serif;
+  --ifm-heading-font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+}
+
+html {
+  font-family: var(--ifm-font-family-base);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ifm-heading-font-family);
+  font-weight: 600;
 }

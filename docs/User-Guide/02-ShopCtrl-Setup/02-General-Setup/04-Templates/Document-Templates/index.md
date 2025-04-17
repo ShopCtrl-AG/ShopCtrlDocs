@@ -18,7 +18,7 @@ Both the text, formatting, and images, along with the merge fields replaced by t
 When generating the file, ShopCtrl will automatically retrieve the information from the database and replace the placeholders with actual data, taking into consideration the rules and formatting applied to the Word file.
 
 Use **Document Templates** to create customized documents depending on your customer's or partner's needs.
-See [Creating and Editing Document Templates]/User-Guide/02-ShopCtrl-Setup/02-General-Setup/04-Templates/Document-Templates/creating-and-editing-document-templates.md, [Merge Fields](merge-fields-in-document-templates.md), [Collections](collections-in-document-templates.md) and [Conditions](conditions-in-document-templates.md) for more information.
+See [Creating and Editing Document Templates](./creating-and-editing-document-templates.md), [Merge Fields](./merge-fields-in-document-templates.md), [Collections](./collections-in-document-templates.md) and [Conditions](./conditions-in-document-templates.md) for more information.
 
 ## Types of document templates
 

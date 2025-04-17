@@ -68,7 +68,10 @@ Please keep in mind, that App Passwords are revoked after Google account passwor
 ## Step 4. Set up mailbox 
 
 Please check Google documentation to get the Incoming Mail (POP3 or IMAP) Server and Outgoing Mail (SMTP) server details:
+
 [Read Gmail messages on other email clients using POP](https://support.google.com/mail/answer/7104828)
+
 [Check Gmail through other email platforms using IMAP](https://support.google.com/mail/answer/7126229)
+
 
 Follow the steps in this article to set up mail box in your ShopCtrl environment: [Setting up mailbox in ShopCtrl](./setting-up-mailbox-in-shopctrl.md).

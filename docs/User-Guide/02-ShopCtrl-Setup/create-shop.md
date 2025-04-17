@@ -50,9 +50,14 @@ To create a shop:
 14. Specify the **Default VAT tariff** used for most of the products.
 15. Decide whether to display prices including or excluding VAT by marking the checkbox **Display Inc VAT**.
 16. On the **Financial > Payment** tab you can specify **Max payment deviation**, which is the maximum allowed difference for under- and overpayments. If the outstanding amount or overpayment fits in the payment tolerance limit, the payment is allocated and the order/invoice will be considered as paid.
-    :::(Info) ()
+
+    :::info[Info]
+
     The **Max payment deviation** limit depends on the currency used in the shop. For example, for Euros the deviation is specified in decimals. While the deviation for Norwegian crones can be specified only in whole numbers.
+    
     :::
+
+
     ![shop-settings-payment-allocations](/img/shop-settings-payment-allocations.png)
 
 17. On the Warehouses tab select **Warehouses** available for the shop.
