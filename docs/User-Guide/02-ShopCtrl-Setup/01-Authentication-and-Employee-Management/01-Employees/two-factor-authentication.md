@@ -13,7 +13,7 @@ Two-factor authentication can be configured as a mandatory requirement for users
 ## Authenticators
 
 The first thing you need to do to set up two factor authentication is to choose a service to use.
-[Authy](https://authy.com/) is a popular authenticator for various platforms, like [Android](https://play.google.com/store/apps/details?id=com.authy.authy), [IOS](https://itunes.apple.com/us/app/authy/id494168017), [Chrome extension](https://chrome.google.com/webstore/detail/authy/gaedmjdfmmahhbjefcbgaolhhanlaolb?hl=en), or for your desktop (Windows [64-bit](https://electron.authy.com/download?channel=stable&arch=x64&platform=win32&version=latest&product=authy) | [32-bit](https://electron.authy.com/download?channel=stable&arch=x32&platform=win32&version=latest&product=authy) or [MacOS](https://electron.authy.com/download?channel=stable&arch=x64&platform=darwin&version=latest&product=authy))
+[Authy](https://authy.com/) is a popular authenticator for various platforms, like [Android](https://play.google.com/store/apps/details?id=com.authy.authy) or [IOS](https://itunes.apple.com/us/app/authy/id494168017).
 We recommend this authenticator because it allows you to synchronize your tokens with multiple devices. You can also backup your tokens and restore them later, for example, when you have a new phone.
 
 Google Authenticator is probably the most famous authenticator out there. Google Authenticator comes for both [Android](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=en) and [IOS](https://itunes.apple.com/us/app/google-authenticator/id388497605?mt=8).

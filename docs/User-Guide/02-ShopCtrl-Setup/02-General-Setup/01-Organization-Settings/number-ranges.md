@@ -15,15 +15,22 @@ There are different strategies to keep your numbers in order.
 - Reset period: numbers can be increased infinite, or reset each year.
 
 Default number format can consist of alphabetical prefix and number itself containing 3-6 digits. Here are the default suggested formats:
+
 `{Nr:000000}` - number sequence consisting of 6 digits.
+
 `OF{Nr:000000} ` - number sequence with alphabetical prefix
+
 `{CreateTime:yy}{Nr:000000}` - number sequence with chronological prefix
+
 
 There are also other formats for chronological numbering. The code can be customizable with the use of the corresponding placeholders. Such as:
 
 `{OfferDate}` - date of the Offer
+
 `{OrderDate}` - date of the Order
+
 `{InvoiceDate}` - date of the Invoice
+
 `{CreateTime}` - date of the offer/invoice/order creation
 
 For example, January 19th, 2023 can also be represented as 19012023-000001 (`{OrderDate:ddMMyyyy}-{Nr:000000}`), 23-000001 (`{OrderDate:yy}-{Nr:000000}`), etc.
