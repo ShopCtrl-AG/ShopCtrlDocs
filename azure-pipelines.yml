@@ -80,8 +80,22 @@ stages:
             --output tsv)
           
           azcopy sync "$(Pipeline.Workspace)/docusaurus-build/" \
-          "https://$(azureStorageAccount).blob.core.windows.net/$(containerName)?$sas" \
-          --recursive \
-          --compare-hash="MD5" \
-          --put-md5 \
-          --delete-destination="true"
+            "https://$(azureStorageAccount).blob.core.windows.net/$(containerName)?$sas" \
+            --recursive \
+            --compare-hash="MD5" \
+            --put-md5 \
+            --delete-destination="true"
+
+          # Set short cache (10 minutes) for HTML files
+          az storage blob update-batch \
+            --account-name $(azureStorageAccount) \
+            --source $(containerName) \
+            --pattern "*.html" \
+            --cache-control "public, max-age=600, immutable"
+
+          # Set long cache (1 year) for non HTML files
+          az storage blob update-batch \
+            --account-name $(azureStorageAccount) \
+            --source $(containerName) \
+            --pattern "*.[!h][!t]*" \
+            --cache-control "public, max-age=31536000, immutable"
