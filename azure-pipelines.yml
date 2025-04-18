@@ -101,3 +101,6 @@ stages:
             fi
             echo "az storage blob update --account-name $(azureStorageAccount) --container-name $(containerName) --sas-token \"$sas\" --name \"$blob_name\" --content-cache-control \"$cache_control_value\" --output none"
           done > commands.batch
+          
+          # Run in parallel
+          az batch --file commands.batch --parallel 32
