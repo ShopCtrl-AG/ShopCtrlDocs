@@ -88,23 +88,16 @@ stages:
 
           # Set Cache-Control
           az storage blob list \
-            --account-name $(azureStorageAccount) \
-            --container-name $(containerName) \
-            --sas-token "$sas" \
-            --query "[?properties.cacheControl == null || properties.cacheControl == ''].name" \
-            --output tsv \
+          --account-name $(azureStorageAccount) \
+          --container-name $(containerName) \
+          --sas-token "$sas" \
+          --query "[?properties.cacheControl == null || properties.cacheControl == ''].name" \
+          --output tsv \
           | while read -r blob_name; do
             if [[ "$blob_name" == *.html ]]; then
-                cache_control_value="public, max-age=300, stale-while-revalidate=60"
+              cache_control_value="public, max-age=300, stale-while-revalidate=60"
             else
-                cache_control_value="public, max-age=31536000, immutable"
+              cache_control_value="public, max-age=31536000, immutable"
             fi
-            az storage blob update \
-              --account-name $(azureStorageAccount) \
-              --container-name $(containerName) \
-              --sas-token "$sas" \
-              --name "$blob_name" \
-              --content-cache-control "$cache_control_value" \
-              --output none
-            echo "Updated Cache-Control for: $blob_name"
-          done
+            echo "az storage blob update --account-name $(azureStorageAccount) --container-name $(containerName) --sas-token \"$sas\" --name \"$blob_name\" --content-cache-control \"$cache_control_value\" --output none"
+          done > commands.batch
