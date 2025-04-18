@@ -90,6 +90,7 @@ stages:
           az storage blob list \
             --account-name $(azureStorageAccount) \
             --container-name $(containerName) \
+            --sas-token "$sas"
             --query "[?properties.cacheControl == null || properties.cacheControl == ''].name" \
             --output tsv \
           | while read -r blob_name; do
@@ -102,6 +103,7 @@ stages:
               --account-name $(azureStorageAccount) \
               --container-name $(containerName) \
               --name "$blob_name" \
+              --sas-token "$sas"
               --content-cache-control "$cache_control_value" \
               --output none
             echo "Updated Cache-Control for: $blob_name"
