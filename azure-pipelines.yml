@@ -91,7 +91,7 @@ stages:
             --delete-destination="true"
           
           # Set Cache-Control
-          MAX_JOBS=64
+          MAX_JOBS=32
           update_blob() {
             blob_name=$1
             if [[ "$blob_name" == *.html ]]; then
@@ -106,6 +106,8 @@ stages:
               --name "$blob_name" \
               --content-cache-control "$cache_control_value" \
               --output none
+            
+            wait
             echo "[$(date +%T)] Updated: $blob_name"
           }
           export -f update_blob
@@ -120,11 +122,13 @@ stages:
             update_blob "$blob_name" &
             # Enforce max parallel jobs
             while (( $(jobs -r | wc -l) >= MAX_JOBS )); do
-              sleep 0.1
+              sleep 0.01
             done
           done
 
           # Wait for all jobs to complete
           wait
-          sleep 3
+          while (( $(jobs -r | wc -l) >= 1 )); do
+            sleep 0.01
+          done
           echo "[$(date +%T)] All cache headers have been set"
