@@ -79,9 +79,39 @@ stages:
             --auth-mode key \
             --output tsv)
           
+          # Set Environment variable
+          # For some reason, --sas-token still generates a warning
+          export AZURE_STORAGE_SAS_TOKEN="$sas"
+          
           azcopy sync "$(Pipeline.Workspace)/docusaurus-build/" \
             "https://$(azureStorageAccount).blob.core.windows.net/$(containerName)?$sas" \
             --recursive \
             --compare-hash="MD5" \
             --put-md5 \
             --delete-destination="true"
+          
+          # Set Cache-Control
+          update_blob() {
+            blob_name=$1
+            if [[ "$blob_name" == *.html ]]; then
+              cache_control_value="public, max-age=300, stale-while-revalidate=60"
+            else
+              cache_control_value="public, max-age=31536000, immutable"
+            fi
+            az storage blob update \
+              --account-name $(azureStorageAccount) \
+              --container-name $(containerName) \
+              --sas-token "$sas" \
+              --name "$blob_name" \
+              --content-cache-control "$cache_control_value" \
+              --output none
+            echo "Updated: $blob_name"
+          }
+          export -f update_blob
+          az storage blob list \
+            --account-name $(azureStorageAccount) \
+            --container-name $(containerName) \
+            --sas-token "$sas" \
+            --query "[?properties.contentSettings.cacheControl == null || properties.contentSettings.cacheControl == ''].name" \
+            --output tsv \
+          | xargs -P 16 -I {} bash -c 'update_blob "{}"'
