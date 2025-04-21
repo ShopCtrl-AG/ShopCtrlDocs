@@ -91,7 +91,7 @@ stages:
             --delete-destination="true"
           
           # Set Cache-Control
-          MAX_JOBS=32
+          MAX_JOBS=64
           update_blob() {
             blob_name=$1
             if [[ "$blob_name" == *.html ]]; then
@@ -106,29 +106,25 @@ stages:
               --name "$blob_name" \
               --content-cache-control "$cache_control_value" \
               --output none
-            
-            wait
             echo "[$(date +%T)] Updated: $blob_name"
           }
           export -f update_blob
-          az storage blob list \
-            --account-name $(azureStorageAccount) \
-            --container-name $(containerName) \
-            --sas-token "$sas" \
-            --query "[?properties.contentSettings.cacheControl == null || properties.contentSettings.cacheControl == ''].name" \
-            --output tsv \
-          | while read -r blob_name; do
+
+          # Use process substitution to avoid creating a subshell
+          while read -r blob_name; do
             # Run worker in background
             update_blob "$blob_name" &
             # Enforce max parallel jobs
             while (( $(jobs -r | wc -l) >= MAX_JOBS )); do
-              sleep 0.01
+              sleep 0.05
             done
-          done
+          done < <(az storage blob list \
+            --account-name $(azureStorageAccount) \
+            --container-name $(containerName) \
+            --sas-token "$sas" \
+            --query "[?properties.contentSettings.cacheControl == null || properties.contentSettings.cacheControl == ''].name" \
+            --output tsv)
 
           # Wait for all jobs to complete
           wait
-          while (( $(jobs -r | wc -l) >= 1 )); do
-            sleep 0.01
-          done
           echo "[$(date +%T)] All cache headers have been set"
