@@ -1026,3 +1026,28 @@ PurchaseOrderRow' links to 'PurchaseOrderRow'
 | Alerts ChangedTimestamp         | Alerts Collection | $$Alerts.ChangedTimestamp$$              | Date and Time |
 
 </details>
+
+## Order Return
+
+<details>
+  <summary> Show the list of Order Return merge fields</summary>
+
+| Merge field name                       | Merge field type | Merge field                           | Data type             |
+| -------------------------------------- | ---------------- | ------------------------------------- | --------------------- |
+| Order Return CloseDate                 | Single item      | $$OrderReturn.CloseDate$$             | Date/Time             |
+| Order Return CreatedTimestamp          | Single item      | $$OrderReturn.CreatedTimestamp$$      | Date/Time             |
+| Order Return FollowUpDate              | Single item      | $$OrderReturn.FollowUpDate$$          | Date/Time             |
+| Order Return Id                        | Single item      | $$OrderReturn.Id$$                    | Number                |
+| Order Return Received Date             | Single item      | $$OrderReturn.ReceivedDate$$          | Date/Time             |
+| Order Return Return Code               | Single item      | $$OrderReturn.ReturnCode$$            | String                |
+| Order Return Return Rows As Html Table | Single item      | $$OrderReturn.ReturnRowsAsHtmlTable$$ | HTML table - Outdated |
+| Order Return ScanCode                  | Single item      | $$OrderReturn.ScanCode$$              | String                |
+| Order Return Row Approved Quantity     | Collection       | $$OrderReturnRow.ApprovedQuantity$$   | Number                |
+| Order Return Row Id                    | Collection       | $$OrderReturnRow.Id$$                 | Number                |
+| Order Return Row Order Return Id       | Collection       | $$OrderReturnRow.OrderReturnId$$      | Number                |
+| Order Return Row Product Code          | Collection       | $$OrderReturnRow.ProductCode$$        | String                |
+| Order Return Row Product Name          | Collection       | $$OrderReturnRow.ProductName$$        | String                |
+| Order Return Row Refund Amount         | Collection       | $$OrderReturnRow.RefundAmount$$       | Number                |
+| Order Return Row Returned Quantity     | Collection       | $$OrderReturnRow.ReturnedQuantity$$   | Number                |
+
+</details>
