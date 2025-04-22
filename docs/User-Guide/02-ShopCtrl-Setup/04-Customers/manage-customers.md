@@ -78,8 +78,10 @@ To merge a customer:
 
 The customer will be deleted and all related data will be moved to another customer you chose.
 
-:::(Warning) ()
+:::warning
+
 Please be careful when merging the customers. This action cannot be undone.
+
 :::
 
 ## Deactivate customers
@@ -111,8 +113,10 @@ To manually obfuscate customer:
 
 The obfuscation changes the customer contact information to fake data which affects all connected offers and orders. Customer emails, VoIP calls and chat conversations are permanently deleted from the system.  
 
-:::(Warning) (Please note)
+:::warning[Please note]
+
 Order, offer, tickets and customer contact information cannot be obfuscated while the corresponding entities are in the active status.
+
 :::
 
 ## Send bulk email
@@ -136,6 +140,8 @@ To delete a customer:
 2. Find and select a customer you would like to delete.
 3. Click **Delete** > **Yes**.
 
-:::(Info)
+:::info[]
+
 Customers linked to orders, could not be deleted.
+
 :::

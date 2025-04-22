@@ -138,6 +138,6 @@ Please enter a name and value(s).
 ### Stock items
 
 Here is an overview of the advanced stock items that were delivered by this purchase order.
-View [Advanced Warehouse]/User-Guide/09-Purchasing/advanced-warehouse.md for details.
+View [Advanced Warehouse](/User-Guide/09-Purchasing/advanced-warehouse.md) for details.
 
 <img src={require("/img/PO_topic_menu_stock_items.png").default} height="" width="800" />

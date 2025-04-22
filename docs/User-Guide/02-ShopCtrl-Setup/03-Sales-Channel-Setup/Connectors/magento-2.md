@@ -69,10 +69,12 @@ Once you have generated API keys in your Magento account, you can set up synchro
     2. Bundle
     3. All - use both Simple and Bundle products
 11. (Optional) Specify the **Specific mappings** for importing Magento orders.
-12. Map the ShopCtrl **Main Order Statuses** to the Magento order statuses.
+12. Map the ShopCtrl **Main Order Statuses** to the Magento order statuses. Please, see [Magento Order Statuses](https://docs.magento.com/user-guide/sales/order-status.html) for more information.
     ![magento-shop-mapping](/img/magento-shop-mapping.png)
-
-Please, see [Magento Order Statuses](https://docs.magento.com/user-guide/sales/order-status.html) for more information. 12. Map the ShopCtrl **Payment Statuses** to the Magento **Payment statuses**. 13. Map the ShopCtrl **Payment Types** to the Magento **Payment Methods**. 14. Create **Carrier account mapping** to guarantee that the ShopCtrl carrier account names correspond to the Magento carrier codes. 17. **Enable** the synchronization. 18. Click **Save** or **Save and Close** to apply changes to the shop.
+13. Map the ShopCtrl **Payment Statuses** to the Magento **Payment statuses**. 
+14. Map the ShopCtrl **Payment Types** to the Magento **Payment Methods**. 14. Create **Carrier account mapping** to guarantee that the ShopCtrl carrier account names correspond to the Magento carrier codes. 
+15. **Enable** the synchronization. 
+16. Click **Save** or **Save and Close** to apply changes to the shop.
 
 :::info[Note]
 

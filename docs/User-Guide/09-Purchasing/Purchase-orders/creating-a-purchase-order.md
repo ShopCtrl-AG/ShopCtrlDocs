@@ -91,26 +91,26 @@ The main differences with the regular purchase order:
 
 ## Creating a back-to-back purchase order
 
-<img src={require("/img/backToBack_PO_00.png").default} height="" width="800" />
+    
 
 To create a back-to-back purchase order:
 1. Open the **Sales order** for which the back-to-back purchase order should be created. 
 If the product is out of stock, it will be marked as a backorder. ShopCtrl system will automatically identify the supplier for the product.
+    <img src={require("/img/backToBack_PO_00.png").default} height="" width="800" />
 2. In the topic menu below, choose a **Purchase Orders**. And click a **Create Purchase Order** button.
-<img src={require("/img/back_to_back_new_order_2.png").default} height="" width="800" />
-
+    <img src={require("/img/back_to_back_new_order_2.png").default} height="" width="800" />
 3. A window will appear offering to choose a **supplier**, **Destination** warehouse, and **Products** to order. 
 The suggestion is based on the supplier's priority set on the product. Preferred supplier is always chosen first. But you can easily choose among the suppliers available.
-<img src={require("/img/back_to_back_new_order_3.png").default} height="" width="400" />
+    <img src={require("/img/back_to_back_new_order_3.png").default} height="" width="400" />
 
 4. There are several options to **Create and Save** a back-to-back purchase order. 
-<img src={require("/img/back_to_back_new_order_4.png").default} height="" width="400" />
+    <img src={require("/img/back_to_back_new_order_4.png").default} height="" width="400" />
 
 #### **Create and Mail** 
 1. Creates and saves new purchase order
 2. Purchase order document is generated automatically the moment a purchase order is created.
 3. Opens a new tab with a new email to a supplier based on the email template set. 
-<img src={require("/img/PO_email_autogenerate_02.png").default} height="" width="800" />
+    <img src={require("/img/PO_email_autogenerate_02.png").default} height="" width="800" />
 
 
 The **Reference** pane displays:
@@ -125,7 +125,7 @@ The purchase order document is automatically attached to the email and is visibl
 1. Creates and saves new Purchase Order
 2. Purchase Order Document is generated automatically the moment a Purchase Order is created.
 3. Opens a new tab with a created purchase order for editing.
-<img src={require("/img/backToBack_PO_03.png").default} height="" width="800" />
+    <img src={require("/img/backToBack_PO_03.png").default} height="" width="800" />
 
 The main differences with the regular purchase order:
 

@@ -108,7 +108,8 @@ These basic system flows are provided by ShopCtrl and will be copied to your Mes
 Below is a short description of these system flows.
 
 **Check business hours flow**. You might want to use Date/time flow control to determine different flows outside and inside business hours.
-DIAGRAM
+
+<img src={require("/img/check-business-hours-flow.png").default} height="" width="400" />
 
 To hand over a dialog to a ShopCtrl employee, call a Check business hours flow webhook from a different flow, to initialize the handover process. The Handover step is a HTTP request, that is sent to ShopCtrl. 
 
@@ -117,7 +118,9 @@ The bot is not paused in both scenarios, so you can add other steps to improve y
 
 **Event webhook flow.**
 
-DIAGRAM
+<img src={require("/img/check-employee-available-flow.png").default} height="" width="400" />
+
+
 
 :::warning[Please note]
 

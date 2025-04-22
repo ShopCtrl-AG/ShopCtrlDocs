@@ -34,10 +34,12 @@ This process will consist of two steps.
    ![amazon-rotate-client-secret-2-step](/img/amazon-rotate-client-secret-2-step.png)
 6. Copy the newly generated **Client Secret**. Store it like you would normally do with passwords.
 
-:::(Error) (**Amazon requires:**)
+
+:::danger[**Amazon requires:**]
 
 > After you generate a new LWA credential (client secret), you must update your credentials for any applications that call the Amazon APIs. Your old credentials expire 7 days after you generate new credentials.
-> :::
+
+:::
 
 ### Step 2. Update ShopCtrl to use new LWA client secret to synchronize to Amazon.
 

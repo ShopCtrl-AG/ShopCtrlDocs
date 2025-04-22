@@ -38,12 +38,16 @@ To set up synchronization in ShopCtrl:
 8. (_Optional_) You can determine in ms the custom interval between API calls. Or leave the field blank to set API call timeout to default 5 minutes.
 9. (_Optional_) Enable API logging to check the detailed logs on each API call performed.
 10. Move back to the top of the pane to the **Functional settings** - **Orders** section. Check the features you would like to use:
-    _ **Import Orders from Mano Mano** - new orders will be imported to ShopCtrl.
-    _ **Order integration to ManoMano** - a setting required for sending T&T info to ManoMano
-    _ **Auto-accept orders** - Pending orders imported will be automatically marked as accepted
-    _ **Send Track&Trace info to ManoMano** - once the order is marked as shipped in Shopctrl, an automatic request to create a shipment within Mano Mano will be created. The Mano Mano shipment will be automatically updated with the tracking code and Url.
-    :::(Warning)
+    - **Import Orders from Mano Mano** - new orders will be imported to ShopCtrl.
+    - **Order integration to ManoMano** - a setting required for sending T&T info to ManoMano
+    - **Auto-accept orders** - Pending orders imported will be automatically marked as accepted
+    - **Send Track&Trace info to ManoMano** - once the order is marked as shipped in Shopctrl, an automatic request to create a shipment within Mano Mano will be created. The Mano Mano shipment will be automatically updated with the tracking code and Url.
+
+    :::warning
+
+
     Update **Products** features like **Export Stock to ManoMano** and **Export Price to ManoMano** are currently under development and not yet available.
+
     :::
 11. **Carrier account mapping**. Here you can map the Mano Mano carriers to the ShopCtrl ones. This mapping is used for auto-updating
     ![manomano-carrier-account-mapping](/img/manomano-carrier-account-mapping.png)

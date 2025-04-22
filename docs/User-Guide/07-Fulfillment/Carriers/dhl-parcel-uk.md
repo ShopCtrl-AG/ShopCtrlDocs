@@ -32,44 +32,44 @@ DHL Parcel UK offers a wide selection of services for your domestic and internat
 
 **DHL Parcel UK Domestic Services**
 
-Bagit Next Day
-Bagit Next Day 09:00
-Bagit Next Day 10:30
-Bagit Next Day 12:00
-Bagit Next Day - ServicePoint Delivery
-Bagit Saturday 09:00
-Bagit Saturday 10:30 (Specified Address / Leave Safe)
-Bagit Saturday 10:30 (Specified Address / Neighbour)
-Bagit Saturday 10:30
-Bagit Saturday (Specified Address / Leave Safe)
-Bagit Saturday (Specified Address / Neighbour)
-Bagit Saturday
-Pallet 48 Hours
-Pallet Next Day
-Parcel 48 Hours (Specified Address / Neighbour)
-Parcel 48 Hours - ServicePoint Delivery
-Parcel 72 Hours (Specified Address / Leave Safe)
-Parcel 72 Hours - ServicePoint Delivery
-Parcel Next Day
-Parcel Next Day 09:00
-Parcel Next Day 10:30
-Parcel Next Day 12:00
-Parcel Next Day - ServicePoint Delivery
-Parcel Saturday 09:00
-Parcel Saturday 10:30 (Specified Address / Leave Safe)
-Parcel Saturday 10:30 (Specified Address / Neighbour)
-Parcel Saturday 10:30
-Parcel Saturday (Specified Address / Leave Safe)
-Parcel Saturday (Specified Address / Neighbour)
-Parcel Saturday
+- Bagit Next Day
+- Bagit Next Day 09:00
+- Bagit Next Day 10:30
+- Bagit Next Day 12:00
+- Bagit Next Day - ServicePoint Delivery
+- Bagit Saturday 09:00
+- Bagit Saturday 10:30 (Specified Address / Leave Safe)
+- Bagit Saturday 10:30 (Specified Address / Neighbour)
+- Bagit Saturday 10:30
+- Bagit Saturday (Specified Address / Leave Safe)
+- Bagit Saturday (Specified Address / Neighbour)
+- Bagit Saturday
+- Pallet 48 Hours
+- Pallet Next Day
+- Parcel 48 Hours (Specified Address / Neighbour)
+- Parcel 48 Hours - ServicePoint Delivery
+- Parcel 72 Hours (Specified Address / Leave Safe)
+- Parcel 72 Hours - ServicePoint Delivery
+- Parcel Next Day
+- Parcel Next Day 09:00
+- Parcel Next Day 10:30
+- Parcel Next Day 12:00
+- Parcel Next Day - ServicePoint Delivery
+- Parcel Saturday 09:00
+- Parcel Saturday 10:30 (Specified Address / Leave Safe)
+- Parcel Saturday 10:30 (Specified Address / Neighbour)
+- Parcel Saturday 10:30
+- Parcel Saturday (Specified Address / Leave Safe)
+- Parcel Saturday (Specified Address / Neighbour)
+- Parcel Saturday
 
 **DHL Parcel UK International Services**
 
-DHL Parcel Connect
-International Road Economy
-Parcel 48 Hours (Specified Address / Neighbour) - Channel Islands
-Parcel 48 Hours - ServicePoint Delivery to Channel Islands
-Worldwide Air
+- DHL Parcel Connect
+- International Road Economy
+- Parcel 48 Hours (Specified Address / Neighbour) - Channel Islands
+- Parcel 48 Hours - ServicePoint Delivery to Channel Islands
+- Worldwide Air
 
 ### Setting up DHL Parcel UK Integration
 

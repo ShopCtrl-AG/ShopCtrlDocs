@@ -117,7 +117,7 @@ If there is a trigger set for certain events to deallocate stock after execution
 **Storage settings**: for the products with a storage life. It is possible to define the number of storage life days and specify when to send a reminder.
 
 #### Advanced warehousing settings
-For [**Advanced** warehousing]/User-Guide/09-Purchasing/advanced-warehouse.md, the number of options configurable per product is enlarged.
+For [**Advanced** warehousing](/User-Guide/09-Purchasing/advanced-warehouse.md), the number of options configurable per product is enlarged.
 You can configure whether the product requires a lot, serial number, or expiry date. Set an expiry warning issuing date and change a warehouse label printed for a specific product. 
  
 <img src={require("/img/product-details-stock-settings-advanced.png").default} height="" width="800" />

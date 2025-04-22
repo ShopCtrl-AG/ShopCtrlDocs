@@ -91,20 +91,23 @@ Once you have enabled integration in your Shopify account, you can set up synchr
 6. Provide an **Api url**, which is `https://{hostname}/admin/api/{version}/`. The current supported API version is **'2023-01'**.
 7. Click the **Connect** button to check the connection settings. A popup window will appear identifying whether the connection was established successfully or if there is a problem with credentials provided incorrectly.
 8. In the **Functional settings** pane, check the features you would like to use:
-   _ **Import Orders** from Shopify - imports new orders at the specified interval
-   _ **Auto-check missing orders for order import** - check this feature to exclude all possible synchronization mistakes and import orders that went missing for any reasons
-   _ **Send Track&Trace info** - exports tracking code, carrier and tracking url to Shopify
-   _ **Repair manual fulfillment on Shopify side** - in case the orders were accidentally fulfilled in Shopify admin, this fulfillment is mapped to the ShopCtrl shipment and missing tracking information is auto-updated at Shopify.
-   _ **Export Products** - exports new and updates existing products to Shopify
-   _ **Export Products stock to Shopify** - export available product stock
-   _ Use sku for not mapped product when export product stock - required if initial product import was not performed via Shopify module.
-   _ **Check active only products when using sku for not mapped products** - this setting helps avoid the situation, when one of your product stock doesn't get updated
-   _ Sync hs code along with product stock
-   _ Enable Inventory track quantity when export product stock - enables track quantity for a product in Shopify, if stock for this product increases in ShopCtrl
-   _ **Import Products** - imports new and updates existing products from Shopify
-   _ **Refund product** - this is the not synchronized system product that will be created in case the refund imported from Shopify does not have a link to a certain order row.
-   :::(Warning) (**Note**)
+   - **Import Orders** from Shopify - imports new orders at the specified interval
+   - **Auto-check missing orders for order import** - check this feature to exclude all possible synchronization mistakes and import orders that went missing for any reasons
+   - **Send Track&Trace info** - exports tracking code, carrier and tracking url to Shopify
+   - **Repair manual fulfillment on Shopify side** - in case the orders were accidentally fulfilled in Shopify admin, this fulfillment is mapped to the ShopCtrl shipment and missing tracking information is auto-updated at Shopify.
+   - **Export Products** - exports new and updates existing products to Shopify
+   - **Export Products stock to Shopify** - export available product stock
+   - Use sku for not mapped product when export product stock - required if initial product import was not performed via Shopify module.
+   - **Check active only products when using sku for not mapped products** - this setting helps avoid the situation, when one of your product stock doesn't get updated
+   - Sync hs code along with product stock
+   - Enable Inventory track quantity when export product stock - enables track quantity for a product in Shopify, if stock for this product increases in ShopCtrl
+   - **Import Products** - imports new and updates existing products from Shopify
+   - **Refund product** - this is the not synchronized system product that will be created in case the refund imported from Shopify does not have a link to a certain order row.
+
+   :::warning[**Note**]
+
    **Send Track&Trace info**. To enable this feature, you also need to map **Warehouses** to Shopify **Locations** and create a **Carrier** mapping below.
+
    :::
 9. Choose whether **Taxes are included in product price**. This setting depends on your Shopify store settings. Learn more on [Shopify Taxes](https://help.shopify.com/en/manual/taxes/).
 10. To guarantee that the ShopCtrl carrier account names correspond to the ones used in Shopify, we need to create a **Carrier account mapping**.
