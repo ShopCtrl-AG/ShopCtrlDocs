@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 6
 slug: /docs/mirakl
 ---
 
@@ -52,6 +52,9 @@ To set up synchronization with pre-prod Mirakl environment in ShopCtrl:
     - **Order Allocated** - the moment stock is allocated to ship the order. In case there is not enough stock, the sync request won't be created till order is fully allocated.
     - **Order Shipped** - the order is accepted at Mirakl the moment the shipment in ShopCtrl is marked as shipped.
 12. **Track&Trace shipments** - once the order is marked as shipped in Shopctrl, an automatic request to update tracking info is created. The Mirakl shipment will be automatically updated with the tracking code and Url, and order will be marked as shipped.
-13. **Carrier account mapping**. Here you can map the Mirakl carrier codes to the ShopCtrl carriers. This mapping is used for auto-updating tracking information to Mirakl. Please click **Show Carriers** to load the list of Mirakl carrier identifiers. Add the mapping to ShopCtrl Carriers to provide the correct tracking information to Mirakl.
+13. **Carrier account mapping**. Here you can map the Mirakl carrier codes to the ShopCtrl carriers. This mapping is used for auto-updating tracking information to Mirakl. 
+    - Please click **Show Carriers** to load the list of Mirakl carrier identifiers. Please copy only the carrier codes for the mapping (the carrier names are provided for reference only).
+    - **Add** the mapping lines to ShopCtrl Carriers to provide the correct tracking information to Mirakl. 
+![mirakl-arrier-account-mapping](/img/mirakl-carrier-account-mapping.png)
 14. **Enable** the synchronization at the top of the Functional Settings pane.
 15. Click **Save** or **Save and Close** to apply changes to the shop.
