@@ -126,7 +126,7 @@ The next step is to enter the credentials for the created application into ShopC
 1. On the sales channels panel, click the designated shop icon and select **Settings** from the list.
 2. In the topic menu go to **Communication > E-mail > Receiving email**.
 3. Click **Add** to create a new connection.
-   :::warning[Important]
+   :::danger[Important]
 
    If you have your mailbox configured already in ShopCtrl, open and modify the **exisitng connection** instead of creating new one.
 
@@ -141,10 +141,10 @@ The next step is to enter the credentials for the created application into ShopC
 9. Click **Save and Authorize**. You will be redirected to authorization confirmation. Please make sure there are no unsaved changes on the other tabs. If you proceed, progress on other tabs will be lost.
 10. Login to your **Microsoft 365** account under the user you are configuring. Review the permissions and confirm granting access.
 
-    :::warning[**Important**]
+    :::danger[**Important**]
 
     To set up the integration with the Microsoft Graph API, it is essential to **authenticate as the user account** associated with the application, rather than logging in as the Active Directory admin.
-
+Make sure you use the email address you would like to configure for the integration. If your organization uses a Single Sign On, make sure you use the shop addres and not your personal account.
     :::
 
 11. After confirmation a **Success** window will be displayed confirming that access has been granted successfully for the account. In case any of the auth parameters were provided wrong, a corresponding window will be displayed. Correct the errors and proceed with the same steps.
@@ -152,6 +152,7 @@ The next step is to enter the credentials for the created application into ShopC
 13. On the shop settings page, the **Status** of your connection will change to **Authorized**.
 14. **Enable** the connection on the top of the window.
 15. Click **Ok** to close settings.
+
 
 #### Test connection to the mailbox
 
