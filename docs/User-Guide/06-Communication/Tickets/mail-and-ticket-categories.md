@@ -38,7 +38,10 @@ You can change the category name, its place in the category tree, icon, and the 
 If sequence is not set for categories nodes, categories are sorted in alphabetical order. You can change the list order by giving each node its place in the list.
 Click on the node, enter the sequence number. The higher the number, the lower a category is in the list.
 
-You can also drag and drop categories to change their parent nodes in the tree.
+**Moving & Copying Categories:**
+You can reorganize categories by dragging and dropping them between different nodes or sections in the shop/global hierarchy. To move a category, click and hold the desired category, then drag it to the new location.
+
+To copy a category instead of moving it, hold the `Ctrl` key (or `Cmd` on Mac) while dragging and dropping the category to the target node. This preserves the original category while creating a duplicate in the new location.
 
 ### Delete category
 
