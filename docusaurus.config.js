@@ -84,7 +84,7 @@ const config = {
           },
           //{ to: "/blog",  "Blog", position: "left" },
           {
-            href: "https://www.shopctrl.com/docs/api",
+            href: "https://api.demo.shopctrl.com/",
             label: "API docs",
             position: "left",
           },
