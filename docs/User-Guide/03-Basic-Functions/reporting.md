@@ -486,3 +486,6 @@ Please check [Understanding Employee Roles and Permissions](/User-Guide/02-ShopC
 ![authorization-report](/img/authorization-report.png)
 
 </details>
+
+
+For advanced reporting capabilities, see our dedicated [Report Developer Resources](/docs/User-Guide/03-Basic-Functions/Advanced-reporting-hidden/advanced-reporting.md)

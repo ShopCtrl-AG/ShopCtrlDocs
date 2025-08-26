@@ -1,0 +1,7 @@
+{
+  "label": "Report Developer Resources",
+  "className": "hidden",
+  "link": {
+    "type": "generated-index"
+  }
+}
