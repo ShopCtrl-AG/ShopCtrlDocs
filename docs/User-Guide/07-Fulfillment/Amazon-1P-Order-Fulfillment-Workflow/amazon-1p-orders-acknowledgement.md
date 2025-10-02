@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 slug: /docs/amazon-1p-orders-acknowledgement
 ---
 
@@ -25,7 +25,7 @@ To ensure accuracy and prevent incomplete bulk buy offers from participating in 
 
 ### Weekly orders acknowledgement
 
-Weekly orders are auto-acknowledged after the order pick file from an external Warehouse Management System (WMS) is processed by ShopCtrl. The [Pick integration](/User-Guide/02-ShopCtrl-Setup/02-General-Setup/06-Fulfillment/integration-with-wms-via-ftp.md#order-picking-integration) aims to correct order row quantities to the amount available for shipping and acknowledge the order to Amazon.
+Weekly orders are auto-acknowledged after the order pick file from an external Warehouse Management System (WMS) is processed by ShopCtrl. The [Pick integration](/docs/User-Guide/02-ShopCtrl-Setup/05-Fulfillment/integration-with-wms-via-ftp.md) aims to correct order row quantities to the amount available for shipping and acknowledge the order to Amazon.
 
 After processing the Pick file, order row quantities are corrected to match the quantities in the Pick file.
 Credit rows are created for quantities that cannot be fulfilled, and quantity excess is not allowed.
@@ -41,7 +41,7 @@ If the product quantity is not set in the file, it's lowered to 0 and sent to Am
 Automatic Shipment Creation: As part of the WMS integration, ShopCtrl offers the option to create shipments automatically upon processing the pick file. The order should be allocated by the moment shipment is created.
 Allocation and shipment creation processes can also be managed by [triggers](/User-Guide/02-ShopCtrl-Setup/02-General-Setup/05-Triggers/index.md), allowing for customization based on internal processes and requirements.
 
-Both shipment creation and also deletion of previously created shipment on reacknowledgement are configured on warehouse level.  Please check Picking configuration. [Integration with WMS via FTP](/User-Guide/02-ShopCtrl-Setup/02-General-Setup/06-Fulfillment/integration-with-wms-via-ftp.md#shopctrl-warehouse-integration-configuration)
+Both shipment creation and also deletion of previously created shipment on reacknowledgement are configured on warehouse level.  Please check Picking configuration. [Integration with WMS via FTP](/docs/User-Guide/02-ShopCtrl-Setup/05-Fulfillment/integration-with-wms-via-ftp.md#shopctrl-warehouse-integration-configuration)
 
 
 ### Undefined orders acknowledgement

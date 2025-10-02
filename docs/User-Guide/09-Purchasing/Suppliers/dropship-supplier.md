@@ -27,7 +27,7 @@ ShopCtrl will automatically create a new dropship warehouse linked to the suppli
 It is also possible to manually change the dropship setting for each product on the product details page.
 4. If you would like to provide a supplier with a shipping label for a specific carrier, specify the options in the **Shipping label** section: 
     * Check the **Shipping label** checkbox to enable the shipping label autogeneration.
-    * Select a dropship **Carrier** account that your supplier will use for dropshipping of your orders. ShopCtrl will automatically generate shipping labels based on carrier requirements. Please view a [list of Carriers](/docs/User-Guide/07-Fulfillment/Carriers/index.md) ShopCtrl provides integration with.
+    * Select a dropship **Carrier** account that your supplier will use for dropshipping of your orders. ShopCtrl will automatically generate shipping labels based on carrier requirements. Please view a [list of Carriers](/docs/User-Guide/02-ShopCtrl-Setup/05-Fulfillment/Carriers/index.md) ShopCtrl provides integration with.
     * Select a **ShipFrom** Info that will be used for shipping label generation. 
         * Default Supplier Main Contact Info - configured on the supplier details page
         * Warehouse Main Contact Info configured on dropship warehouse details page

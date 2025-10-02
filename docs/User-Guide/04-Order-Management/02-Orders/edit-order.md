@@ -69,7 +69,7 @@ If the parcel has not left the warehouse yet, it could be cancelled manually. If
 
 ### Update cancelled order status to Amazon
 
-To start using this functionality, enable it at Shop Settings > Amazon Shop Synchronization > Orders Integration > Export cancelled orders. Check [Setting up Amazon 3P shop synchronization in ShopCtrl](/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/Connectors/Amazon/amazon-3p.md#2-setting-up-amazon-shop-synchronization-in-shopctrl) for more information. 
+To start using this functionality, enable it at Shop Settings > Amazon Shop Synchronization > Orders Integration > Export cancelled orders. Check [Setting up Amazon 3P shop synchronization in ShopCtrl](/docs/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/Connectors/Amazon/Amazon-3P/index.md#2-setting-up-amazon-shop-synchronization-in-shopctrl) for more information. 
 
 To cancel the order, change the order main status to **Cancelled** in ShopCtrl. Amazon order will be updated shortly with the cancellation reason **Cancelled by customer request**. 
 

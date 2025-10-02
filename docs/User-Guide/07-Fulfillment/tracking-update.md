@@ -38,7 +38,7 @@ Order fulfillment at Shopify is similar to the order shipment at Shopctrl. If an
 
 ## Exporting shipments tracking info to Amazon
 
-To synchronize tracking codes created for the order in ShopCtrl back to Amazon; enable **Export shipments** feature and set up carrier mapping. See more [Setting up Amazon synchronization](/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/Connectors/Amazon/amazon-3p.md#2-setting-up-amazon-shop-synchronization-in-shopctrl). 
+To synchronize tracking codes created for the order in ShopCtrl back to Amazon; enable **Export shipments** feature and set up carrier mapping. See more [Setting up Amazon synchronization](/docs/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/Connectors/Amazon/Amazon-3P/index.md#2-setting-up-amazon-shop-synchronization-in-shopctrl). 
 
 All the shipments and the corresponding tracking information will be updated to Amazon with regular sync requests once the tracking code is provided.
 Based on carrier mapping, ShopCtrl will send shipment data for each order:

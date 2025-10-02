@@ -28,11 +28,10 @@ Amazon provides two primary platforms for sellers to engage with its marketplace
 
 ### ShopCtrl Support:
 
-**Flexibility:**
-ShopCtrl supports businesses operating on both models, allowing them to seamlessly integrate their operations with either Amazon 1P Vendor Central or 3P Seller Central.
-**Unified Management:**
-Regardless of the chosen model, ShopCtrl provides a unified platform for managing orders, inventory, and other aspects of the selling process.
-**Customization:**
-Businesses can tailor their approach to Amazon integration based on their specific needs, whether they prefer the structured relationship of Vendor Central or the autonomy of Seller Central.
+**Flexibility:** ShopCtrl supports businesses operating on both models, allowing them to seamlessly integrate their operations with either Amazon 1P Vendor Central or 3P Seller Central.
+
+**Unified Management:** Regardless of the chosen model, ShopCtrl provides a unified platform for managing orders, inventory, and other aspects of the selling process.
+
+**Customization:** Businesses can tailor their approach to Amazon integration based on their specific needs, whether they prefer the structured relationship of Vendor Central or the autonomy of Seller Central.
 
 ShopCtrl's support for both Amazon 1P Vendor Central and 3P Seller Central empowers businesses to choose the model that aligns best with their strategies. This flexibility ensures a seamless and efficient integration process, allowing businesses to optimize their Amazon selling experience. Moreover, businesses can work with both approaches simultaneously within the ShopCtrl platform, providing even greater versatility in their Amazon marketplace operations.
