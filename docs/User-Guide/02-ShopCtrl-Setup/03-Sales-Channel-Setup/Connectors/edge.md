@@ -161,6 +161,11 @@ To synchronize inventory, ShopCtrl products must be mapped to Virtual Stock (Edg
 6. Once errors are resolved, repeat steps to download the latest products list and click the **Map** button to confirm the matches and generate the mappings.
 7. Click **Save** or **Save and Close**.
 
+:::warning[**Maintaining Product-Offer Synchronization**] 
+
+The product-offer mapping is not a one-time setup. If new products are added to **both** Virtual Stock (Edge) and ShopCtrl, you must repeat the entire mapping process (Steps 1-7 in "Linking Products and Offers") to create the necessary links for these new items. Additionally, after creating new mappings, you should **Mark products for export** again to ensure the stock levels for all products, including the newly added ones, are established in Virtual Stock's system. 
+
+:::
 
 
 #### Configuring Product Lead Times

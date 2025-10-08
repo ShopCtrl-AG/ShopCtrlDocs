@@ -6,7 +6,7 @@ slug: /docs/amazon-1p-setting-up-shopctrl-synchronization
 
 # Setting up Shop Synchronization in ShopCtrl
 
-Once you have enabled integration in your Amazon account, you can set up synchronization in ShopCtrl. It will consist of two steps.
+Once you have enabled integration in your Amazon account, you can set up synchronization in ShopCtrl. 
 
 ## Before start: Configuring shop in ShopCtrl
 
@@ -71,7 +71,6 @@ You have now established the connection to Amazon, but synchronization is not ye
 ### **Step 2.** Configure statuses mapping and Fulfillment centers
 
 According to the [Amazon SP-API documentation](https://developer-docs.amazon.com/sp-api/reference/getpurchaseorders), Amazon 1P provides two key concepts for tracking order progression: **`purchaseOrderState`** and  **`PurchaseOrdersStatus`**.
-ShopCtrl uses a more detailed model with separate **Main** and **Payment** statuses. 
 ShopCtrl consolidates both the Amazon `purchaseOrderState` and `PurchaseOrdersStatus` information, translating them into the appropriate ShopCtrl **Main Order Status**. This ensures that key state changes from Amazon - such as an order being acknowledged, rejected, or cancelled - are accurately represented in your ShopCtrl workflow.
 
 :::warning[Before you begin]
@@ -84,7 +83,7 @@ Please ensure you have created two main order statuses in ShopCtrl: "**Acknowled
  **Main Order Status mapping** Configure the mapping of order statuses by manually selecting the incoming Amazon purchase order status and aligning it with an appropriate ShopCtrl status.
  For example: 
 - Map Amazon's `ACKNOWLEDGED` state to your ShopCtrl **Acknowledged** status
-- Map Amazon's `CANCELLED` state or item-level `REJECTED` status to your ShopCtrl **Rejected** status
+- Map Amazon's `CANCELLED` state or `REJECTED` status to your ShopCtrl **Rejected** status
 
  **Payment Order Status mapping** Amazon doesn't return payment status/payment when retrieving orders via API integration. Though for finilizing orders inside ShopCtrl you might need to configure the mapping rules. Assuming that closed order is a paid order, you can map it to ShopCtrl Paid status. 
 Cancelled or Rejected orders can receive Fully credited status. 
@@ -107,7 +106,7 @@ If you have not configured any fulfillment centers here, ShopCtrl will still use
 You can **add new** fulfillment centers, override the addresses of existing ones or add mapping to your internal code directly from this pane.
 * **Preload Default Centers:** To easily add your internal codes to the most common centers, use the **‘Add Default FCs’** button. This will populate the list with Amazon's standard fulfillment centers.
 * **Add a New Fulfillment Center:** If Amazon notifies you of a new fulfillment center code, please **add** it to this list to ensure seamless order import.
-* **Mapp Internal Codes (ShipToPartyRef):** This column allows you to map your internal codes to each fulfillment center. During order import, ShopCtrl will add this code as the ShipToPartyRef parameter to the order. This provides a unique identifier for integration when pushing orders further into your ERP or internal system.
+* **Mapp Internal Codes (ShipToPartyRef):** This column allows you to map your internal codes to each fulfillment center. During order import, ShopCtrl will add this code as the ShipToPartyRef parameter to the order. This provides a unique identifier for integration when pushing orders further into your internal system.
 * **Edit Information:** Edit the address or ShipToPartyRef fields for any entry.
 * **Save Changes:** Save the shop settings to apply any changes immediately.
 * **Clean Up:** After mapping your codes, you can click **‘Remove rows with empty ShipToPartyRef’** to clean up the list and remove any default centers you don't use.
@@ -154,12 +153,12 @@ Begin the process of bringing existing orders from Amazon into ShopCtrl and acti
 1. **Set Import Start Date:** Use the **Ignore Orders Before Timestamp** setting to select the date from which you want to start importing historical orders. This prevents older, irrelevant orders from cluttering your system.
 1. **Manage Order Updates:** Enable **Skip updated orders on import** to filter out historical orders that Amazon has marked as changed (e.g., due to cancellations of undelivered or damaged items). This is recommended because ShopCtrl currently does not support continuous import for order updates
 1. **Process Historical Orders:** Handle orders already acknowledged in Amazon by choosing to finalize them within ShopCtrl:
-  - **Allocate historical Acknowledged Orders:** Check this to reserve stock for these past orders.
-  - **Create Shipment for Historical Acknowledged orders:** Check this to generate shipments, helping to synchronize fulfillment status.
+    - **Allocate historical Acknowledged Orders:** Check this to reserve stock for these past orders.
+    - **Create Shipment for Historical Acknowledged orders:** Check this to generate shipments, helping to synchronize fulfillment status.
 1. **Activate Order Import:** In the **Synchronization Customization** pane at the top of the page, enable the features to:
-  - Check **Orders integration** feature.
-  - Check **Import new orders** for ongoing synchronization of new orders.
-  - Check **Import missing orders** to attempt to import any orders that may have been missed previously.
+    - Check **Orders integration** feature.
+    - Check **Import new orders** for ongoing synchronization of new orders.
+    - Check **Import missing orders** to attempt to import any orders that may have been missed previously.
 7. Click **Save** or **Save and Close** to apply your configuration changes to the shop.
 
 **New orders will not start importing until you enable the entire synchronization.** Once you check the main synchronization checkbox at the top of the Amazon 1P Synchronization page, the import will begin based on your settings. Depending on your configuration, historical orders will also be processed at this time.
