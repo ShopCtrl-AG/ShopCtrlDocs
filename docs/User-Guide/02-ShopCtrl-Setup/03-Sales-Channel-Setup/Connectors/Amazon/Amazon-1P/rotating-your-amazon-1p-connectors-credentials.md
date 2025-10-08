@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 slug: /docs/rotating-your-amazon-1p-connectors-credentials
 ---
 # Rotating your Amazon 1P connector's credentials

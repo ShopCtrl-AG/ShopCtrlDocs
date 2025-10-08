@@ -85,7 +85,7 @@ Once the return is finalized, it is not possible to edit it anymore.
 
 ## Exporting returns to Amazon
 
-To synchronize returns created in ShopCtrl to Amazon, enable the **Export returns** feature in Shop Settings > Amazon Synchronization tab of the designated shop. Please check the [Setup your Amazon synchronization in ShopCtrl](/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/Connectors/Amazon/amazon-3p.md#2-setting-up-amazon-shop-synchronization-in-shopctrl) for more information.
+To synchronize returns created in ShopCtrl to Amazon, enable the **Export returns** feature in Shop Settings > Amazon Synchronization tab of the designated shop. Please check the [Setup your Amazon synchronization in ShopCtrl](/docs/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/Connectors/Amazon/Amazon-3P/index.md#2-setting-up-amazon-shop-synchronization-in-shopctrl) for more information.
 
 After the **Export returns** feature is enabled, returns created in ShopCtrl are synchronized to Amazon. 
 Currently, only **Refund resolution** is supported and only returns with this resolution are syncronized to Amazon.

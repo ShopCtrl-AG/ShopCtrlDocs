@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 slug: /docs/amazon-1p-group-shipment
 ---
 
@@ -15,7 +15,7 @@ In ShopCtrl, the process of creating group shipments and submitting ASNs to Amaz
 
 ###  Creating Group Shipments with Pack Integration
 
-Under the [Pack integration feature](/User-Guide/02-ShopCtrl-Setup/02-General-Setup/06-Fulfillment/integration-with-wms-via-ftp.md), ShopCtrl efficiently processes packing information relayed from external Warehouse Management Systems (WMS) and incorporates it into each shipment. Items can be packed into cartons and placed onto pallets, or items can be palletized directly without cartons. All relevant item data is encapsulated within the shipment pack information, which is then consolidated into the group shipment pack information.
+Under the [Pack integration feature](/docs/User-Guide/02-ShopCtrl-Setup/05-Fulfillment/integration-with-wms-via-ftp.md), ShopCtrl efficiently processes packing information relayed from external Warehouse Management Systems (WMS) and incorporates it into each shipment. Items can be packed into cartons and placed onto pallets, or items can be palletized directly without cartons. All relevant item data is encapsulated within the shipment pack information, which is then consolidated into the group shipment pack information.
 
 Additionally, this integration facilitates the creation of new group shipments based on the provided pack files. The system operates under the assumption that a CSV document contains data for several orders, and based on this information creates group shipment.  It's important to note that individual shipments for each order should already be created and picked at this stage.
 Group shipment with consolidated pack information:
