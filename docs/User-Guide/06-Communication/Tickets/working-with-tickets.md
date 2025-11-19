@@ -25,6 +25,20 @@ Once an employee opens a ticket that doesn't have an assignment yet, it automati
 
 :::
 
+### Marking Tickets as Spam
+
+Select tickets and use the **Mark as Spam** button to automatically close them and filter future emails from the same sender.
+
+<img src={require("/img/mark-as-spam.png").default} height="" width="800" />
+
+**Before you begin:** A [Spam ticket filter](./ticket-configuration.md#how-to-create-a-spam-filter-for-marking-tickets-as-spam) must be configured for this feature to work.
+
+When used, this action:
+- Closes the selected tickets
+- Assigns the Spam category
+- Adds the sender's email to the spam filter
+- Prevents future emails from this address from creating tickets in your Todo grid
+
 ## Filters
 
 The powerful filter option helps you to gain a better overview of the existing tickets.
