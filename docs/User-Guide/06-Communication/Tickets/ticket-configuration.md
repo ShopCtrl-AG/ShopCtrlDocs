@@ -64,9 +64,11 @@ You can always use a **Mark follow up** drop-down on ticket details to set a mor
 
 
 ### Idle mail
+
 Here you can set a mail template and a date when the email will be generated and sent to the waiting customers.
 
 ### Ticket filter
+
 Using the robust filtering algorithm, ShopCtrl enables you to use regular expressions to route specific messages to the correct team or agent.
 In the sample filter below, we will point out some of the filter features:
 <img src={require("/img/shop-details-tickets-add-filter-bookkeeping.png").default} height="" width="400" />
@@ -93,7 +95,38 @@ For more information on Regular expressions syntax please view [.NET regular exp
 
 :::
 
+### How to Create a Spam Filter for Marking Tickets as Spam
+
+To use the "Mark as Spam" feature in the tickets grid, you need to create and configure a dedicated spam filter.
+
+**Steps to create the spam filter:**
+
+1. Navigate to **Shopowner > Communication > Tickets**.
+2. Create a new filter at the shopowner level so it applies to all shops.
+3. Click **Add Filter**.
+    <img src={require("/img/configure-ticket-spam-filter.png").default} height="" width="400" />
+
+4. Configure the filter settings:
+   - **Name**: Enter "Spam" (recommended).
+   - In the **Actions to perform** section, select a "Spam" ticket category to assign to filtered tickets.
+   - Enable the **Close ticket** option.
+   - Ensure the **Enabled** checkbox is marked to activate the filter.
+5. Click **Ok** to add the filter.
+6. Click **Save Shopowner** to save your changes.
+
+**To set as default spam filter:**
+
+1. Refresh the shopowner settings tab.
+2. Navigate to **Shopowner > Communication > Tickets > General** pane.
+3. Select your newly created "Spam" filter as the default **Spam Filter**.
+4. Click **Save** or **Save and Close**.
+
+    <img src={require("/img/mark-as-spam-configuration.png").default} height="" width="400" />
+
+You can now test the filter from the tickets grid by selecting tickets and using the ["Mark as Spam"](working-with-tickets.md#marking-tickets-as-spam) button.
+
 ### Employee groups
+
 You can create new employee groups in Configuration > Employee Groups or use the existing ones to distribute the inbound tickets between applicable employees.
 Please make sure to turn on the "For ticket management" checkbox setting on the Employee group details page to make this group available for assigning tickets.
 <img src={require("/img/employee-group-setting.png").default} height="" width="800" />
