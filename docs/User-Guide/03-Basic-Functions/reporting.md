@@ -180,6 +180,7 @@ Report consists of 13 charts on ticket statistics.
 
 <details>
   <summary> Actual support statistics </summary>
+  
 Actual support statistics provide a snapshot of the day with the current support progress. 
 Report accumulates tickets data and chat and VoIP calls requests initiated by both employees and customers.
 The chart shows the increase in open tickets for the current day.
