@@ -71,7 +71,6 @@ When customers submit an NPS rating, they are redirected to your configured Erro
 | The token is invalid | The rating link is expired, malformed, or has already been used. | "This feedback link has expired or is invalid." | 
 | The ticket is already rated | The customer has already submitted feedback for this support ticket. | "Thank you! We have already received your feedback for this request." | 
 | The rating value is invalid | A technical error; the rating parameter was outside the valid 1-10 range. | "We encountered a technical issue. Please try again." | 
-| The request is originated from the internal network | Someone from within your company's network attempted to submit a rating. | "Feedback cannot be submitted from internal networks." | 
 
 ##  How the Automated System Works
 
