@@ -26,9 +26,10 @@ It is important to note that ShopCtrl **does not** incorporate **shipping costs 
 
 The prices quoted for purchase order rows in foreign currency remain as is and never change during the PO lifecycle. Only the base currency equivalent may be affected by exchange rate fluctuations.
 
-[**Exchange rates update daily**](/docs/User-Guide/02-ShopCtrl-Setup/02-General-Setup/02-Currencies/currency-exchange-rates.md) for active purchase orders. You can always check the current rate on the Purchase Order Details tab. 
-While a purchase order remains in **Active status** (i.e., not finished or cancelled), the exchange rate on the PO details is updated daily. This allows ordered stock items, shipping costs and discounts to be recalculated based on the latest exchange rate.
-Once the order is marked as Finished or Cancelled, all price updates on the PO are stopped, and the exchange rate is locked for reporting and historical accuracy.
+ShopCtrl applies exchange rates at specific moments during the purchase order lifecycle to ensure accurate cost tracking:
+ - At Purchase Order creation: The exchange rate at the time the PO is created is recorded at the order level.
+ - At Delivery creation: When a delivery is initiated, the exchange rate at that moment is captured at the delivery level.
+ - At stock provisioning: The actual exchange rate at the moment stock enters the warehouse determines the final base currency cost for those items.
 
 **Stock item costs are frozen upon delivery.** When products are provisioned to your warehouse, their purchase price in base currency is locked using the exchange rate at that time. This is done so that even if the exchange rate on the PO changes later, the cost of items already delivered remains consistent and traceable.
 
@@ -41,7 +42,7 @@ To make this work, ShopCtrl now tracks exchange rates at the delivery level. Eac
 
 This means that the sum of your stock item costs in base currency might not exactly match the converted line total on the purchase order if rates changed after some items were delivered. This is expected and ensures accurate cost tracking per delivery.
 
-<img src={require("/img/PO-stock-item-price-calc.png").default} height="" width="600" />
+<img src={require("/img/PO-ER-stock-item-price-calc.png").default} height="" width="400" />
 
 This approach allows ShopCtrl to reflect the actual cost paid for each item entering the warehouse, while keeping the originally quoted foreign prices unchanged.
 
