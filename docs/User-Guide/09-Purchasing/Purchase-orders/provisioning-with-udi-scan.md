@@ -42,6 +42,10 @@ If your products require additional fields:
     <img src={require("/img/product-stock-item-parameters.png").default} height="" width="800" />
 1. **Save** the product to apply changes. These fields will be available for each stock item the next time this product is provisioned.
 
+**To save the complete scanned UDI string**: Create a parameter named **"FullUdiString"** (String type). This will store the entire raw barcode value for reference.
+You do not need to assign this parameter as a product custom parameter—it will work automatically once defined.
+If the FullUdiString parameter is not defined, scanning itself still works, but no stock item parameter is created to store the complete UDI string.
+
 
 ### Configuring UDI Barcode Format
 
