@@ -8,8 +8,14 @@ slug: /docs/product-fulfillment
 ## Carriers
 
 Here you can view a list of carriers enabled in the system and available for the product.
-<img src={require("/img/product-details-categories.png").default} height="" width="800" />
 
+<img src={require("/img/product-details-categories.png").default} height="" width="800" />
+To display carrier shipping prices on this page, ensure the rates are quoted for the most popular shipping routes. 
+This can be done by configuring the prices on the **Carrier account > Prices tab**. 
+
+Carrier prices indicate the preferred carrier for a specific destination (from country to country). When creating a shipment, the best carrier for shipping products is determined based on the carrier priority and the cheapest price quoted for the route. The system will assign the same carrier to the shipment automatically, unless that carrier is disabled for the specific shop or warehouse from which the product is being shipped.
+
+Please note: The prices shown on this tab are for reference purposes only. Prices are the same for all products across the system.
 
 ## Product package
 
