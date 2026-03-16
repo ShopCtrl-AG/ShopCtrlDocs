@@ -33,12 +33,15 @@ It is not possible to use any comparison operators for the number type merge fie
 
 :::
 
+
+### 1. Basic Value Check (Show if Exists)
+
 For example, here is a condition that will show inner text only if there is a value in the $$Order.CustomerReference$$ merge field:
 
 ```html
 <!-- RangeStart:$$Order.CustomerReference$$ -->
 <p>CustomerReference: $$Order.CustomerReference$$</p>
-<!-- $$RangeEnd:$$Order.CustomerReference$$ -->
+<!-- RangeEnd:$$Order.CustomerReference$$ -->
 ```
 
 For numeric type merge fields: inner text will be displayed if the value of the merge field exists and is not zero.
@@ -46,16 +49,42 @@ For numeric type merge fields: inner text will be displayed if the value of the 
 ```html
 <!-- RangeStart:$$Order.DiscountExVat$$ -->
 <p>Discount: $$Order.DiscountExVat$$</p>
-<!-- $$RangeEnd:$$Order.DiscountExVat$$ -->
+<!-- RangeEnd:$$Order.DiscountExVat$$ -->
 ```
+### 2. Checking for Specific Values
 
-And here is a condition example that will show text only if the merge field value is false:
+Here is a condition example that will show text only if the merge field value is false:
 
 ```
 <!-- RangeStart:$$Order.IsPaid$$='False' -->
 <p>Please proceed with the payment</p>
 <!-- RangeEnd:$$Order.IsPaid$$='False' -->
 ```
+
+### 3. Checking for Empty or Null Data
+
+Empty Text (=''). Use this syntax for text-based fields (such as URLs, Names, or Notes) to check if the field is completely empty.
+
+```html
+<!-- Display a message while the order is processing (Value is Null) -->
+<!-- RangeStart:$$Order.TrackingUrl$$='null' -->
+<p>Your order is being prepared. Tracking will be available shortly.</p>
+<!-- RangeEnd:$$Order.TrackingUrl$$='null' -->
+```
+How it works: The content inside these tags will only appear if the TrackingUrl field has no value.
+
+For Number or Date type fields, a standard "empty" check may not always trigger correctly. In these cases, you should check for a null value.
+
+```html
+<!-- RangeStart:$$Order.DownPayment$$='null' -->
+<p>No down payment recorded for this order.</p>
+<!-- RangeEnd:$$Order.DownPayment$$='null' -->
+```
+:::tip Pro-Tip
+
+If a field isn't behaving as expected with `=''`, try switching to `='null'` to see if the underlying data type requires it.
+
+:::
 
 ### Nesting сonditions
 
