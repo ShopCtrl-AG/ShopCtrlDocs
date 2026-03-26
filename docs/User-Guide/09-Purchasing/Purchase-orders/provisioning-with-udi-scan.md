@@ -60,7 +60,7 @@ If the FullUdiString parameter is not defined, scanning itself still works, but 
     - For LOT Number, Serial Number and Product Variant: Specify the exact length (number of characters).
     - For Date fields: No length specification needed (standard format).
 1. **Configure Format Literals**:
-    - For fields that include literal characters in the barcode, enter these literals in the corresponding field.
+    - For fields that include literal characters in the barcode, select **ID prefix format** `(id)` from the top dropdown.
     - This supports various barcode standards including GS1 with different bracket styles.
 1. **Test Your Configuration**:
     - Use the Test input field at the top of the configuration page.
