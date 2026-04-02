@@ -152,4 +152,28 @@ The recommended **API timeout**, an interval between API calls, is set in ms and
 **Default template parameters** - Here you can customize the default shipping label margins and size. Enter or change the values in a whitespace-separated format: `Top Right Bottom Left Size`. Click **Check** button to get the parsed values of the template.
 
 
+### Setting Up DHL Non-Operating Days (Holidays)
+
+To prevent label generation errors on public holidays (e.g., `pickup date cannot be a public holiday`), you must manually define days when DHL does not operate.
+
+**Configuration Steps**
+
+1. Navigate to **Configuration > Transport > Carrier Accounts** in your ShopCtrl admin panel.
+2. Locate and edit your **DHL Parcel UK** carrier settings.
+3. Find the **"Delivery days-off"** text field.
+4. Enter holiday dates using the required format: `YYYY.MM.DD`
+   - Separate multiple dates with commas
+   - **Example:** `2026.04.03,2026.04.06`
+
+5. Click the **Check button** to verify your entries
+   - The system will parse and confirm each date
+   - **Example output:** `03 April 2026`, `06 April 2026`
+
+
+<img src={require("/img/dhl-parcel-uk-holidays.png").default} height="" width="800" />
+
+**Best Practice Recommendation**
+
+Configure this setting **once per year** – enter all known bank and public holidays for the upcoming year in advance. This proactive approach ensures uninterrupted label generation throughout the year.
+
 
