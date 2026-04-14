@@ -168,6 +168,7 @@ To prevent label generation errors on public holidays (e.g., `pickup date cannot
 5. Click the **Check button** to verify your entries
    - The system will parse and confirm each date
    - **Example output:** `03 April 2026`, `06 April 2026`
+6. **Save** carrier to apply changes.
 
 
 <img src={require("/img/dhl-parcel-uk-holidays.png").default} height="" width="800" />
