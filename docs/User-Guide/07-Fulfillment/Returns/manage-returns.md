@@ -14,12 +14,15 @@ Here you can register the products that need to be re-sent or repaired. Re-stock
 You can set up any return reasons and conditions for the items to be returned. Check more here - [Configure returns](./configure-returns.md).
 
 ### Return resolutions
+
 There are several **resolutions** that could be applied to the product being returned:
-**Resend** - for the returned parcels that need to be resent to the customer.
-**Repair** - for the products that need to be repaired and sent back to the customer.
-*Resend and refund resolutions do not imply that the product will be re-stocked to the warehouse.*
-**Exchange** - for this option, you can re-stock the returned item (even as a different product) back to the warehouse. 
-**Refund** - allows to re-stock the product and provide a refund for the customer.
+
+- **Resend** - for the returned parcels that need to be resent to the customer.
+- **Repair** - for the products that need to be repaired and sent back to the customer.
+
+    *Resend and repair resolutions do not imply that the product will be re-stocked to the warehouse.*
+- **Exchange** - for this option, you can re-stock the returned item (even as a different product) back to the - warehouse. 
+- **Refund** - allows to re-stock the product and provide a refund for the customer.
 
 ## Creating return
 
@@ -30,13 +33,14 @@ If you receive a return notice from a customer, the first step will be to regist
 You can create a return from the **Fulfillment > Returns** tab or directly within the specific **Order details page > Topic menu > Returns.**
 
 To register a return request, create return:
-2. Go to **Fulfillment > Returns**.
-3. Click **Add** and select a shop from the dropdown list where the order was shipped from. A new return will be opened on a new page.
-4. Type and select **Order** code in the orders field. 
-5. Select a **warehouse** where the return is heading. By default, the warehouse where the order was shipped from is preselected.
-6. You can now enter the customer **comment**, **notes**, link, or create a **ticket**.
-7. Select a **Follow Up** date if needed.
-9. **Save and close** the page to apply changes to the return.
+
+1. Go to **Fulfillment > Returns**.
+2. Click **Add** and select a shop from the dropdown list where the order was shipped from. A new return will be opened on a new page.
+3. Type and select **Order** code in the orders field. 
+4. Select a **warehouse** where the return is heading. By default, the warehouse where the order was shipped from is preselected.
+5. You can now enter the customer **comment**, **notes**, link, or create a **ticket**.
+6. Select a **Follow Up** date if needed.
+7. **Save and close** the page to apply changes to the return.
 
 Once the return arrives back at your warehouse, you can continue registering it. The following steps will differ depending on whether the product needs to be re-stocked or not. 
 

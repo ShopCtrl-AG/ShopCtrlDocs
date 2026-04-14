@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 slug: /docs/processing-customer-gdpr-requests
 ---
 
@@ -10,6 +10,12 @@ This guide explains how to process GDPR right-to-be-forgotten requests using the
 :::info[**Required Permissions**]
 
 To see and use the GDPR features, a user must have **permission to delete customers**. Without this permission, the GDPR section will not be visible in the menu.
+
+:::
+
+:::info[**Note**]
+
+GDPR anonymization is only available at the customer level. There is no GDPR option on individual order records.
 
 :::
 
@@ -35,6 +41,12 @@ To see and use the GDPR features, a user must have **permission to delete custom
 
 This action cannot be undone. Once executed, the customer's personal data is permanently anonymized.
 
+
+:::
+
+:::danger[**Important**]
+
+The **Forget Me** button anonymizes the customer unconditionally. It does not check whether the customer has active orders, open tickets, or any other pending activity. All personal data is anonymized immediately regardless of the current state of associated records.
 
 :::
 
