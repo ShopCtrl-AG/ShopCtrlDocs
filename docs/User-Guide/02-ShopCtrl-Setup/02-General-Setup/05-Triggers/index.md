@@ -234,3 +234,9 @@ The most common use is to create an alert when handling backorders. You could us
 After any order-related event, you can configure trigger to create a ticket of a certain type and assign it to a certain employee group to handle.
 
 ![trigger-action-create-ticket-assign-group](/img/trigger-action-create-ticket-assign-group.png)
+
+### Trigger Condition
+
+With the Trigger condition action, you can control whether the remaining actions in a trigger should execute based on entity properties. This allows you to build conditional workflows without creating separate triggers for each scenario.
+
+For more information, see [Trigger Action: Condition](trigger-action-condition.md).
