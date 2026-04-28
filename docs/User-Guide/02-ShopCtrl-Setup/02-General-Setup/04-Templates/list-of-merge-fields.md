@@ -298,11 +298,79 @@ Merge fields that are marked as belonging to a certain collection must be insert
 | Product Registration Serial Number                | ProductRegistration Collection | $$ProductRegistration.SerialNumber$$             | String                      |
 | Product Registration Use By Date                  | ProductRegistration Collection | $$ProductRegistration.UseByDate$$                | Date and Time               |
 
+**Product Collection** (nested on OrderRow — each order row links to a Product; iterate within the OrderRow collection)
+
+| Merge field name                                  | Merge field type               | Merge field                                      | Data type                   |
+| ------------------------------------------------- | ------------------------------ | ------------------------------------------------ | --------------------------- |
+| Product ID                                        | Product Collection (on OrderRow) | $$Product.Id$$                                   | String                      |
+| Product Code                                      | Product Collection (on OrderRow) | $$Product.Code$$                                 | String                      |
+| Product Ref Code                                  | Product Collection (on OrderRow) | $$Product.RefCode$$                              | String                      |
+| Product Scan Code                                 | Product Collection (on OrderRow) | $$Product.ScanCode$$                             | String                      |
+| Product Type                                      | Product Collection (on OrderRow) | $$Product.ProductType$$                          | String                      |
+| Product Property Def Set ID                       | Product Collection (on OrderRow) | $$Product.ProductPropertyDefSetId$$              | String                      |
+| Product Price Excluding VAT                       | Product Collection (on OrderRow) | $$Product.PriceExVat$$                           | Number                      |
+| Product Price UOM ID                              | Product Collection (on OrderRow) | $$Product.PriceUomId$$                           | String                      |
+| Product Published                                 | Product Collection (on OrderRow) | $$Product.Published$$                            | Boolean                     |
+| Product Keep Stock                                | Product Collection (on OrderRow) | $$Product.KeepStock$$                            | Boolean                     |
+| Product Is Shippable                              | Product Collection (on OrderRow) | $$Product.IsShippable$$                          | Boolean                     |
+| Product Is Advanced Product                       | Product Collection (on OrderRow) | $$Product.IsAdvancedProduct$$                    | Boolean                     |
+| Product Has Advanced Properties                   | Product Collection (on OrderRow) | $$Product.HasAdvancedProperties$$                | Boolean                     |
+| Product Requires Lot Number                       | Product Collection (on OrderRow) | $$Product.RequiresLotNumber$$                    | Boolean                     |
+| Product Requires Expiry Date                      | Product Collection (on OrderRow) | $$Product.RequiresExpiryDate$$                   | Boolean                     |
+| Product Requires Serial Number                    | Product Collection (on OrderRow) | $$Product.RequiresSerialNumber$$                 | Boolean                     |
+| Product Requires Scan When Picking                | Product Collection (on OrderRow) | $$Product.RequiresScanWhenPicking$$              | Boolean                     |
+| Product Creation Date                             | Product Collection (on OrderRow) | $$Product.CreationDate$$                         | Date and Time               |
+| Product Changed Timestamp                         | Product Collection (on OrderRow) | $$Product.ChangedTimestamp$$                     | Date and Time               |
+| Product Qty Available                             | Product Collection (on OrderRow) | $$Product.QtyAvailable$$                         | Number                      |
+| Product Qty On Hand                               | Product Collection (on OrderRow) | $$Product.QtyOnHand$$                            | Number                      |
+| Product Qty Ordered                               | Product Collection (on OrderRow) | $$Product.QtyOrdered$$                           | Number                      |
+| Product Qty Reserved                              | Product Collection (on OrderRow) | $$Product.QtyReserved$$                          | Number                      |
+| Product Weight                                    | Product Collection (on OrderRow) | $$Product.Weight$$                               | Number                      |
+| Product Weight UOM ID                             | Product Collection (on OrderRow) | $$Product.WeightUomId$$                          | String                      |
+| Product Length                                     | Product Collection (on OrderRow) | $$Product.Length$$                               | Number                      |
+| Product Width                                     | Product Collection (on OrderRow) | $$Product.Width$$                                | Number                      |
+| Product Height                                    | Product Collection (on OrderRow) | $$Product.Height$$                               | Number                      |
+| Product Size UOM ID                               | Product Collection (on OrderRow) | $$Product.SizeUomId$$                            | String                      |
+| Product Diameter                                  | Product Collection (on OrderRow) | $$Product.Diameter$$                             | Number                      |
+| Product Volume                                    | Product Collection (on OrderRow) | $$Product.Volume$$                               | Number                      |
+| Product Volume UOM ID                             | Product Collection (on OrderRow) | $$Product.VolumeUomId$$                          | String                      |
+| Product Storage Life                              | Product Collection (on OrderRow) | $$Product.StorageLife$$                          | Number                      |
+| Product Storage Life Unit                         | Product Collection (on OrderRow) | $$Product.StorageLifeUnit$$                      | String                      |
+| Product HS Code                                   | Product Collection (on OrderRow) | $$Product.Hscode$$                               | String                      |
+| Product Origin Country Code                       | Product Collection (on OrderRow) | $$Product.OriginCountryCode$$                    | String                      |
+| Product UN Class                                  | Product Collection (on OrderRow) | $$Product.UnClass$$                              | String                      |
+| Product UN Number                                 | Product Collection (on OrderRow) | $$Product.UnNumber$$                             | String                      |
+| Product UN Packing Group                          | Product Collection (on OrderRow) | $$Product.UnPackingGroup$$                       | String                      |
+| Product Brand Name                                | Product Collection (on OrderRow) | $$Product.ProductBrandName$$                     | String                      |
+| Product Brand Ref 1                               | Product Collection (on OrderRow) | $$Product.ProductBrandRef1$$                     | String                      |
+| Product Brand Ref 2                               | Product Collection (on OrderRow) | $$Product.ProductBrandRef2$$                     | String                      |
+
+**ProductGroup Collection** (nested on Product — each product links to a ProductGroup; iterate within the Product collection)
+
+| Merge field name                                  | Merge field type                     | Merge field                                      | Data type                   |
+| ------------------------------------------------- | ------------------------------------ | ------------------------------------------------ | --------------------------- |
+| Product Group ID                                  | ProductGroup Collection (on Product) | $$ProductGroup.Id$$                              | String                      |
+| Product Group Name                                | ProductGroup Collection (on Product) | $$ProductGroup.Name$$                            | String                      |
+| Product Group Comment                             | ProductGroup Collection (on Product) | $$ProductGroup.Comment$$                         | String                      |
+| Product Group Is Active                           | ProductGroup Collection (on Product) | $$ProductGroup.IsActive$$                        | Boolean                     |
+| Product Group Sequence                            | ProductGroup Collection (on Product) | $$ProductGroup.Sequence$$                        | Number                      |
+
 **Relations based on current Order Row item**
+
 'ProductRegistration' links to ProductRegistration
+
+'Product' links to Product (nested collection — each OrderRow contains a Product)
+
+**Relations based on current Product item**
+
+'ProductGroup' links to ProductGroup (nested collection — each Product contains a ProductGroup)
+
 **Relations**
+
 'PaymentType' links to Order
+
 'OrderRow' links to OrderRow
+
 
 </details>
 
