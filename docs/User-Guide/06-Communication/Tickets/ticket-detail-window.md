@@ -1,99 +1,160 @@
 ---
-sidebar_position: 5
-slug: /docs/ticket-detail-window
+sidebar_position: 2
+slug: /docs/ticket-details
 ---
 
-# Ticket Detail Window
+# Ticket Details
 
-Using the ticket detail window, you can add or modify (existing) ticket information.
-To display the ticket details, simply double click on a ticket or click the edit button in the main ticket screen.
+The ticket detail window displays all information about a ticket and allows you to manage communication, assign employees, track products, and more. To open it, double-click a ticket or click the edit button in the main ticket screen.
 
-An example of the ticket detail window:
+<img src={require("/img/ticket-detail-window-new.png").default} height="" width="800" />
 
-<img src={require("/img/ticket-details-window.png").default} height="" width="800" />
+## Action Buttons
+
+The top section contains the main action buttons:
+
+- **Save and Close** — Save the ticket and close the detail window. Use the dropdown arrow to access **Save** (without closing).
+- **Mark Closed and Close** — Set the ticket status to *Closed* and close the window.
+- **Delete** — Remove the ticket.
+
+## Ticket Header
+
+<img src={require("/img/ticket-detail-header.png").default} height="" width="800" />
+
+The header area displays key ticket information in a compact layout:
+
+| Field | Description |
+| --- | --- |
+| **Ticket ID** | Unique ticket number (e.g. 1852). |
+| **Title** | Subject line of the ticket. Editable directly in the header. |
+| **Company** | The customer company linked to this ticket. Click the icons to open, edit, or search for a different company. |
+| **Order** | The linked order number (if applicable). |
+| **Status folder** | Current status folder (e.g. Todo, Closed). |
+| **Ticket type** | The type of ticket (e.g. Incident Ticket). Select from the dropdown. |
+| **Priority** | Ticket priority flag. |
+| **Language** | Language of the ticket, shown as a country flag. |
+| **Return / Offer / Service contract** | Quick-link dropdowns to associate the ticket with a return, offer, or service contract. |
+
+### Assignment
+
+- **Employee assignment** — Click the employee dropdown (shows *Not assigned* or the assigned employee name) to assign the ticket to a specific employee. The **Assign me** button provides a shortcut to assign the ticket to yourself. This button is hidden when you are already the assignee.
+- **Group assignment** — Select a support team or group from the group dropdown.
+
+### Categories
+
+<img src={require("/img/ticket-detail-categories.png").default} height="" width="800" />
+
+The category dropdown allows you to assign one or more categories to the ticket. When the AI Assistant is enabled, it automatically suggests categories based on the ticket content — these suggestions appear directly in the category dropdown. You can apply the suggested categories or choose your own from the full category list.
+
+### Dates
+
+- **Opened date** — Shows the date and time the ticket was created (lock icon).
+- **Closed date** — Shows the date and time the ticket was closed, or `-` if still open.
+
+:::tip
+Once you have selected at least one category, the AI will no longer auto-load new suggestions. Use the refresh button in the AI Assistant panel to request updated suggestions at any time.
+:::
+
+## AI Assistant
 
 
-### 1. Action buttons
-The Menu section of the ticket detail window contains all necessary action buttons.
+The AI Assistant panel sits directly below the ticket header. It automatically analyzes the ticket content (messages, title, comments) and provides:
 
-<img src={require("/img/ticket-details-action-menu.png").default} height="" width="800" />
+- **Satisfaction score** — A satisfaction rating (e.g. 2/5) displayed with an emoji indicator in the panel header.
+- **AI Summary** — A brief summary of the customer's issue, generated from the ticket content.
 
-**Save (and close):**
-Store this ticket (and close the ticket detail window)
+Use the **refresh button** in the panel header to regenerate the AI analysis. The panel is collapsible — click the collapse/expand arrows to toggle its visibility.
 
-**Mark closed and close**
-  Update the ticket status to ‘Closed’ and close the ticket detail window
-  
-**Wait for customer and close:**
-  Update the ticket status to ‘Waiting for customer’ and close the ticket detail window.
-  The ticket will still be visible until the customer responded.
-  
-  **Delete**
-  Remove this ticket
-  
-**Assign to me …**
-  Once a ticket has been opened, use this button to assign the ticket to yourself or another employee.
-  
-  **Assign Group …**
-  Once a ticket has been opened, use this button to assign the ticket to a group or team.
-  
-  **Mark follow-up**
-  Push this ticket to the background for a certain amount of time. After the follow-up period, the ticket will be displayed again.
-  
-  **Merge**
-Merge the ticket with it's duplicate.
+:::tip
+The AI Assistant requires configuration. See [Ticket AI Assistant](/docs/ticket-ai-assistant) for setup instructions including API key configuration and category training.
+:::
 
-**Add Activity**
-Specify a category and hours for a new activity connected with the ticket.
-___
+## Tabs
 
-### 2. Ticket Priority
-  Set or view the ticket priority.
-___
-### 3. Ticket Status
-Set or view the ticket status. Ticket status can be managed in the Configuration menu (submenu Statuses). 
-Predefined status types:
+<img src={require("/img/ticket-detail-tabs.png").default} height="" width="800" />
 
-| Ticket status	 | Description |
-| ----------- | ----------- |
-| Closed | Ticket was closed after solving/answering the initial question. |
-| Closed – Waited for customer | If a ticket conversation is inactive for a certain amount of time without a response from the customer, ShopCtrl will close the ticket automatically. The preferred inactivity time can be determined using ticket settings. |
-| Follow up | When setting the ticket to a follow-up status, the ticket will be ‘off radar’ and not appear as an open ticket. After a  predefined number of days, the ticket will become visible again in the ‘open’ ticket section. Please note, the ticket will also turn active again when receiving a reply. |
-| Open | Ticket is open and requires a reply |
-| Open – From close | Ticket was reopened after it was previously closed. A closed ticket will also reopen after a new inbound message was received. |
-| Open – From follow up | ShopCtrl assigns this status to a ticket that was previously in the ‘follow up’ state. |
-| Waiting for customer | A message was sent to the customer. The ‘waiting for customer’ status is assigned until the customer replies. |
+All ticket-related information is organized into tabs below the AI Assistant panel. Each tab title shows a count badge indicating the number of items (e.g. *Messages (2)*, *Comments (1)*, *Parameters (1)*). Tabs load their content on first click for faster page performance.
 
-___
-### 4. Ticket Type
-Set or view the [ticket type](/User-Guide/06-Communication/Tickets/ticket-types.md).
-___
-### 5. Customer name
-Using the email address or phone number, ShopCtrl attempts to retrieve an existing customer.
-It’s also possible to select a customer manually.
-___
-### 6. Ticket Category
-Set or view the ticket category. A ticket can be assigned to multiple categories.
-You can manage the category list within the Configuration Menu -> Mail categories.
-___
-### 7. Ticket Context menu
-Comments
-Read/Write internal comments. These comments will not be shared with customers and/or suppliers.
-Parameters
-Manage ticket parameters
-History
-The history panel displays extensive logging of all actions performed on this ticket.
-Attachments
-Add / download /delete attachments related to the selected ticket.
-___
-### 8. Communication window
-A listing of all messages within the selected ticket. This includes all the communication channels (Mail, Phone, Whatsapp or socials), and also external messages (for example, suppliers or other web care teams). There is a clear distinction in message types.
-Light gray: incoming customer message
-Light green: reply of the customer support agent
-Blue: non-customer communication
-___
-### 9. Reply section
-Click the ‘Compose customer mail’ to send a direct reply to the customer
-Click the ‘Compose non-customer mail’ to reply to a third party (teammate, supplier, etc.) A reply window is similar to the screenshot below:
+### Messages
 
-<img src={require("/img/ticket_compose_non_customer_mail.png").default} height="" width="800" />
+The Messages tab is the default view and shows all communication related to the ticket.
+
+**Message timeline:**
+
+<img src={require("/img/ticket-detail-message-timeline.png").default} height="" width="800" />
+
+Messages are grouped by date and displayed in a timeline format. Each message shows:
+- Sender name and email address
+- Timestamp
+- Message preview (click to expand the full content)
+- Action links: **Reply All**, **Forward**, **View**
+
+Message colors indicate the type:
+- **Light gray** — Incoming customer message
+- **Light green** — Reply from a customer support agent
+- **Blue** — Non-customer communication (e.g. supplier, internal)
+
+The most recent non-auto-reply message is automatically expanded when you open the ticket.
+
+**Composing messages:**
+
+Use the toolbar buttons to start a new message:
+- **New Customer Mail** — Compose a reply to the customer.
+- **New Supplier Mail** — Compose a message to a supplier or third party.
+
+The compose window supports minimize, restore, and close. When minimized, it collapses to the bottom-left corner of the screen so you can continue reviewing the ticket while drafting a reply. Closing the compose window with unsaved changes will prompt you to confirm.
+
+<img src={require("/img/ticket-detail-compose-ai.png").default} height="" width="800" />
+
+The AI Assistant is also available inside the compose window. Use it to get help drafting your reply — for example, to generate a response based on the ticket context or to adjust the tone of your message.
+
+**Toolbar options:**
+- **Search** — Filter messages by keyword.
+- **Type filter** — Filter by message type (mail, note, phone, chat).
+- **Sort** — Change the message sort order.
+- **Detailed View** — Toggle between compact and detailed message display.
+
+### Comments
+
+Internal comments that are not visible to customers. Use comments for internal notes, handover information, or team coordination.
+
+### Attachments
+
+View, upload, and manage file attachments related to the ticket.
+
+### Products
+
+<img src={require("/img/ticket-detail-products.png").default} height="" width="800" />
+
+The Products tab shows which products are associated with the ticket. The tab badge displays the count as *selected/total* (e.g. *Products (0/3)*).
+
+Products can come from two sources:
+- **Order products** — Automatically loaded from the linked order (if any).
+- **Manually added products** — Added via the search/add function within the tab.
+
+The product grid displays:
+- Product image thumbnail
+- SKU
+- Product name
+- Supplier (editable inline)
+
+Use the checkboxes to mark which specific products are affected by the ticket.
+
+### Child Tickets
+
+View and manage tickets that are linked as children of the current ticket. Use the **Merge** function to combine duplicate tickets.
+
+### Tasks
+
+Track activities and tasks related to the ticket. Task badges show active vs. total count (e.g. *Tasks (1/3)*).
+
+### Parameters
+
+View and edit custom ticket parameters. The badge shows the number of parameters with values.
+
+### History
+
+The History tab contains three sub-tabs:
+- **History** — Full audit log of all changes made to the ticket.
+- **Employee History** — Timeline of employee assignments and actions.
+- **Status History** — Log of all status transitions.
