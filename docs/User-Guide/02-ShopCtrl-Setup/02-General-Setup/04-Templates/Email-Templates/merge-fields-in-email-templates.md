@@ -73,3 +73,101 @@ The syntax of the mail template merge field is as follows: `$$MailTemplate.{Temp
 Where `{Template-code}` is the code of the existing mail template.
 
 To insert a merge field mail template click the **Templates** drop-down button in the menu above the body and select the field from the list. Or type it according to the format shown above.
+
+## Report Custom Tag
+
+You can embed reports directly into email templates using the `<Report>` custom tag. The report is generated dynamically when the email is sent.
+
+**Syntax:**
+
+```html
+<Report ReportCode="{report-code}" OutputType="{Image|HTML}">{parameters}</Report>
+```
+
+| Attribute | Description |
+| --- | --- |
+| `ReportCode` | The code of the Report Configuration (see how to find it below). |
+| `OutputType` | `HTML` renders the report as an HTML table. `Image` embeds it as a PNG image. |
+
+**Parameters** are passed as key-value pairs separated by `&amp;` inside the tag. You can combine them with merge fields. The parameter keys must match the internal parameter **Name** from the Report Configuration, not the label shown in the UI.
+
+For `DateRange` parameters, you can pass explicit dates in `yyyy-MM-dd` format or use a keyword like `this year`, `last month`, `last7days`, etc.
+
+**Examples:**
+
+Ticket statistics filtered by date range and shop:
+```html
+<Report ReportCode="Ticket_statistics" OutputType="HTML">FromPeriod=2026-04-01&amp;TillPeriod=2026-04-30&amp;Shops=$$Shop.Id$$</Report>
+```
+
+Invoice statistics with a shop and year parameter:
+```html
+<Report ReportCode="InvoiceStatsOverview" OutputType="HTML">ShopIdParam=$$Shop.Id$$&amp;YearsParam=2026</Report>
+```
+
+<details>
+<summary><b>Full email template example</b></summary>
+
+```html
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Weekly Ticket Statistics</title>
+    <style>
+        body { font-family: Arial, Helvetica, sans-serif; color: #333; font-size: 13px; margin: 0; padding: 20px; }
+        .wrapper { max-width: 720px; margin: 0 auto; background: #ffffff; border: 1px solid #e5e5e5; border-radius: 4px; }
+        .header { background: #2f4f6f; color: #ffffff; padding: 16px 20px; border-radius: 4px 4px 0 0; }
+        .header h1 { margin: 0; font-size: 18px; font-weight: 600; }
+        .content { padding: 20px; line-height: 1.5; }
+        .report-block { margin: 20px 0; padding: 12px; background: #f7f9fc; border: 1px solid #e2e7ee; border-radius: 4px; overflow-x: auto; }
+        .report-block h2 { margin: 0 0 10px 0; font-size: 15px; color: #2f4f6f; }
+        .report-block img { max-width: 100% !important; height: auto !important; display: block; }
+        .report-block span { max-width: 100% !important; }
+        .footer { padding: 14px 20px; font-size: 11px; color: #888; border-top: 1px solid #eee; }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>Weekly Ticket Statistics — $$Shop.Name$$</h1>
+        </div>
+        <div class="content">
+            <p>Hi $$Employee.FirstName$$,</p>
+            <p>
+                Please find below the ticket statistics for <strong>$$Shop.Name$$</strong>
+                covering the reporting period ending <strong>$$Current.Date##yyyy-MM-dd$$</strong>.
+            </p>
+            <div class="report-block">
+                <h2>Ticket statistics</h2>
+                <Report ReportCode="Ticket_statistics" OutputType="HTML">FromPeriod=2026-04-01&amp;TillPeriod=2026-04-30&amp;Shops=$$Shop.Id$$</Report>
+            </div>
+            <p>Kind regards,<br>ShopCtrl Reporting</p>
+        </div>
+        <div class="footer">
+            Generated automatically on $$Current.Date##yyyy-MM-dd HH:mm$$ ·
+            $$Shop.Name$$
+        </div>
+    </div>
+</body>
+</html>
+```
+
+![report-custom-tag-in-action](/img/report-custom-tag-in-action.png)
+
+</details>
+
+**How to find the report code and parameter names:**
+
+Use the Reports API endpoint on your ShopCtrl instance to get the list of available reports with their codes and parameters:
+
+```
+GET https://{your-shopctrl-domain}/v1/Reports
+```
+
+Replace `{your-shopctrl-domain}` with the URL of your ShopCtrl environment (e.g. `https://mycompany.shopctrl.com`).
+
+The response contains the `Code` (use as `ReportCode`) and `ReportParameters` array where each entry's `Name` field is the parameter key to use in the tag.
+
+:::note
+For `DateRange` type parameters, the `Name` field contains two comma-separated keys (e.g. `StartDateParam,EndDateParam`). Pass them as separate parameters: `StartDateParam=2026-01-01&amp;EndDateParam=2026-12-31`, or as a keyword: `StartDateParam,EndDateParam=this year`.
+:::
