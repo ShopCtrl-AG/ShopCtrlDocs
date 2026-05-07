@@ -7,7 +7,7 @@ slug: /docs/ticket-details
 
 The ticket detail window displays all information about a ticket and allows you to manage communication, assign employees, track products, and more. To open it, double-click a ticket or click the edit button in the main ticket screen.
 
-<img src={require("/img/ticket-detail-window-new.png").default} height="" width="800" />
+![ticket-detail-window-new](/img/ticket-detail-window-new.png)
 
 ## Action Buttons
 
@@ -16,10 +16,20 @@ The top section contains the main action buttons:
 - **Save and Close** — Save the ticket and close the detail window. Use the dropdown arrow to access **Save** (without closing).
 - **Mark Closed and Close** — Set the ticket status to *Closed* and close the window.
 - **Delete** — Remove the ticket.
+- **Old Layout** — Switch to the previous ticket detail layout. This saves your preference per employee — all tickets will open in the old layout until you switch back. The old layout has a **New Layout** button to return to the current view.
+
+
+<details>
+<summary><b>Old style ticket details layout</b></summary>
+
+![ticket-detail-window-old](/img/ticket-detail-window-old.png)
+
+</details>
+
 
 ## Ticket Header
 
-<img src={require("/img/ticket-detail-header.png").default} height="" width="800" />
+![ticket-detail-header](/img/ticket-detail-header.png)
 
 The header area displays key ticket information in a compact layout:
 
@@ -37,12 +47,12 @@ The header area displays key ticket information in a compact layout:
 
 ### Assignment
 
-- **Employee assignment** — Click the employee dropdown (shows *Not assigned* or the assigned employee name) to assign the ticket to a specific employee. The **Assign me** button provides a shortcut to assign the ticket to yourself. This button is hidden when you are already the assignee.
-- **Group assignment** — Select a support team or group from the group dropdown.
+- **Employee assignment** — Click the employee dropdown (shows *No employee assigned* or the assigned employee name) to assign the ticket to a specific employee. The **Assign me** button provides a shortcut to assign the ticket to yourself. This button is hidden when you are already the assignee.
+- **Group assignment** — Select a support team or group from the group dropdown (shows *No team assigned* or the assigned team name).
 
 ### Categories
 
-<img src={require("/img/ticket-detail-categories.png").default} height="" width="800" />
+![ticket-detail-categories](/img/ticket-detail-categories.png)
 
 The category dropdown allows you to assign one or more categories to the ticket. When the AI Assistant is enabled, it automatically suggests categories based on the ticket content — these suggestions appear directly in the category dropdown. You can apply the suggested categories or choose your own from the full category list.
 
@@ -66,14 +76,31 @@ The AI Assistant panel sits directly below the ticket header. It automatically a
 Use the **refresh button** in the panel header to regenerate the AI analysis. The panel is collapsible — click the collapse/expand arrows to toggle its visibility.
 
 :::tip
-The AI Assistant requires configuration. See [Ticket AI Assistant](/docs/ticket-ai-assistant) for setup instructions including API key configuration and category training.
+The AI Assistant requires configuration. See [Ticket AI Assistant](/docs/User-Guide/06-Communication/Tickets/ticket-ai-assistant.md) for setup instructions including API key configuration and category training.
 :::
 
 ## Tabs
 
-<img src={require("/img/ticket-detail-tabs.png").default} height="" width="800" />
+
 
 All ticket-related information is organized into tabs below the AI Assistant panel. Each tab title shows a count badge indicating the number of items (e.g. *Messages (2)*, *Comments (1)*, *Parameters (1)*). Tabs load their content on first click for faster page performance.
+
+### Reordering tabs
+
+You can drag and drop tabs to rearrange them in any order you prefer. The tab order is saved per employee, so each team member can organize their workspace independently.
+
+### Pinning a tab
+
+You can pin one tab to keep it always visible while working in other tabs. To pin a tab, hover over the active tab and click the pin icon that appears on the right side of the tab header. This splits the view into two columns: the pinned tab on the left and the remaining tabs on the right.
+
+- Only the active tab shows the pin icon.
+- Only one tab can be pinned at a time. Pinning a different tab replaces the current pin.
+- Drag the splitter between the columns to adjust the width.
+- The pinned tab and column width are saved per employee and restored automatically on next visit.
+- To unpin, click the pin icon in the pinned panel header.
+
+![ticket-details-pin-tab](/img/ticket-details-pin-tab.png)
+
 
 ### Messages
 
@@ -81,7 +108,7 @@ The Messages tab is the default view and shows all communication related to the 
 
 **Message timeline:**
 
-<img src={require("/img/ticket-detail-message-timeline.png").default} height="" width="800" />
+![ticket-detail-message-timeline](/img/ticket-detail-message-timeline.png)
 
 Messages are grouped by date and displayed in a timeline format. Each message shows:
 - Sender name and email address
@@ -104,7 +131,7 @@ Use the toolbar buttons to start a new message:
 
 The compose window supports minimize, restore, and close. When minimized, it collapses to the bottom-left corner of the screen so you can continue reviewing the ticket while drafting a reply. Closing the compose window with unsaved changes will prompt you to confirm.
 
-<img src={require("/img/ticket-detail-compose-ai.png").default} height="" width="800" />
+![ticket-detail-compose-ai](/img/ticket-detail-compose-ai.png)
 
 The AI Assistant is also available inside the compose window. Use it to get help drafting your reply — for example, to generate a response based on the ticket context or to adjust the tone of your message.
 
@@ -124,7 +151,7 @@ View, upload, and manage file attachments related to the ticket.
 
 ### Products
 
-<img src={require("/img/ticket-detail-products.png").default} height="" width="800" />
+![ticket-detail-products](/img/ticket-detail-products.png)
 
 The Products tab shows which products are associated with the ticket. The tab badge displays the count as *selected/total* (e.g. *Products (0/3)*).
 
