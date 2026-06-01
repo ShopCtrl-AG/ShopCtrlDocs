@@ -49,10 +49,12 @@ There is a number of **Contract Merge Fields** available for use as part of cust
         * Fixed tier price - specify a price per 1 item based on a quantity ordered.
         *On the example below, the price will differ depending on the number of products ordered. For the quantity three and above, the latest quoted price will be used.*
     <img src={require("/img/edit-contract-row-tierprice.png").default} height="" width="400" />
+        * Stacked tier price - specify a price per tier range. The total quantity is distributed across tiers and each tier produces its own order row. For example, with tiers at 1+ (€0.50), 51+ (€0.35), and 101+ (€0.20), a quantity of 133 would generate three order rows: 50 × €0.50, 50 × €0.35, and 33 × €0.20.
+        * Flat-fee tier price - specify a fixed fee per tier range. The total quantity determines which tier applies, and a single order row is created with quantity 1 at that tier's price. For example, with tiers at 1+ (€50), 51+ (€75), and 101+ (€100), a quantity of 133 would generate one order row: 1 × €100.
     * Choose a **Quantity mode**:
         * Fixed quantity - a specified quantity will be added to each generated order.
         * Call service - this will identify that a customer confirmation is needed for the product quantity.
-    * (Optional) Enter a **Comment** that will be added to the corresponding order row. You can also use contract-specific merge fields: `$$PeriodFrom$$`, `$$PeriodUntil$$`.
+    * (Optional) Enter a **Comment** that will be added to the corresponding order row. You can also use contract-specific merge fields: `$$PeriodFrom$$`, `$$PeriodUntil$$`. When using Stacked or Flat-fee tier price modes, additional merge fields are available: `$$TierQtyFrom$$`, `$$TierQtyTill$$`, `$$TierRange$$`, `$$TierQty$$`, `$$TierPriceExVat$$`, `$$TierPriceIncVat$$`.
     *  (Optional) Enter an **Internal Comment** visible only within a contract details page.
     * Specify on which **Conditions** contract row will be added to the generated order:
 <img src={require("/img/edit-contract-row-conditions.png").default} height="" width="400" />
@@ -88,6 +90,17 @@ After the products were added to the contract, we can proceed to **Order generat
 The fulfillment status of the newly generated order will be "**Hold fulfillment**", to prevent the order from an automatic shipment before customer confirmation.
 
 :::
+
+### Preview order
+
+You can preview the order rows that would be generated for a given period without actually creating the order.
+
+1. Click the **Preview Order** button in the top toolbar.
+2. Set the **From** and **Till** dates for the period you want to preview. By default, the dates are set to the previous month.
+3. Click **Run preview** to generate a preview of the order rows. The grid will display the product name, quantity, price, totals, and comment for each row.
+4. Review the results. If the preview looks correct, you can click **Create order** to generate and save the order directly from the preview window.
+
+<img src={require("/img/contracts-order-preview.png").default} height="" width="800" />
 
 ## Manage contracts
 
