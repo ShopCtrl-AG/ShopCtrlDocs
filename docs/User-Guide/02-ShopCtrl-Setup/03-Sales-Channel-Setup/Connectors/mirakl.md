@@ -58,3 +58,43 @@ To set up synchronization with pre-prod Mirakl environment in ShopCtrl:
 ![mirakl-arrier-account-mapping](/img/mirakl-carrier-account-mapping.png)
 14. **Enable** the synchronization at the top of the Functional Settings pane.
 15. Click **Save** or **Save and Close** to apply changes to the shop.
+
+## Stock and price export
+
+To compare ShopCtrl stock/price against the current Mirakl offers and push corrections in bulk or per row, see [Mirakl Stock & Price Export](/docs/User-Guide/08-Product-Management/Product-Export/mirakl-stock-price-export.md).
+
+## Master-SKU Map
+
+The **Master-SKU map** drives several Mirakl offers from a single ShopCtrl **master product**. It is built for the case where the master product lives in ShopCtrl and its **variants are created as separate offers on Mirakl**, each identified by a **colour code** - a short suffix of letters and digits added to the master SKU.
+
+When stock and price are updated, the value is sent from the master product to **all** of its mapped colour codes.
+
+:::note
+
+This is a specific, opt-in feature. By default it is **disabled** and the table has **no records** - the connector then maps each offer to the product with the same SKU.
+
+:::
+
+![mirakl-master-sku-map](/img/mirakl-master-sku-map.png)
+
+The grid shows the **master SKU** (the ShopCtrl product's own code) and the **mapped marketplace offer SKUs** it drives - the master's own code first, then its colour-code variants.
+
+### Adding new masters and colour-code mappings
+
+When new masters or colour codes exist on Mirakl but are not yet in the table:
+
+1. Click **Adjust SKU map from marketplace → Merge new offers**. This pulls the newly-seen Mirakl offers in, keeping all existing mappings - nothing is removed.
+2. Click **Suggest masters**. The new possible masters and their colour codes are loaded into a separate review list first - they are **not** in the map yet.
+3. Review the suggestions and **add selected** or **add all**. Only the entries you add are moved into the map table.
+4. Click **Save map** to store the result.
+
+### Possible problems and solutions
+
+By default the **master** is the source: it exports stock and price to all its colour codes. An offer key may show a small badge when something needs attention - click the badge to apply its fix.
+
+| Badge | Problem | Solution |
+|---|---|---|
+| 🟠 **not on marketplace** | The mapped offer no longer exists on Mirakl (stale mapping). | Click to remove the stale key. |
+| 🔵 **direct product** | The offer also exists as its own standalone product. You want to override the default and let that product - not the master - drive this colour code. | Click **Use direct product as source** to promote it. The direct product then owns the offer and the master no longer drives it. |
+| 🔴 **missing product** | The master product for this row no longer exists in ShopCtrl. | Click to delete the dead row. |
+| ⚠ **conflict** | The offer is mapped to a master **and** matches a different standalone product - you must choose the source. | Click **Resolve conflict** and pick the source. |
