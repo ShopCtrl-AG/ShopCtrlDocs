@@ -15,5 +15,6 @@ With Amazon 1P integration in ShopCtrl, you gain a comprehensive suite of featur
 - Automatically acknowledge incoming bulk buy purchase orders based on negotiated terms.
 - Streamline logistics with the creation of group shipments.
 - Enhance visibility and control with the Advanced Shipping Notice (ASN) procedure.
+- Process dropship orders via [Amazon 1P Direct Fulfillment](/docs/setting-up-direct-fulfillment) (VDF) integration.
 
 These features collectively empower you to optimize your Amazon 1P operations, ensuring a smooth and streamlined workflow within the ShopCtrl environment.
