@@ -59,7 +59,7 @@ Spotted an error or something out of date? Please [open an issue](https://github
 
 ## Deployment
 
-The site is published to [docs.shopctrl.com](https://docs.shopctrl.com) via the pipeline defined in [`azure-pipelines.yml`](azure-pipelines.yml).
+The site is automatically built and deployed to [docs.shopctrl.com](https://docs.shopctrl.com) on every push to `main`, via the GitHub Actions workflow in [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml). Hosting is provided by GitHub Pages.
 
 ## About ShopCtrl
 
