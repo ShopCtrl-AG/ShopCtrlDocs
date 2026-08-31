@@ -2,7 +2,7 @@
 
 The source for the **ShopCtrl Knowledgebase** — the comprehensive documentation for the ShopCtrl Omnichannel Backoffice software.
 
-📖 **Read the docs:** [docs.shopctrl.com](https://docs.shopctrl.com)
+📖 **Read the docs:** [support.shopctrl.com](https://support.shopctrl.com)
 
 This repository contains the Markdown content and site configuration for that knowledge base. It's a static site built with [Docusaurus](https://docusaurus.io/).
 
@@ -59,7 +59,7 @@ Spotted an error or something out of date? Please [open an issue](https://github
 
 ## Deployment
 
-The site is automatically built and deployed to [docs.shopctrl.com](https://docs.shopctrl.com) on every push to `main`, via the GitHub Actions workflow in [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml). Hosting is provided by GitHub Pages.
+The site is automatically built and deployed to [support.shopctrl.com](https://support.shopctrl.com) on every push to `main`, via the GitHub Actions workflow in [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml). Hosting is provided by GitHub Pages.
 
 ## About ShopCtrl
 
