@@ -86,6 +86,6 @@ Once configured, a background scheduled task runs every hour to automate the ent
 
 **Data Collection:** Customer ratings (1-10) are recorded at the ticket level. The mail is linked to the ticket, so you can view it. 
 
-**Report Generation:** NPS reports are generated based on the aggregated ratings per ticket, accessible via the ShopCtrl reporting module.
+**Report Generation:** NPS reports are generated based on the aggregated ratings per ticket, accessible via the ShopCtrl reporting module. Please check the [NPS overview report](/User-Guide/03-Basic-Functions/reporting.md#nps-overview-report) description for more information.
 
 <img src={require("/img/nps-feedback-request-mail.png").default} height="" width="800" />

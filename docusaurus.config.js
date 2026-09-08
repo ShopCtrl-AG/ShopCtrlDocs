@@ -24,6 +24,8 @@ const config = {
   organizationName: "ShopCtrl", // Usually your GitHub org/user name.
   projectName: "knowledgebase", // Usually your repo name.
 
+  clientModules: ["./src/js/openDetailsFromHash.js"],
+
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 

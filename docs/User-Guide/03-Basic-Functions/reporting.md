@@ -13,7 +13,7 @@ You can also set up a scheduled task of sending auto-generated reports via email
 
 ### Sales
 
-<details>
+<details id="sales-overview-report">
   <summary> Sales overview report </summary>
 
 Sales overview report provides an overview of overall and monthly sales per shop and year specified in a shop owner base currency. Report displays the overall year to date and month to date sales.
@@ -30,7 +30,7 @@ Report parameters:
 
 </details>
 
-<details>
+<details id="invoice-stats-overview-report">
   <summary> Invoice stats overview report </summary>
  
 Report provides a recap of the total invoices issued per month and per year, calculates the overall invoiced year to date and month to date amounts.
@@ -47,7 +47,7 @@ Report parameters:
 
 </details>
 
-<details>
+<details id="product-overview-report">
   <summary> Product overview report </summary>
  
 This report shows top 10 most sold products and top 10 products with highest turnover per year.
@@ -61,7 +61,7 @@ Report parameters:
 
 </details>
 
-<details>
+<details id="sold-products-per-day-report">
   <summary> Sold products per day report </summary>
 
 A list of products sold per selected shop(s) within defined timeframe.
@@ -71,7 +71,7 @@ By default, the period is set to 1 day. Changing a timeframe to a bigger period 
 
 </details>
 
-<details>
+<details id="affiliate-orders-report">
   <summary> Affiliate orders report </summary>
 
 The report displays/calculates total summary in base currency of the orders brought to you by different affiliates.
@@ -86,7 +86,7 @@ Report parameters:
 
 </details>
 
-<details>
+<details id="transport-costs">
   <summary> Transport costs </summary>
 
 The report groups shipped orders by a transport category and summarizes transport costs per carrier.
@@ -99,7 +99,7 @@ Report parameters:
 
 </details>
 
-<details>
+<details id="cancelled-orders">
   <summary> Cancelled orders </summary>
 
 The report tracks all cancelled orders for a given shop(s) and period and displays total sum in base currency.
@@ -117,7 +117,7 @@ Report parameters:
 
 </details>
 
-<details>
+<details id="order-credit-overview">
   <summary> Order credit overview </summary>
 
 Order credit overview report prints out a list of credited orders for a given shop(s) and period. Provided that the credit reasons are used while creating returns/refunds, the reasons are also displayed.
@@ -133,7 +133,7 @@ Report parameters:
 
 ### Service Level Reporting
 
-<details>
+<details id="service-level">
   <summary> Service level </summary>
  
 Service level agreement performance data for the selected shops grouped by employees. This report includes the data about the volume of phone calls, email handling time and number of SLA hours it took to achieve the first time answer.
@@ -152,7 +152,7 @@ Report parameters:
 
 </details>
 
-<details>
+<details id="ticket-statistics">
   <summary> Ticket statistics </summary>
  
 Report consists of 13 charts on ticket statistics.
@@ -178,7 +178,7 @@ Report consists of 13 charts on ticket statistics.
 
 </details>
 
-<details>
+<details id="actual-support-statistics">
   <summary> Actual support statistics </summary>
   
 Actual support statistics provide a snapshot of the day with the current support progress. 
@@ -189,7 +189,68 @@ The chart shows the increase in open tickets for the current day.
 
 </details>
 
-<details>
+<details id="nps-overview-report">
+  <summary> NPS overview report </summary>
+
+The **NPS overview** report shows how customers rated your support over a chosen period. The report covers all tickets **closed** within the selected period.
+Feedback requests are sent automatically after a ticket is closed, please check [Configure Net Promoter Score (NPS) Feedback for Your Shops](/User-Guide/06-Communication/Tickets/nps.md) for more information.
+
+Report parameters:
+
+- Shops
+- Date range or period (by default the current month)
+
+**Executive summary**
+
+The report opens with five figures. Taking as an example a single shop over September 2026:
+
+| Figure          | Example | Meaning                                                       |
+| --------------- | ------- | ------------------------------------------------------------- |
+| NPS score       | 16,67   | The Net Promoter Score for the period                          |
+| Response rate   | 60,00%  | Share of sent feedback requests that resulted in a rating      |
+| Responses       | 6       | Ratings received                                               |
+| Closed tickets  | 10      | All tickets closed in the period                               |
+| Requests sent   | 10      | Feedback requests sent for those tickets                       |
+
+Read from the bottom up: 10 tickets were closed, all 10 qualified for a feedback request, and 6 customers rated their support — a response rate of 6 / 10 = 60%.
+
+The score itself is coloured against the legend beside it: **red** below 0 (needs attention), **amber** from 0 to 30 (improving), **green** above 30 (excellent).
+
+**How the score is calculated**
+
+Every rating falls into one of three groups, and the score is the percentage of promoters minus the percentage of detractors. Passives count towards the total number of responses, but drop out of the calculation itself — which is deliberate: NPS measures the balance between enthusiasts and critics.
+
+In the example, the 6 responses were:
+
+| Group      | Ratings | Responses | Share |
+| ---------- | ------- | --------- | ----- |
+| Promoters  | 9-10    | 2         | 33%   |
+| Passives   | 7-8     | 3         | 50%   |
+| Detractors | 1-6     | 1         | 17%   |
+
+NPS = 33% promoters - 17% detractors = **16,67**
+
+The score ranges from -100 (every respondent a detractor) to +100 (every respondent a promoter). A score of 0 means promoters and detractors cancel each other out exactly.
+
+**Charts and breakdown**
+
+**Rating distribution** shows those three groups as a pie, so you can see what the score is made of — a score of 0 built from equal promoters and detractors is a very different situation from one built entirely of passives.
+
+**NPS trend over time** plots the score per month. Because the grouping is monthly, a period shorter than a month shows a single value.
+
+**NPS by sales channel** repeats the score, the number of closed tickets and the number of responses for each selected shop, so you can compare channels in one view.
+
+:::note
+
+Feedback requests are sent a configurable number of days after a ticket is closed, and customers need time to respond. Figures for the current period therefore keep rising for a while after the period ends — compare completed periods for a like-for-like picture.
+
+:::
+
+![nps-report](/img/nps-report.png)
+
+</details>
+
+<details id="communication-per-order">
   <summary> Communication per Order </summary>
  
 A list of orders of a certain shop within the selected timeframe with minimum communication count higher than the specified minimum amount.
@@ -205,7 +266,7 @@ Report parameters:
 
 </details>
 
-<details>
+<details id="event-category-report">
   <summary> Event category report </summary>
  
 Report groups communication events like emails and VoIP calls per mail category over all shops selected.
@@ -219,7 +280,7 @@ Report parameters:
 
 </details>
 
-<details>
+<details id="event-overview-report">
   <summary> Event overview report </summary>
   
 Report groups communication events like emails and VoIP calls per shop and per category over a chosen period.
@@ -232,7 +293,7 @@ Report parameters:
 
 </details>
 
-<details>
+<details id="events-distribution-report">
   <summary> Events distribution report </summary>
 
 Event distribution report contains an area chart displaying events distribution per shop over a year period. The most busy months are highlighted in green.
@@ -241,7 +302,7 @@ Event distribution report contains an area chart displaying events distribution 
 
 </details>
 
-<details>
+<details id="event-forecast-report">
   <summary> Event forecast report </summary>
  
  Event Forecast Report contains a line chart with the total number of events over a year period grouped by shop and month.
@@ -250,7 +311,7 @@ Event distribution report contains an area chart displaying events distribution 
 
 </details>
 
-<details>
+<details id="events-per-order-report">
   <summary> Events per order report </summary>
  
 Report contains the summary of all events, like VoIP calls and emails and calculates the average events per order ratio.
@@ -259,7 +320,7 @@ Report contains the summary of all events, like VoIP calls and emails and calcul
 
 </details>
 
-<details>
+<details id="events-per-sync-source">
   <summary> Events per sync source </summary>
  
  Events per synchronization source report gives an overview of the events that came through synchronization channels.
@@ -268,7 +329,7 @@ Report contains the summary of all events, like VoIP calls and emails and calcul
 
 </details>
 
-<details>
+<details id="shop-event-time">
   <summary> Shop event time </summary>
  
 The **Shop event time report** calculates for a shop(s) average duration of VoIP calls and time spent on mail creation for a specified period.
@@ -282,7 +343,7 @@ The **Shop event time report** calculates for a shop(s) average duration of VoIP
 
 ### Employee performance and activities
 
-<details>
+<details id="activity-journal-report">
   <summary> Activity journal report </summary>
  
 Report summarizes hours spent on different activities by employees for a given period. Activities are registered and tracked on  the **General > Activities tab**.
@@ -298,8 +359,8 @@ Report summarizes hours spent on different activities by employees for a given p
 
 </details>
 
-<details>
-  <summary> Employee performance report  </summary>
+<details id="employee-performance-report">
+  <summary> Employee performance report </summary>
  
 Employee performance report provides data about total handled phone calls and emails grouped by employee and shop(s).
 
@@ -313,7 +374,7 @@ Report parameters:
 
 </details>
 
-<details>
+<details id="employee-productivity-report">
   <summary> Employee productivity report </summary>
 
 Employee productivity report displays the most detailed overview of the communication happening via email per employee. Report is grouped by employee and provides details of the emails sent and connected tickets closed.
@@ -334,7 +395,7 @@ Sub-report: New emails sent by employee.
 
 </details>
 
-<details>
+<details id="employee-overview-report">
   <summary> Employee overview report </summary>
 
 This report displays a recap of events handled by employees with detailed data about phone calls duration and email handling time. It also summarizes the number of closed tickets per employee.
@@ -349,7 +410,7 @@ Report parameters:
 
 </details>
 
-<details>
+<details id="employee-event-time">
   <summary> Employee event time </summary>
  
 <b>Employee event time</b> report gives statistics about the total number of events (VoIp calls and emails) handled by employees within the selected timeframe. It also calculates the average time spent handling emails and answering calls.
@@ -367,7 +428,7 @@ Report parameters:
 
 #### Phone - VoIP
 
-<details>
+<details id="phone-calls-specification">
   <summary> Phone calls specification </summary>
 
 Detailed report of received and answered calls. Includes in-depth call details, like call duration and destination phone numbers.
@@ -380,7 +441,7 @@ Report parameters:
 
 </details>
 
-<details>
+<details id="phone-statistics">
   <summary> Phone statistics </summary>
 
 Queue statistics daily report.
@@ -396,7 +457,7 @@ Report parameters:
 
 </details>
 
-<details>
+<details id="phone-wait-times">
   <summary> Phone wait times </summary>
 
 Report compares wait time of answered phone calls against predefined normal response time.
@@ -413,7 +474,7 @@ Report parameters:
 
 #### Reports on Wiki item usage
 
-<details>
+<details id="wiki-item-usage">
   <summary> Wiki item usage </summary>
 
 Report gives statistics about the 5 most and 5 least used wiki articles. By default, the current month period is pre-selected.
@@ -428,7 +489,7 @@ Report parameters:
 
 ### Reports on inventory, purchasing, and communication with suppliers
 
-<details>
+<details id="average-delivery-time-per-supplier">
   <summary> Gemiddelde levertijd per leverancier - Average delivery time per supplier </summary>
 
 Average delivery time per supplier provides statistics for the last 4 deliveries fulfilled by the supplier.
@@ -437,7 +498,7 @@ Average delivery time per supplier provides statistics for the last 4 deliveries
 
 </details>
 
-<details>
+<details id="purchase-order-detail-report">
   <summary> Purchase order detail report </summary>
 
 The <b>Purchase order detail report</b> provides an opportunity to easily get an overview of a certain purchase order. Including all the details about the provisioned quantities, and yet to be received products.
@@ -452,7 +513,7 @@ Please note, that report searches not by purchase order code, but by ID. The las
 
 </details>
 
-<details>
+<details id="supplier-mail-statistics">
   <summary> Supplier mail statistics </summary>
 
 Provides information about the average response time to supplier emails. It also queries in-depth details of mails received and tickets assigned in a separate sub-report.
@@ -467,7 +528,7 @@ Report parameters:
 
 </details>
 
-<details>
+<details id="product-stock-expiration-report">
   <summary> Product stock expiration report </summary>
  
 The **Product stock expiration** report is a part of the [Adwanced warehouse]/User-Guide/09-Purchasing/advanced-warehouse.md functionality. Products are grouped based on the time left before expiry.
@@ -478,7 +539,7 @@ The **Product stock expiration** report is a part of the [Adwanced warehouse]/Us
 
 ### Configuration reports
 
-<details>
+<details id="authorization-report">
   <summary> Authorization report </summary>
 
 The report gives an overview of the existing roles and permissions. The list contains all the fine grained permissions granted to the role.
