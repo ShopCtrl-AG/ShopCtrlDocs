@@ -4,6 +4,7 @@
   "collapsible": true,
   "collapsed": true,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "description": "Manage your product catalog in ShopCtrl: products, variants, properties, brands, groups, warehouses and stock counts."
   }
 }

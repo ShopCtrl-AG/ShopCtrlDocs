@@ -4,6 +4,7 @@
   "collapsible": true,
   "collapsed": true,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "description": "Export product data and inventory from ShopCtrl, including product exports to Amazon and Mirakl stock and price exports."
   }
 }

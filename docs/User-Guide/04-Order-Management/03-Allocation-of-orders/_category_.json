@@ -4,6 +4,7 @@
   "collapsible": true,
   "collapsed": true,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "description": "How ShopCtrl allocates stock to orders, including working with parked stock."
   }
 }

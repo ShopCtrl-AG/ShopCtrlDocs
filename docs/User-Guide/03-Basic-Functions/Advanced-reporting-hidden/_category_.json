@@ -2,6 +2,7 @@
   "label": "Report Developer Resources",
   "className": "hidden",
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "description": "Advanced reporting resources for report developers, including building dynamic reports with deep links to filtered views."
   }
 }

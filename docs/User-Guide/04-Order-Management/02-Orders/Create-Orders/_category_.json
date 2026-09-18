@@ -4,6 +4,7 @@
   "collapsible": true,
   "collapsed": true,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "description": "Create orders in ShopCtrl by adding them manually, duplicating an existing order, or importing them in bulk."
   }
 }

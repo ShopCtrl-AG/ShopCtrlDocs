@@ -4,6 +4,7 @@
   "collapsible": true,
   "collapsed": true,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "description": "Set up and use ShopCtrl messaging: configuration, the messaging interface and handling incoming messages."
   }
 }

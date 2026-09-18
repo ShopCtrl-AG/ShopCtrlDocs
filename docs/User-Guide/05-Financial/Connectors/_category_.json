@@ -4,6 +4,7 @@
   "collapsible": true,
   "collapsed": true,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "description": "Connect ShopCtrl to financial services such as Exact Online and the MultiSafepay checkout page."
   }
 }

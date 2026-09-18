@@ -4,6 +4,7 @@
   "collapsible": true,
   "collapsed": true,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "description": "Create and manage customers and customer groups in ShopCtrl, and handle GDPR requests and customer data obfuscation."
   }
 }

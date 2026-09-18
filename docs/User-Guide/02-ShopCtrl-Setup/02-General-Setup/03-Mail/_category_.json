@@ -4,6 +4,7 @@
   "collapsible": true,
   "collapsed": true,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "description": "Connect a mailbox to ShopCtrl, including Google and Microsoft Office 365 accounts, app passwords and email protocols."
   }
 }

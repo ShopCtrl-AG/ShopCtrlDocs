@@ -4,6 +4,7 @@
   "collapsible": true,
   "collapsed": true,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "description": "Work with orders in ShopCtrl: order details, editing orders, bulk actions, affiliates and backorder delivery notifications."
   }
 }

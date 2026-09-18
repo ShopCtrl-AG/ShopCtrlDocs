@@ -4,6 +4,7 @@
   "collapsible": true,
   "collapsed": true,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "description": "Financial features in ShopCtrl: invoicing and connectors to accounting and payment providers."
   }
 }

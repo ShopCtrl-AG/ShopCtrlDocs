@@ -4,6 +4,7 @@
   "collapsible": true,
   "collapsed": true,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "description": "Handle customer service tickets in ShopCtrl: ticket configuration, types and statuses, the Ticket AI Assistant and NPS feedback."
   }
 }

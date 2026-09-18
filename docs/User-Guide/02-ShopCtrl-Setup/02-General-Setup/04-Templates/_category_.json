@@ -4,6 +4,7 @@
   "collapsible": true,
   "collapsed": true,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "description": "Create and edit document and email templates in ShopCtrl, and look up the merge fields available to them."
   }
 }
