@@ -13,6 +13,19 @@ const config = {
     "The comprehensive knowledge base about the ShopCtrl Omnichannel Backoffice Software.",
   favicon: "img/shopctrl_favicon.svg",
 
+  // PNG fallback for clients that don't render the SVG favicon
+  headTags: [
+    {
+      tagName: "link",
+      attributes: {
+        rel: "icon",
+        type: "image/png",
+        sizes: "224x224",
+        href: "/img/shopctrl_favicon.png",
+      },
+    },
+  ],
+
   // Set the production url of your site here
   url: "https://support.shopctrl.com",
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -71,6 +84,8 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // Default og:image / twitter:image for link previews
+      image: "img/shopctrl-social-card.png",
       navbar: {
         title: "ShopCtrl",
         logo: {

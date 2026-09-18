@@ -1,0 +1,49 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  @font-face{
+    font-family:'Nunito';
+    src:url('file:///D:/Support%20Knowledgebase/ShopCtrlDocs/static/font/Nunito%20Regular%20400.ttf') format('truetype');
+    font-weight:400; font-style:normal;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1200px;height:630px;overflow:hidden}
+  body{
+    font-family:'Nunito',system-ui,sans-serif;
+    background:linear-gradient(115deg,#574CA8 0%,#45418F 42%,#1F5A72 74%,#136969 100%);
+    display:flex;align-items:center;justify-content:center;
+    position:relative;
+  }
+  /* soft highlight so the flat gradient has some depth */
+  body::before{
+    content:'';position:absolute;inset:0;
+    background:radial-gradient(900px 520px at 22% 18%,rgba(255,255,255,.16),transparent 62%);
+  }
+  .wrap{display:flex;align-items:center;gap:66px;position:relative;z-index:1}
+  .mark{
+    width:252px;height:252px;flex:none;
+    border-radius:52px;
+    box-shadow:0 22px 52px rgba(12,16,48,.34);
+  }
+  .eyebrow{
+    font-size:50px;color:rgba(255,255,255,.80);
+    letter-spacing:3px;line-height:1;margin-bottom:20px;
+  }
+  .title{
+    font-size:88px;color:#fff;line-height:1;letter-spacing:-1px;
+  }
+  .rule{
+    width:132px;height:7px;border-radius:4px;margin-top:34px;
+    background:rgba(255,255,255,.62);
+  }
+</style></head>
+<body>
+  <div class="wrap">
+    <img class="mark" src="file:///D:/Support%20Knowledgebase/ShopCtrlDocs/static/img/shopctrl_favicon.svg">
+    <div>
+      <div class="eyebrow">ShopCtrl</div>
+      <div class="title">Knowledgebase</div>
+      <div class="rule"></div>
+    </div>
+  </div>
+</body></html>
