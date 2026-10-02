@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 slug: /docs/amazon-1p-group-shipment
+description: "Combine shipments into an Amazon 1P group shipment in ShopCtrl and submit Advanced Shipment Notifications, including pack file integration."
 ---
 
 # Amazon 1P Group Shipment

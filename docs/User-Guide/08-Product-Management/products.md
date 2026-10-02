@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/products
+description: "The ShopCtrl products page: the groups and selections tree and the products pane, used to manage every product across your sales channels."
 ---
 # Products 
 

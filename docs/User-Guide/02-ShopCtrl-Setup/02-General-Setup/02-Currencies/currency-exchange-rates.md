@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/currency-exchange-rates
+description: "Manage currency exchange rates in ShopCtrl, accept the daily rates retrieved from the European Central Bank or set your own, and recalculate foreign prices."
 ---
 
 # Currency Exchange Rates
@@ -8,7 +9,7 @@ slug: /docs/currency-exchange-rates
 The currency exchange rates used throughout the system could be set in **Configuration > Currency exchange rate**.
 
 The **Rate** column displays the actual conversion rate of the base currency to the foreign currency.
-**Available rate** column displays the current (relevant to the current date) exchange rate. ShopCtrl retrieves the current **Available rates** daily using a [Currencylayer](https://currencylayer.com/) service.
+**Available rate** column displays the current (relevant to the current date) exchange rate. ShopCtrl retrieves the current **Available rates** daily from the [European Central Bank (ECB) euro foreign exchange reference rates](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html) feed.
 
 ![currency-exchange-rate](/img/currency-exchange-rate-01.png)
 

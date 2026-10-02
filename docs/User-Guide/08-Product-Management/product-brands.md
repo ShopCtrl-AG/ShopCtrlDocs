@@ -1,6 +1,7 @@
 ---
 sidebar_position: 5
 slug: /docs/product-brands
+description: "Manage product brands in ShopCtrl under Product Management > Product Brands: add, edit, copy and sync brands to your webshops."
 ---
 # Product Brands 
 

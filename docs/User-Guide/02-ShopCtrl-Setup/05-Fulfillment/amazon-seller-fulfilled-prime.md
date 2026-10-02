@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 slug: /docs/amazon-seller-fulfilled-prime
+description: "Set up Amazon Seller Fulfilled Prime in ShopCtrl, starting with an Amazon SFP carrier account, to buy Amazon shipping services for Prime orders."
 ---
 # Amazon Seller Fulfilled Prime 
 

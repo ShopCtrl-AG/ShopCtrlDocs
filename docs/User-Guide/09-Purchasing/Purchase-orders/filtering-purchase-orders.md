@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 slug: /docs/filtering-purchase-orders
+description: "Every filter available on the ShopCtrl purchase orders table, including keyword search, status, supplier and date filters."
 ---
 
 # Filtering Purchase Orders 

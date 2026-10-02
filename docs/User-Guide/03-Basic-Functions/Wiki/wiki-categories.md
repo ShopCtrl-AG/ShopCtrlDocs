@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 slug: /docs/wiki-categories
+description: "Organize ShopCtrl wiki articles into generic or shop-specific categories under Configuration > Wiki categories."
 ---
 
 # Wiki categories

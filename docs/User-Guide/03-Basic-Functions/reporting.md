@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 slug: /docs/reporting
+description: "Default and custom reports in ShopCtrl, how role-based access works, and exporting to PDF, Excel or CSV or scheduling them by email."
 ---
 
 # Reporting

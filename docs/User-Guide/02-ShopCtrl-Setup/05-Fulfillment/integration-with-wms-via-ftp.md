@@ -1,6 +1,7 @@
 ---
 sidebar_position: 5
 slug: /docs/integration-with-wms-via-ftp
+description: "Integrate a Warehouse Management System with ShopCtrl over FTP using CSV files to automate pick and pack for Amazon 1P purchase orders."
 ---
 
 # Integration with WMS via FTP

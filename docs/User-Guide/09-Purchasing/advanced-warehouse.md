@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 slug: /docs/advanced-warehouse
+description: "Track lot numbers, serial numbers and expiry dates per stock item in ShopCtrl by turning a product into an advanced product."
 ---
 
 # Advanced Warehouse 

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 7
 slug: /docs/product-properties
+description: "Product properties in ShopCtrl describe a product's characteristics, synchronize with your sales channels and define product variants."
 ---
 # Product Properties 
 

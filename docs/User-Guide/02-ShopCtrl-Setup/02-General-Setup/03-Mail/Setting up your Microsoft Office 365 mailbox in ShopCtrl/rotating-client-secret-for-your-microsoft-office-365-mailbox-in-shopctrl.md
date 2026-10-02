@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 slug: /docs/rotating-client-secret-for-your-microsoft-office-365-mailbox-in-shopctrl
+description: "Reissue an expiring Microsoft 365 client secret and update it in ShopCtrl so mail synchronization keeps running without interruption."
 ---
 
 

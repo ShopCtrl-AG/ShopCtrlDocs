@@ -1,6 +1,7 @@
 ---
 sidebar_position: 6
 slug: /docs/product-groups
+description: "View and manage product groups and selections in the ShopCtrl products tree, which mirrors the catalog structure of your sales channels."
 ---
 # Product Groups 
 

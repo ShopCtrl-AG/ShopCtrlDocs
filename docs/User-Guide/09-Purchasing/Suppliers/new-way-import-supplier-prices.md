@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/purchase-price-import-with-tiers
+description: "A simplified ShopCtrl import profile for supplier purchase prices and volume-based tier pricing. Your Excel file must include the product code."
 ---
 
 # Purchase Price Import (with Tiers)

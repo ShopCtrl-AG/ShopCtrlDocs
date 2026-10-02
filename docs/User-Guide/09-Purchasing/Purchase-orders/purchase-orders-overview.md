@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/purchase-orders-overview
+description: "A tour of the ShopCtrl purchase orders screen: the orders table, the actions panel, and the bulk actions available on a selection."
 ---
 # Purchase Orders Overview 
 

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 slug: /docs/how-to-set-up-price-export-to-amazon-3p
+description: "Set up price export from ShopCtrl to Amazon 3P, including price verification and background price validation with alerts for mismatches."
 ---
 
 # How to Set Up Price Export to Amazon 3P

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/amazon
+description: "How Amazon 1P Vendor Central and 3P Seller Central differ as selling models, and how ShopCtrl supports both."
 ---
 
 # Amazon

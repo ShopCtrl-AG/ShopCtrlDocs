@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 slug: /docs/creating-parcel
+description: "Parcels in ShopCtrl record the carrier, service, tracking code, shipping label and package dimensions, including multi-package shipments."
 ---
 # Creating Parcel 
 
@@ -10,7 +11,7 @@ Default fulfillment flows imply that [creating a shipment](/User-Guide/07-Fulfil
 A warehouse could be configured to automatically generate shipping labels using pre-configured carriers. 
 
 A **Parcel** keeps a record about a carrier and service used to ship the shipment, tracking code, shipping label, and package dimensions.
-Using the integrated PIM functionality, ShopCtrl can not only [choose the best carrier to ship an order](/docs/User-Guide/02-ShopCtrl-Setup/05-Fulfillment/Carriers/index.md#managing-carriers), but also easily determine whether an order will fit in one box, or needs to be divided in a multi packages shipment. 
+Using the integrated PIM functionality, ShopCtrl can not only [choose the best carrier to ship an order](/docs/User-Guide/02-ShopCtrl-Setup/05-Fulfillment/Carriers/managing-carriers.md), but also easily determine whether an order will fit in one box, or needs to be divided in a multi packages shipment. 
 When supported by the carrier integration, the parcel tracking status is monitored and **parcel status** changes accordingly. 
 
 <img src={require("/img/parcel-overview.png").default} height="" width="800" />

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 slug: /docs/duplicating-orders
+description: "Duplicate an existing ShopCtrl order to copy its customer, products and parameters into a new one. Duplicates are not synced to sales channels."
 ---
 
 # Duplicating Orders

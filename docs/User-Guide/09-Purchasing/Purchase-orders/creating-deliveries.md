@@ -1,6 +1,7 @@
 ---
 sidebar_position: 6
 slug: /docs/creating-deliveries
+description: "Create deliveries against a ShopCtrl purchase order to plan part shipments, specifying which products arrive when and on what expected date."
 ---
 
 # Creating Deliveries 

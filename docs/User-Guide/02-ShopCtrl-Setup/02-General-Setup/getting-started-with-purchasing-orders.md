@@ -1,6 +1,7 @@
 ---
 sidebar_position: 7
 slug: /docs/getting-started-with-purchasing-orders
+description: "Set up ShopCtrl for purchasing by creating a dedicated purchasing shop and configuring its document and email templates."
 ---
 
 # Getting started with purchasing

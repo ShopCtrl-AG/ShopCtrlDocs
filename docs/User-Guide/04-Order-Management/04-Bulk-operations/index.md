@@ -1,5 +1,6 @@
 ---
 slug: /docs/bulk-operations
+description: "Bulk operations in ShopCtrl filter orders by order codes, products or shipping dates and then run a single action across the whole selection."
 ---
 
 # Bulk Operations

@@ -1,5 +1,6 @@
 ---
 slug: /docs/document-templates
+description: "Document templates in ShopCtrl are Word files populated with merge fields, used to auto-generate customized documents such as offers and invoices."
 ---
 
 # Document Templates

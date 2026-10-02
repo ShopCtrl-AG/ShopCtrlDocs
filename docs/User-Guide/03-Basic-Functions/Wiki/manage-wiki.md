@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/manage-wiki
+description: "Create and manage ShopCtrl wiki articles for internal company knowledge, including regular and private article types and publish status."
 ---
 
 # Manage Wiki

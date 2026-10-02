@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 slug: /docs/conditions-in-document-templates
+description: "Use conditional blocks in ShopCtrl document templates to show different content per shop or customer, based on merge field values."
 ---
 
 # Conditions in Document Templates

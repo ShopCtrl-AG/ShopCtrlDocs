@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 slug: /docs/merge-fields-in-email-templates
+description: "Insert merge fields such as $$Order.Date$$ into a ShopCtrl email template so mail is filled with live data when it is generated."
 ---
 
 # Merge Fields in Email Templates

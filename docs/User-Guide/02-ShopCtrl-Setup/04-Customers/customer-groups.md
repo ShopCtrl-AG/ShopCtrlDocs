@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 slug: /docs/customer-groups
+description: "Create, edit and delete customer groups in ShopCtrl under Configuration > Customer groups to organize customers by type."
 ---
 
 # Customer groups

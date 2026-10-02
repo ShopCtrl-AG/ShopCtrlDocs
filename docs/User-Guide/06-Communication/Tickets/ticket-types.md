@@ -1,6 +1,7 @@
 ---
 sidebar_position: 7
 slug: /docs/ticket-types
+description: "Create and configure ticket types in ShopCtrl to route support requests to the right department. Every incoming ticket receives a type."
 ---
 
 # Ticket Types
@@ -63,5 +64,5 @@ An agent will mark a ticket as a **Question** if it's asking a question about pr
 A **Problem** is used when a customer/end-user has reported a problem that they're having with your product or service. A problem ticket could be anything from "My order had an error in it" to "I can't access the calendar page".
 
 An agent can select the ticket type when they are completing their first review of a ticket.
-To automate customer support and efficiently handle certain customer requests via email, you can set up [Filters](/docs/User-Guide/06-Communication/Tickets/ticket-configuration.md#ticket-filter) to distribute certain requests among different departments. You can also use [Triggers](/docs/User-Guide/02-ShopCtrl-Setup/02-General-Setup/05-Triggers/index.md#create-ticket) to create a ticket after certain [Events](/docs/User-Guide/02-ShopCtrl-Setup/02-General-Setup/05-Triggers/index.md#events). Tickets of a certain type can also be created as part of [Invoice Reminders](/User-Guide/05-Financial/Invoices/invoice-reminders.md) automatic configuration.
+To automate customer support and efficiently handle certain customer requests via email, you can set up [Filters](/docs/User-Guide/06-Communication/Tickets/ticket-configuration.md#ticket-filter) to distribute certain requests among different departments. You can also use [Triggers](/docs/User-Guide/02-ShopCtrl-Setup/02-General-Setup/05-Triggers/trigger-actions.md#create-ticket) to create a ticket after certain [Events](/docs/User-Guide/02-ShopCtrl-Setup/02-General-Setup/05-Triggers/trigger-events.md). Tickets of a certain type can also be created as part of [Invoice Reminders](/User-Guide/05-Financial/Invoices/invoice-reminders.md) automatic configuration.
 

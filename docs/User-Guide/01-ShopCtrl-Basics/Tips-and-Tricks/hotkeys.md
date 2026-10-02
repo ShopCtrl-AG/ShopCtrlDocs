@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 slug: /docs/hotkeys
+description: "Keyboard shortcuts and deep links in ShopCtrl, including quick actions for copying entity IDs and linking straight to a record."
 ---
 
 # Hotkeys and Deep Links

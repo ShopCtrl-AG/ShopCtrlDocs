@@ -1,6 +1,7 @@
 ---
 sidebar_position: 5
 slug: /docs/contracts
+description: "Contracts in ShopCtrl auto-create orders on a set schedule at agreed prices, with a separate frequency per product such as monthly or quarterly."
 ---
 
 # Contracts

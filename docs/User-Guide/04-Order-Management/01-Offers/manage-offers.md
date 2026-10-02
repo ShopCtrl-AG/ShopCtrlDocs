@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/manage-offers
+description: "Manage offers in ShopCtrl: filter by status, employee, affiliate, product or date, automate emails, and convert an accepted offer into an order."
 ---
 
 # Manage Offers

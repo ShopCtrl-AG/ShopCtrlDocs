@@ -1,6 +1,7 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 slug: /docs/palletways
+description: "Integrate Palletways with ShopCtrl for automated pre-notification and pick-up instructions on express pallet deliveries across Europe."
 ---
 
 # Palletways 

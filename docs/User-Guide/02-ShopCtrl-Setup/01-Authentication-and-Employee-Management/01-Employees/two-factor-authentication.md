@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 slug: /docs/two-factor-authentication
+description: "Set up two-factor authentication in ShopCtrl using an authenticator app, and make it a mandatory requirement for all users."
 ---
 
 # Two Factor Authentication

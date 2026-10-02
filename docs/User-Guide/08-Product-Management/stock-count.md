@@ -1,6 +1,7 @@
 ---
 sidebar_position: 11
 slug: /docs/stock-count
+description: "Count warehouse inventory in ShopCtrl per location using a barcode scanner, then register and resolve the discrepancies found."
 ---
 # Stock Count 
 

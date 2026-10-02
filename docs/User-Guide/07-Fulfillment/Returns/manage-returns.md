@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/manage-returns
+description: "Register and process customer returns in ShopCtrl from Fulfilment > Returns, with resolutions for resend, repair, restock and credit invoices."
 ---
 # Manage Returns 
 

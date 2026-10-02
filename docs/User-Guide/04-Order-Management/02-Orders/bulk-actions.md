@@ -1,6 +1,7 @@
 ---
 sidebar_position: 5
 slug: /docs/bulk-actions
+description: "Apply bulk actions to a selection of ShopCtrl orders: create invoices, send an email template, update statuses, send documents or export to Excel."
 ---
 
 # Bulk Actions

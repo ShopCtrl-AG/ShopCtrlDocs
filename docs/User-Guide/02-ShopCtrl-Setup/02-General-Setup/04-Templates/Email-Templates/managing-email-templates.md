@@ -1,6 +1,7 @@
 ---
 sidebar_position: 5
 slug: /docs/managing-email-templates
+description: "Manage the ShopCtrl email template list: add, copy, edit, search, filter by kind and publication status, and delete templates."
 ---
 
 # Managing Email Templates

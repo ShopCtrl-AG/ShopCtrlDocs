@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 slug: /docs/amazon-1p-orders-acknowledgement
+description: "Acknowledge Amazon 1P purchase orders in ShopCtrl, including automatic acknowledgement of bulk buy orders, within Amazon's 24-hour window."
 ---
 
 # Amazon 1P Orders Acknowledgement 

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/orders-introduction
+description: "How order management works in ShopCtrl, from importing orders across sales channels through invoicing and shipping, linked to inventory control."
 ---
 
 # Orders Introduction

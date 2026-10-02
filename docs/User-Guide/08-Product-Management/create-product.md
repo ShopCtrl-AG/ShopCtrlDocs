@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 slug: /docs/create-product
+description: "Step-by-step instructions for creating a product in ShopCtrl, from product code and name through to retail price, VAT tariff and publication."
 ---
 # Create Product 
 

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 5
 slug: /docs/provisioning
+description: "Provisioning in ShopCtrl is receiving goods into your warehouse, covering both private and fulfillment warehouses and how to open the screen."
 ---
 
 # Provisioning Overview 

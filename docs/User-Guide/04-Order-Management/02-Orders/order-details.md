@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 slug: /docs/order-details
+description: "The ShopCtrl order details window: customer data, payment, tax, carrier and shop details, order rows, shipments, parcels and shipping labels."
 ---
 
 # Order Details

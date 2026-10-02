@@ -1,6 +1,7 @@
 ---
 sidebar_position: 5
 slug: /docs/amazon-freight
+description: "Connect Amazon Freight to ShopCtrl over SFTP to automate inbound and outbound logistics data, with sandbox and production environments."
 ---
 
 

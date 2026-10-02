@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 slug: /docs/dropship-supplier
+description: "Turn a ShopCtrl supplier into a dropship supplier, which creates a linked dropship warehouse, or make all new suppliers dropship by default."
 ---
 
 # Dropship Supplier 

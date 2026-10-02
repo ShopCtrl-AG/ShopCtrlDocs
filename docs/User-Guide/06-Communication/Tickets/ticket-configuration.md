@@ -1,6 +1,7 @@
 ---
 sidebar_position: 5
 slug: /docs/ticket-configuration
+description: "Enable and configure ticketing for a ShopCtrl shop, including auto-assigning employees and the communication settings tickets depend on."
 ---
 
 # Ticket Configuration

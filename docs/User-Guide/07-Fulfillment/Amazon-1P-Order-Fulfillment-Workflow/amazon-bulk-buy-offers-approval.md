@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/amazon-bulk-buy-offers-approval
+description: "The four-stage Bulk Buy Offers approval process in ShopCtrl — Commerce, Manufacture, Warehouse, and final upload back to Amazon."
 ---
 
 # Amazon Bulk Buy Offers Approval

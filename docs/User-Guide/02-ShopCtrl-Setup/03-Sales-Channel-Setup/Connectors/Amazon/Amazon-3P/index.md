@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 slug: /docs/amazon-3p
+description: "Connect Amazon 3P Seller Central to ShopCtrl to import orders and products, update tracking numbers, export cancellations and create returns."
 ---
 
 # Amazon 3P

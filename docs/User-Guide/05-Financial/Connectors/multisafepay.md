@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 slug: /docs/multisafepay
+description: "Integrate MultiSafepay with ShopCtrl for a self-hosted checkout page and payment links built from merge fields, with multiple transactions per order."
 ---
 
 # MultiSafepay and ShopCtrl Checkout page

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/understanding-employee-roles-and-permissions
+description: "How roles restrict access to features in ShopCtrl, and what each predefined role from System Admin to Shop Owner Admin is allowed to do."
 ---
 
 # Understanding Employee Roles and Permissions

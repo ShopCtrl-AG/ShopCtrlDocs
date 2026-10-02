@@ -1,6 +1,7 @@
 ---
 sidebar_position: 7
 slug: /docs/exportimport
+description: "Export the filtered ShopCtrl purchase orders table to an Excel file, and create purchase orders through the API."
 ---
 
 # Export/Import 

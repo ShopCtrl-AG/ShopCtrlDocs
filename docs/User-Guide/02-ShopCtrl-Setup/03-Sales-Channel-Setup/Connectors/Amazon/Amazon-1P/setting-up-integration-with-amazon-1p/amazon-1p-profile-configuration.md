@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/amazon-1p-profile-configuration
+description: "Create an app client in Amazon Vendor Central and generate the API credentials that give ShopCtrl access to your Amazon 1P account."
 ---
 
 # Amazon 1P Profile Configuration

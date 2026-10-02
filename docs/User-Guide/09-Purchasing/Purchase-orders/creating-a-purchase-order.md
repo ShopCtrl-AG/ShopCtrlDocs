@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 slug: /docs/creating-a-purchase-order
+description: "Create regular, dropship and back-to-back purchase orders in ShopCtrl, and what needs to be set up before you start."
 ---
 
 # Creating a Purchase Order 

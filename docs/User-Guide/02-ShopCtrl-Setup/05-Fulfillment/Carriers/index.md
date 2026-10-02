@@ -1,78 +1,56 @@
 ---
 sidebar_position: 6
 slug: /docs/carriers
+description: "Carrier accounts in ShopCtrl, and the full list of available shipping integrations including DHL, GLS, UPS, PostNL and Royal Mail."
 ---
+
+import CarrierGrid from '@site/src/components/CarrierGrid';
+
 # Carriers 
 
-Integrations with different shipping services in ShopCtrl are configured through carrier accounts.
-There is a number of integrations available with world-leading logistics companies and international parcel delivery services. 
+Integrations with shipping services in ShopCtrl are configured through carrier accounts. ShopCtrl connects to international parcel services, regional carriers and freight companies.
 
-Here is a list of available integrations:
+## Available carriers
 
-* DHL
-    * DHL Europlus
-    * DHL Express
-    * DHL For You
-    * [DHL Parcel UK](./dhl-parcel-uk.md)
-* DPD
-* [GLS](./gls.md)
-* [UPS](./ups.md)
-* [UK Royal Mail](./royal-mail.md)
-* [Post NL](./postnl.md)
-* [Palletways](./palletways.md)
-* JKB service
-* Raben
-* De Rooy
-* DutchNed
-* [Dynalogic](./dynalogic.md)
+### Parcel carriers
 
+<CarrierGrid carriers={[
+  { name: "DHL", logo: "/img/DHL-LOGO.jpg", services: "Europlus, Express, For You, Parcel UK", guide: "/docs/dhl-parcel-uk" },
+  { name: "DPD" },
+  { name: "GLS", logo: "/img/gls-icon.png", services: "Business Parcel, Euro Business Parcel, Express Parcel", guide: "/docs/gls" },
+  { name: "PostNL", logo: "/img/logo_postnl.png", services: "Parcels, Extra@Home", guide: "/docs/postnl" },
+  { name: "Red je Pakketje" },
+  { name: "Royal Mail", logo: "/img/uk-royal-mail-icon.png", services: "Click & Drop", guide: "/docs/royal-mail" },
+  { name: "UPS", logo: "/img/ups-logo.png", guide: "/docs/ups" },
+]} />
 
-## Managing carriers
+### Pallet and freight
 
-You can effectively distribute orders among carriers based on:
+<CarrierGrid carriers={[
+  { name: "Bowker", logo: "/img/bowker_logo.png", guide: "/docs/bowker" },
+  { name: "De Rooy" },
+  { name: "Dobbe Transport" },
+  { name: "DutchNed" },
+  { name: "Dynalogic", logo: "/img/dynalogic_logo.png", guide: "/docs/dynalogic" },
+  { name: "Hertgers" },
+  { name: "JKB" },
+  { name: "Mainfreight" },
+  { name: "Palletways", logo: "/img/logo_palletways.png", guide: "/docs/palletways" },
+  { name: "Raben" },
+]} />
 
-* Parcel weight
-* Carrier priority
-* Shipping price
+### Amazon shipping
 
-First of all, you can set up different carrier accounts for different **warehouses**. The carrier could be linked to a warehouse or several **shops**.
+<CarrierGrid carriers={[
+  { name: "Amazon Seller Fulfilled Prime", logo: "/img/amazon.jpg", services: "Prime shipping labels for Amazon 3P orders", guide: "/docs/amazon-seller-fulfilled-prime" },
+  { name: "Amazon Freight", logo: "/img/amazon.jpg", services: "Freight bookings for Amazon 1P orders", guide: "/docs/amazon-freight" },
+  { name: "Amazon Direct Fulfillment", logo: "/img/amazon.jpg", services: "Shipping labels for Amazon 1P dropship orders", guide: "/docs/setting-up-direct-fulfillment" },
+]} />
 
-You can also specify shipping **prices** per country for the carrier. These prices will be taken into account in carrier distribution and a cheaper carrier will be a preferred one if other parameters are not specified.
+### Other shipping options
 
-<img src={require("/img/carrier-prices.png").default} height="" width="800" />
-
-:::warning[Please note]
-
-Carrier shipping rates also limit carrier assignment based on the country of destination. Orders to a country that is not listed in the prices tab, won't be assigned to this carrier.
-
-:::
-
-Set carrier priority to a higher number if you would like this carrier to have an advantage over other carriers with similar service terms.
-
-### Distribute shipments based on product dimensions
-
-Carriers in ShopCtrl are specific to the carrier service. This way we could differentiate orders not only between different carriers but also between different services offered by the same carrier based on product dimensions.
-
-How to set up carrier assignment based on product dimensions:
-
-1) Turn on this feature on a shop owner settings: **Configurations > Shop Owners > Shop owner details page > Fulfillment > Shipment Settings > Allow Product General Dimensions to be used for parcel dimensions.**
-<img src={require("/img/shopwner-settings-shipment-settings-dimensions.png").default} height="" width="500" />
-2) Specify **product dimensions** for all of the products you are selling. You can import dimensions along with other details using your sales channel synchronization or [Excel product import](/User-Guide/08-Product-Management/Product-Import/product-import-via-excel.md) option.
-3) Configure limits for the carrier account:
-    1) Go to **Transport > Carrier Accounts** and open a Carrier.
-    2) Click on the Limits tab.
-    3) Set Min and Max **Weight** values in kg or grams.
-    4) (Optional) Set Min and Max **Length**, and max belt size in meters, centimeters, or millimeters.
-    5) (Optional) Set the max **Volume** value in liters.
-    6) **Save** or **Save and Close** carrier account.
-<img src={require("/img/carrier-limits-small-package.png").default} height="" width="500" />
-4) Proceed with configuring limits on other carrier accounts.
-
-:::info[Please note]
-
-Border values are included in the calculation. So if you ship a 3 kg product and set the carrier weight limit to 3 kg, the shipment will be distributed to that carrier.
-If there are several carriers with similar or overlapping limits, you can regulate carrier assignment by adding shipping prices and/or setting carriers' priority.
-
-:::
-
-
+<CarrierGrid carriers={[
+  { name: "Bumbal", services: "Route planning for your own delivery fleet" },
+  { name: "Generic carrier", services: "Any other carrier: enter tracking codes by hand or connect through webhooks" },
+  { name: "Pick up", services: "The customer collects the order" },
+]} />

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/create-employees
+description: "Create an employee account in ShopCtrl: login, full name, public alias, shop assignment and role. Requires the Shop Owner Admin role."
 ---
 
 # Create Employees

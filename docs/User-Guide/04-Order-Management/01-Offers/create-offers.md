@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 slug: /docs/create-offers
+description: "Create an offer in ShopCtrl from the Sales > Offers page or a customer details page, adding the customer and the products quoted."
 ---
 # Create Offers
 

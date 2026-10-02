@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 slug: /docs/merge-fields-in-document-templates
+description: "Insert ShopCtrl merge fields into a Word document template using Word's Quick Parts, with the correct field names and formatting."
 ---
 
 # Merge Fields in Document Templates

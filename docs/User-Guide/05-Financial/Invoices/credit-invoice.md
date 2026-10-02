@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/credit-invoice
+description: "Credit invoices in ShopCtrl cancel a previous invoice in full or in part — for refunds, returns, invoice errors or invoices issued by mistake."
 ---
 
 # Credit Invoice

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 slug: /docs/tracking-update
+description: "Send tracking information to customers from ShopCtrl using triggers, and export track and trace details back to the originating sales channel."
 ---
 
 # Tracking Update 

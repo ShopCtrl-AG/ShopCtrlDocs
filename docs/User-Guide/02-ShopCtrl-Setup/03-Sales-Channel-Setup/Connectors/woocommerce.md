@@ -1,6 +1,7 @@
 ---
 sidebar_position: 10
 slug: /docs/woocommerce
+description: "Connect WooCommerce to ShopCtrl using REST API keys to import orders, synchronize products and export stock levels."
 ---
 
 # WooCommerce

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 slug: /docs/configure-returns
+description: "Configure returns in ShopCtrl by defining the return reasons and conditions your company uses, plus custom return and return row statuses."
 ---
 # Configure Returns 
 

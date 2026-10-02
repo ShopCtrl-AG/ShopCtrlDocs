@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 slug: /docs/creating-return-label
+description: "Generate a return label in ShopCtrl as a parcel with the Return option enabled, including the carrier and ship-from address prerequisites."
 ---
 # Creating Return Label
 

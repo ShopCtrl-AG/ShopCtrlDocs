@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 slug: /docs/packing-instructions
+description: "Create customized packing instructions in ShopCtrl per destination country, product or customer, including customs and document requirements."
 ---
 
 # Packing instructions

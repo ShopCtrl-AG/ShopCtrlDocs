@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 slug: /docs/shipment-item-placement
+description: "Record where each item sits inside a ShopCtrl group shipment — which pallet and which carton — to build the pack data sent to Amazon in the ASN."
 ---
 
 # Item Placement in Group Shipments

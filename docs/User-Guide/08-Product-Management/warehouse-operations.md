@@ -1,6 +1,7 @@
 ---
 sidebar_position: 12
 slug: /docs/warehouse-operations
+description: "Scan and manage stock items in ShopCtrl, review the stock counts performed per location and move advanced stock items between locations."
 ---
 # Warehouse Operations 
 

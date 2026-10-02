@@ -1,0 +1,5 @@
+# https://support.shopctrl.com/robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://support.shopctrl.com/sitemap.xml

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 slug: /docs/setting-up-dropship-fulfillment
+description: "Set up dropship fulfillment in ShopCtrl so suppliers ship directly to your customers, starting with dropship suppliers and carrier accounts."
 ---
 
 # Setting up Dropship Fulfillment

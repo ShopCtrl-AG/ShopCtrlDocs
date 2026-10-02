@@ -1,6 +1,7 @@
 ---
 sidebar_position: 6
 slug: /docs/affiliates
+description: "Track how many orders each affiliate brings you in ShopCtrl by configuring affiliates and running the Affiliate Orders report."
 ---
 
 # Affiliates

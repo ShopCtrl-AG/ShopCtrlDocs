@@ -1,6 +1,7 @@
 ---
 sidebar_position: 8
 slug: /docs/shopware-6
+description: "Connect Shopware 6 to ShopCtrl to import orders and products, starting with an API user role and integration in your Shopware account."
 ---
 
 # Shopware v6

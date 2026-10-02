@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 slug: /docs/importing-orders
+description: "How ShopCtrl imports orders from each sales channel, which data is synchronized, and how customized products are handled."
 ---
 
 # Importing Orders

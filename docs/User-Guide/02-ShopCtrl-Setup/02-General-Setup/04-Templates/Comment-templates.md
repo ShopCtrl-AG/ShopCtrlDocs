@@ -1,8 +1,10 @@
 ---
 sidebar_position: 3
 slug: /docs/comment-templates
+description: "Create reusable comment templates in ShopCtrl for order, order return, ticket and task comments to keep wording fast and consistent."
 ---
 
+# Comment Templates
 
 ShopCtrl is excited to announce a new feature that enhances productivity and ensures a consistent format for comments throughout the platform: **Comment Templates**. 
 Comment Templates are pre-configured snippets of text designed to streamline comment creation. This feature allows users to create pre-defined templates for comments on orders, order returns, tickets, and tasks. It helps teams maintain a unified structure in communication while addressing key points efficiently.

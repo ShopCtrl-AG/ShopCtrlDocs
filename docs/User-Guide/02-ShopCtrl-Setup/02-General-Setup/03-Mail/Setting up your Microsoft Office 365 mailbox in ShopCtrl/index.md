@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 slug: /docs/setting-up-your-microsoft-office-365-mailbox-in-shopctrl
+description: "Two ways to connect a Microsoft Office 365 mailbox to ShopCtrl — POP3/IMAP with SMTP, or the Microsoft Graph API — both secured with OAuth2."
 ---
 
 # Setting up your Microsoft Office 365 mailbox in ShopCtrl

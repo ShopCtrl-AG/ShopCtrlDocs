@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 slug: /docs/product-details
+description: "The ShopCtrl product details page: the top information panel, translation selector, product locking, and the topic menu tabs holding all product data."
 ---
 # Product Details 
 

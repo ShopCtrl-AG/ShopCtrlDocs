@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 slug: shopctrl-architecture
+description: "A graphical overview of the ShopCtrl platform architecture and how its components fit together."
 ---
 
 # ShopCtrl Architecture

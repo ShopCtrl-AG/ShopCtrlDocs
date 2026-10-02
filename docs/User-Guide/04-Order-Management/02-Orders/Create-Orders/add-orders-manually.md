@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/add-orders-manually
+description: "Create an order manually in ShopCtrl for phone or wholesale sales, adding customer details, order rows and further order details."
 ---
 
 # Add Orders Manually

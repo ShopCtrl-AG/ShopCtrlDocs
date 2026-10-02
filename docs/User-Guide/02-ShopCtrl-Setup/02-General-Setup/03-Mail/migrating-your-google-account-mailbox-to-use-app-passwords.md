@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 slug: /docs/migrating-your-google-account-mailbox-to-use-app-passwords
+description: "Migrate a ShopCtrl Google mailbox connection from basic password authentication to a more secure Google App password, in four steps."
 ---
 
 # Migrating your Google Account mailbox to use App passwords

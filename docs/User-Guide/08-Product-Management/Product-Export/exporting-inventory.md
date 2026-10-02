@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/exporting-inventory
+description: "Update product stock levels from ShopCtrl to your sales channels, including real-time Shopify updates mapped from warehouses to locations."
 ---
 # Exporting Inventory 
 

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 8
 slug: /docs/purchase-orders-prices-handling
+description: "How ShopCtrl determines purchase prices and profit margins, and when exchange rates are applied across the purchase order lifecycle."
 ---
 
 

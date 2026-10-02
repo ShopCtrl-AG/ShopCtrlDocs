@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/amazon-1p-setting-up-shopctrl-synchronization
+description: "Set up Amazon 1P shop synchronization in ShopCtrl, including currency, VAT tariffs, payment types and how customer contact data is stored."
 ---
 
 

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 5
 slug: /docs/obfuscating-customer-and-order-data
+description: "Obfuscate personal data in inactive ShopCtrl customer and order records, manually or as a scheduled night task, to meet data retention policies."
 ---
 
 # Obfuscating Customer and Order Data

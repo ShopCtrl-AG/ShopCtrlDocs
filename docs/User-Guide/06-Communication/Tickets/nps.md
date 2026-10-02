@@ -1,6 +1,7 @@
 ---
 sidebar_position: 8
 slug: /docs/nps
+description: "Configure automated Net Promoter Score (NPS) feedback requests per shop in ShopCtrl. Requires the Shop Admin role."
 ---
 # Configure Net Promoter Score (NPS) Feedback for Your Shops
 

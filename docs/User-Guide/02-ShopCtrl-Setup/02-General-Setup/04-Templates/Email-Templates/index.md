@@ -1,5 +1,6 @@
 ---
 slug: /docs/email-templates
+description: "Email templates in ShopCtrl send mail automatically when an order is placed, a shipment is created or goods are purchased, with template kinds explained."
 ---
 
 # Email Templates

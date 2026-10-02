@@ -2,6 +2,7 @@
 sidebar_position: 1
 id: intro
 slug: /
+description: "Start here: what the ShopCtrl platform does and how this guide is organized, from setup and order management to fulfillment, products and purchasing."
 ---
 
 # Welcome to ShopCtrl

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/messaging-overview
+description: "ShopCtrl messaging over WhatsApp and webchat: distribute incoming chats, link messages to orders, tickets and customers, and keep history in one place."
 ---
 
 # Messaging Overview

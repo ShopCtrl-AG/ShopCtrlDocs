@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 slug: /docs/bol
+description: "Connect Bol.com to ShopCtrl using Retailer API credentials to import orders, update tracking numbers and keep inventory in sync."
 ---
 
 # Bol.com

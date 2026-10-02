@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/import-supplier-products
+description: "Import supplier product names, SKUs, prices, stock and delivery times into ShopCtrl, linking automatically by SKU or EAN on a schedule."
 ---
 
 # Import Supplier Products 

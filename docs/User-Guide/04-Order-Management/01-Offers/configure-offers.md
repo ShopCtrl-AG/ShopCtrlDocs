@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 slug: /docs/configure-offers
+description: "Prepare ShopCtrl for offers by setting up a document template, email templates per language and the offer statuses used to track progress."
 ---
 # Configure Offers
 

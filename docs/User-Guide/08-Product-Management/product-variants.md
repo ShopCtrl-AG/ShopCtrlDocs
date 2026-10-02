@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 slug: /docs/product-variants
+description: "Turn a ShopCtrl product into a parent product and generate its variants from a property set, such as size or color."
 ---
 # Product Variants 
 

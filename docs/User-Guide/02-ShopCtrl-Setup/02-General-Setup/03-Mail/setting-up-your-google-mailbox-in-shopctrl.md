@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 slug: /docs/setting-up-your-google-mailbox-in-shopctrl
+description: "Connect a Google mailbox to ShopCtrl using App password authentication, in four steps beginning with 2-Step Verification in the admin console."
 ---
 
 # Setting up your Google mailbox in ShopCtrl

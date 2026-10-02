@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 slug: /docs/rotating-your-amazon-1p-connectors-credentials
+description: "Rotate the Login with Amazon (LWA) client secret for your ShopCtrl Amazon 1P application, in two steps, to keep the connector working."
 ---
 # Rotating your Amazon 1P connector's credentials
 

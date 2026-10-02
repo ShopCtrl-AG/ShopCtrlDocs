@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 slug: /docs/favorites
+description: "Use Favorites in ShopCtrl to bookmark pages, save all open tabs at once and restore tab history for quicker access."
 ---
 
 # Favorites

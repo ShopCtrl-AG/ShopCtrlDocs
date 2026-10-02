@@ -1,6 +1,7 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 slug: /docs/dynalogic
+description: "Integrate the Dynalogic carrier with ShopCtrl to send shipments, print PDF labels, share tracking details and cancel shipping labels."
 ---
 # Dynalogic 
 

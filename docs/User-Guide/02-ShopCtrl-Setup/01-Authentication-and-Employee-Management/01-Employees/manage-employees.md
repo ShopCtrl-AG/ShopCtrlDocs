@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 slug: /docs/manage-employees
+description: "View, filter, edit and deactivate employee accounts in ShopCtrl from the Configuration > Employees list."
 ---
 
 # Manage Employees

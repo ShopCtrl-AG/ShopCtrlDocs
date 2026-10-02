@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 slug: /docs/creating-dropshipment
+description: "Create a dropshipment in ShopCtrl so a supplier ships an order directly to your customer, using configured dropship suppliers and purchase prices."
 ---
 # Creating Dropshipment 
 

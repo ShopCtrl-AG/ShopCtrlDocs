@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/customizing-the-table-layout
+description: "Sort and group ShopCtrl table columns, and adjust the table layout to suit the way you work."
 ---
 
 # Customizing the Table Layout

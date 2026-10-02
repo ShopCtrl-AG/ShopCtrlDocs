@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 slug: /docs/setting-up-bulk-buy-offers
+description: "Prepare ShopCtrl for Amazon Bulk Buy Offers: role authorization, expiry alert notifications, and ASIN and EAN mapping on your products."
 ---
 
 # Setting up Bulk Buy Offers

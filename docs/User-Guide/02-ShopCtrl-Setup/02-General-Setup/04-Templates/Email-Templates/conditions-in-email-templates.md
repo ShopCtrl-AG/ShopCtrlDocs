@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 slug: /docs/conditions-in-email-templates
+description: "Add conditional blocks to ShopCtrl email templates so content appears only when a merge field has a value or matches a given text."
 ---
 
 # Conditions in Email Templates

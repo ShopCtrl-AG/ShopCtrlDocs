@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/creating-shipment
+description: "Ship an order in ShopCtrl by allocating stock from one or more warehouses or dropship suppliers, then creating the shipment."
 ---
 # Creating Shipment 
 

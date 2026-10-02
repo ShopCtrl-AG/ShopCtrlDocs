@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/amazon-1p
+description: "The Amazon 1P Vendor Central integration in ShopCtrl: purchase order import, bulk buy offers, group shipments, ASN and direct fulfillment."
 ---
 
 # Amazon 1P

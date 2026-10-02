@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 slug: /docs/handling-incoming-messages
+description: "Handle incoming chats in ShopCtrl: set your availability, receive new message notifications and reply from the messaging interface."
 ---
 
 # Handling Incoming Messages

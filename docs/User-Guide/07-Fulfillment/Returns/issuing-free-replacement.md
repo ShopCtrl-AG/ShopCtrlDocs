@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 slug: /docs/issuing-free-replacement
+description: "Send a free replacement to a customer in ShopCtrl when a product arrives damaged and the buyer keeps the original item."
 ---
 # Issuing Free Replacement 
 

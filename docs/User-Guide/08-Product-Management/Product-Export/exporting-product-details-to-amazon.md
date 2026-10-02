@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 slug: /docs/exporting-product-details-to-amazon
+description: "Publish or unpublish Amazon listings from ShopCtrl and export changed product prices through the Amazon shop synchronization settings."
 ---
 # Exporting product details to Amazon 
 

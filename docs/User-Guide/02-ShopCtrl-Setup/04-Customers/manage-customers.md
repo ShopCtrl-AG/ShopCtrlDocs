@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 slug: /docs/manage-customers
+description: "Search, filter and open customers in ShopCtrl to review order statistics, conversation history, invoices, contracts and returns."
 ---
 
 # Manage customers

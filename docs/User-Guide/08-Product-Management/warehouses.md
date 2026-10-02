@@ -1,6 +1,7 @@
 ---
 sidebar_position: 10
 slug: /docs/warehouses
+description: "Warehouse types in ShopCtrl — private, fulfilment, supplier and dropship — plus warehouse addresses and the priority used when allocating stock."
 ---
 # Warehouses 
 

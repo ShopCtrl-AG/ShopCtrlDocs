@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/amazon-vdf-setting-up-shopctrl-synchronization
+description: "Configure Amazon Direct Fulfillment synchronization in ShopCtrl, including shop currency, VAT tariffs, payment types and contact info handling."
 ---
 
 # Setting up VDF Synchronization in ShopCtrl

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/create-supplier
+description: "Create a supplier in ShopCtrl with company and contact details, the email used for purchase orders, and external reference codes."
 ---
 
 # Create Supplier 

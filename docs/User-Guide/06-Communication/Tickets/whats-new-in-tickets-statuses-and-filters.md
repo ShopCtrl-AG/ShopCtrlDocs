@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 slug: /docs/whats-new-in-tickets-statuses-and-filters
+description: "The redesigned ShopCtrl ticket statuses: Open becomes Todo, new waiting states are added, and the top box filters that go with them."
 ---
 
 # What's New in Tickets: Ticket Statuses and Filters

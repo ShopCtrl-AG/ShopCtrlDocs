@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 slug: /docs/puchase-order-details
+description: "A walkthrough of the ShopCtrl purchase order details page, covering every action in the top menu and the data held on each tab."
 ---
 # Purchase Order Details 
 

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 slug: /docs/setting-up-email-protocols-to-your-microsoft-office-365-mailbox-in-shopctrl
+description: "Connect a Microsoft Office 365 mailbox to ShopCtrl over POP3, IMAP and SMTP using OAuth authorization, in five steps with video instructions."
 ---
 
 # Setting up Email protocols to your Microsoft Office 365 mailbox in ShopCtrl

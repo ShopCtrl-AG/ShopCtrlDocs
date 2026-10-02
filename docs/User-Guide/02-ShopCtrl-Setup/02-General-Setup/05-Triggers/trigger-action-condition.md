@@ -1,6 +1,7 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 slug: /docs/trigger-action-condition
+description: "Use the Condition action in a ShopCtrl trigger to evaluate entity properties and either stop or continue the remaining actions."
 ---
 
 # Trigger Action: Condition

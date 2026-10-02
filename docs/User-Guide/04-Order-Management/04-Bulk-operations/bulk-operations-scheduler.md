@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/bulk-operations-scheduler
+description: "Schedule a ShopCtrl bulk operation to run automatically at a set interval, using the same settings as the manual operation."
 ---
 
 # Bulk Operations Scheduler

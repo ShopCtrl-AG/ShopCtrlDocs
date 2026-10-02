@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 slug: /docs/mirakl-stock-price-export
+description: "Compare ShopCtrl stock and prices against live Mirakl offers, correct the differences, and export the comparison to Excel."
 ---
 
 # Mirakl Stock & Price Export

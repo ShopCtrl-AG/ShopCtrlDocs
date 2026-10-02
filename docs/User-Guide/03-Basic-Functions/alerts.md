@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/alerts
+description: "Alerts in ShopCtrl flag errors, warnings and information about problems in the system, with banners on the orders grid and a per-order alerts tab."
 ---
 
 # Alerts

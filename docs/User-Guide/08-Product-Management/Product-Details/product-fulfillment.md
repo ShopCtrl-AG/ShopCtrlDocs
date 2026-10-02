@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 slug: /docs/product-fulfillment
+description: "The Fulfillment tab of a ShopCtrl product: carriers available for the product, reference shipping prices and product package measurements."
 ---
 # Product Fulfillment 
 

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 slug: /docs/navigating-in-shopctrl
+description: "A tour of the ShopCtrl web interface: the navigation pane, dynamic tab panes, customizable logo section and how to move between features."
 ---
 
 # Navigating in ShopCtrl

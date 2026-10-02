@@ -1,6 +1,7 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 slug: /docs/gls
+description: "Integrate GLS with ShopCtrl using MyGLS credentials to send parcel and freight orders, book express services and receive labels and tracking."
 ---
 
 # GLS 

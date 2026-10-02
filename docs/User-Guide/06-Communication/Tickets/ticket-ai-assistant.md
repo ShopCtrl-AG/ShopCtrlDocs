@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 slug: /docs/ticket-ai-assistant
+description: "The ShopCtrl Ticket AI Assistant summarizes and categorizes tickets from mail, titles and comments. Configured per shop with an OpenAI API key."
 ---
 
 # Ticket AI Assistant

@@ -1,0 +1,132 @@
+.figure {
+  margin: 0 0 2rem;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.legendItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legendBadge {
+  padding: 0.1rem 0.6rem;
+  border-radius: 999px;
+  background: var(--ifm-color-primary);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.legendStep {
+  display: inline-block;
+  width: 2.2rem;
+  height: 1.1rem;
+  border: 1px solid var(--ifm-color-emphasis-400);
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-100);
+}
+
+/* Keep the diagram readable on phones: scroll sideways instead of shrinking */
+.scroll {
+  overflow-x: auto;
+}
+
+.svg {
+  display: block;
+  width: 100%;
+  min-width: 620px;
+  max-width: 760px;
+  height: auto;
+  font-family: var(--ifm-font-family-base);
+}
+
+.card {
+  fill: var(--ifm-background-surface-color);
+  stroke: var(--ifm-color-primary);
+  stroke-width: 1.5;
+  transition: stroke-width 0.15s;
+}
+
+.cardLink:hover .card,
+.cardLink:focus .card {
+  stroke-width: 3;
+}
+
+.badge {
+  fill: var(--ifm-color-primary);
+}
+
+.bolt {
+  fill: #fff;
+}
+
+.badgeText {
+  fill: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.label {
+  fill: var(--ifm-color-primary);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.value {
+  fill: var(--ifm-font-color-base);
+  font-size: 14px;
+}
+
+.step {
+  fill: var(--ifm-color-emphasis-100);
+  stroke: var(--ifm-color-emphasis-400);
+}
+
+.stepText {
+  fill: var(--ifm-color-emphasis-800);
+  font-size: 14px;
+}
+
+.decision {
+  fill: var(--ifm-color-emphasis-100);
+  stroke: var(--ifm-color-emphasis-500);
+}
+
+.decisionText {
+  fill: var(--ifm-font-color-base);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.arrow,
+.arrowDashed {
+  fill: none;
+  stroke: var(--ifm-color-emphasis-500);
+  stroke-width: 1.5;
+}
+
+.arrowDashed {
+  stroke-dasharray: 5 4;
+}
+
+.arrowHead {
+  fill: var(--ifm-color-emphasis-500);
+}
+
+.arrowLabel {
+  fill: var(--ifm-color-emphasis-700);
+  font-size: 12px;
+  font-weight: 600;
+}

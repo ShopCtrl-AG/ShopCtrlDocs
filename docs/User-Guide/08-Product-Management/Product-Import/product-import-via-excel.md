@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/product-import-via-excel
+description: "Import product details, prices, availability and stock levels into ShopCtrl from Excel, using customizable import profiles per shop group."
 ---
 # Product Import via Excel 
 

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 slug: /docs/ebay
+description: "Step-by-step setup for integrating an eBay shop with ShopCtrl, from joining the eBay Developers Program to obtaining production API keys."
 ---
 
 # eBay

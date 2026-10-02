@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 slug: /docs/manage-roles-and-permissions
+description: "Create and edit roles in ShopCtrl by copying a predefined role and adjusting its permissions to match your own access requirements."
 ---
 
 # Manage Roles and Permissions

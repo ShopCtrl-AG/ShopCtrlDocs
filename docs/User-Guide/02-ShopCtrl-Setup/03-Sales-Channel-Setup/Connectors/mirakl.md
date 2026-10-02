@@ -1,6 +1,7 @@
 ---
 sidebar_position: 6
 slug: /docs/mirakl
+description: "Connect Mirakl to ShopCtrl to import and accept orders, send shipment information and sync stock, with products mapped by Offer SKU."
 ---
 
 # Mirakl

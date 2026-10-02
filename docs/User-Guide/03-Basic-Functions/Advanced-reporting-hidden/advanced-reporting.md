@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/report-deep-links-ticketlist
+description: "Build ShopCtrl reports that deep-link into filtered ticket views using the additionalQueryParams argument of the OpenDetailTabForEdit function."
 ---
 
 # Building Dynamic Reports with Deep Links to Filtered Ticket Views

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 slug: /docs/how-to-add-asin-and-ean-to-your-products
+description: "Store EAN at product level and ASIN as a product property in ShopCtrl so Amazon products map correctly during import and export."
 ---
 # Adding ASIN and EAN to Your Products 
 

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/create-shop
+description: "Create a shop in ShopCtrl — a webshop, marketplace or in-store channel — with its own currency, branding, contact details and templates."
 ---
 
 # Create Shop

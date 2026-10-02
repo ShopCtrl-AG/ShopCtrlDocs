@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 slug: /docs/collections-in-email-templates
+description: "Use RangeStart and RangeEnd collections in ShopCtrl email templates to repeat merge fields such as order rows."
 ---
 
 # Collections in Email Templates

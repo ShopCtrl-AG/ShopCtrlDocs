@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/setting-up-mailbox-in-shopctrl
+description: "Configure incoming and outgoing mail servers for a ShopCtrl shop using POP3, IMAP and SMTP with basic authentication."
 ---
 
 # Setting up mailbox in ShopCtrl

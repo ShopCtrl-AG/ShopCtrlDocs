@@ -1,6 +1,7 @@
 ---
 sidebar_position: 5
 slug: /docs/manomano
+description: "Connect ManoMano to ShopCtrl with a production API key to import and accept orders and send tracking information back to ManoMano."
 ---
 
 # Mano Mano

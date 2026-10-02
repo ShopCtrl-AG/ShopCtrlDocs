@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 slug: /docs/messaging-configuration
+description: "Configure ShopCtrl messaging with the MessageBird widget and WhatsApp Business, covering workspace setup and channel installation."
 ---
 
 # Messaging Configuration

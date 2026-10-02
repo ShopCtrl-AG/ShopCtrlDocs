@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 slug: /docs/magento-2
+description: "Connect Magento 2 to ShopCtrl via the REST API to import orders, export track and trace details, synchronize products and push stock levels."
 ---
 
 # Magento 2

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 slug: /docs/product-purchasing
+description: "The Supplier tab of a ShopCtrl product: supplier purchase prices, supplier priority, preferred suppliers and time-bound price changes."
 ---
 # Product Purchasing 
 

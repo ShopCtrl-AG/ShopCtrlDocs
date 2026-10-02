@@ -1,5 +1,6 @@
 ---
 slug: /docs/sales-channel-setup
+description: "Set up sales channels in ShopCtrl, each with its own trading name, logo, company and financial information, default templates and VAT rates."
 ---
 
 # Sales Channel Setup

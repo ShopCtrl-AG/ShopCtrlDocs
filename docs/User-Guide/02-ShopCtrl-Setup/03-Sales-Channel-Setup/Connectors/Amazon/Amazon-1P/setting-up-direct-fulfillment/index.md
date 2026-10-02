@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/setting-up-direct-fulfillment
+description: "Amazon 1P Direct Fulfillment (VDF) in ShopCtrl: import dropship purchase orders, accept or reject them, request labels and confirm shipments."
 ---
 
 # Setting up Direct Fulfillment

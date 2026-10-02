@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 slug: /docs/sla-new
+description: "Configure service level agreements per shop and communication channel in ShopCtrl, including availability hours, response times and time zones."
 ---
 
 # Service Level Agreement

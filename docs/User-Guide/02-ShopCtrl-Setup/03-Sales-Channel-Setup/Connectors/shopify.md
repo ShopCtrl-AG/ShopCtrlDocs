@@ -1,6 +1,7 @@
 ---
 sidebar_position: 7
 slug: /docs/shopify
+description: "Connect Shopify to ShopCtrl to import orders and product details, update tracking and fulfillment, and keep Shopify inventory in sync."
 ---
 
 # Shopify

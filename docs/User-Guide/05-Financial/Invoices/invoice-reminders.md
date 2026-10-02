@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 slug: /docs/invoice-reminders
+description: "Set up automatic payment reminders in ShopCtrl, choosing when each reminder is sent after the invoice due date and what it contains."
 ---
 
 # Invoice Reminders

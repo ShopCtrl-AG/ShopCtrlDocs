@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/create-customers
+description: "Create a customer manually in ShopCtrl for an individual or a company, alongside the customers imported automatically from your sales channels."
 ---
 
 # Create customers

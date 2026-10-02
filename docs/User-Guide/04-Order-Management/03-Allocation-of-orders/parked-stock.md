@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/parked-stock
+description: "Park stock in ShopCtrl to reserve it outside the normal allocation flow, and deallocate products already assigned to orders."
 ---
 
 # Parked Stock

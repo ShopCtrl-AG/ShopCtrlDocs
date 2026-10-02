@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 slug: /docs/number-ranges
+description: "Configure number ranges in ShopCtrl for orders, offers and invoices, including prefixes, digit counts, chronological formats and reset periods."
 ---
 
 # Number Ranges

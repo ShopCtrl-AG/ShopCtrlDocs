@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/creating-and-editing-document-templates
+description: "Create or edit a ShopCtrl document template by building a Word file with merge fields and uploading it under Configuration > Templates."
 ---
 
 # Creating and Editing Document Templates

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 6
 slug: /docs/mail-and-ticket-categories
+description: "Create generic or shop-specific mail and ticket categories in ShopCtrl to route requests, spot repeat issues and drive ticket reporting."
 ---
 
 # Mail and Ticket Categories

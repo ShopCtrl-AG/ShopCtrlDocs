@@ -1,6 +1,7 @@
 ---
 sidebar_position: 8
 slug: /docs/amazon-1p-order-fulfillment-workflow
+description: "The full Amazon 1P order fulfillment workflow in ShopCtrl, from importing purchase orders and acknowledging them through to shipment and ASN."
 ---
 
 

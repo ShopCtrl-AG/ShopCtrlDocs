@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 slug: /docs/messaging-interface
+description: "The ShopCtrl messaging window under Communication > Messages: the conversation list, message filters and the customer dialog pane."
 ---
 
 # Messaging Interface

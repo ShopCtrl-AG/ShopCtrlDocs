@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/product-sales
+description: "The Sales tabs of a ShopCtrl product: sales history graphs, average price, the orders containing the product, and reserved orders."
 ---
 # Product Sales 
 

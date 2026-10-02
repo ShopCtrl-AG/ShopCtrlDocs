@@ -1,6 +1,7 @@
 ---
-sidebar_position: 9
+sidebar_position: 10
 slug: /docs/migrating-to-the-new-oauth-for-ups-integration
+description: "Migrate the ShopCtrl UPS integration to OAuth 2.0, required by UPS since August 2024, by creating an application on the UPS Developer Portal."
 ---
 
 

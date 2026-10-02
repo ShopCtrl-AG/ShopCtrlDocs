@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/creating-and-editing-email-templates
+description: "Create or edit an email template in ShopCtrl at generic or shop level, setting its name, mail kind and type under Configuration > Templates."
 ---
 
 # Creating and Editing Email Templates

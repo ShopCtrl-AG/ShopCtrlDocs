@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/setting-up-integration-with-amazon-1p
+description: "Connect Amazon 1P Vendor Central to ShopCtrl to import purchase orders, approve bulk buy offers and pack shipments for Amazon fulfillment centers."
 ---
 
 # Setting up Integration with Amazon 1P

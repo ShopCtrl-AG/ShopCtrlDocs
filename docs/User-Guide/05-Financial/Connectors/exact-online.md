@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/exact-online
+description: "Connect ShopCtrl to Exact Online with the Sync connector for a fully automated link, or the Export connector for XML invoices imported manually."
 ---
 
 # Exact Online

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 slug: /docs/processing-customer-gdpr-requests
+description: "Process GDPR right-to-be-forgotten requests in ShopCtrl using customer-level anonymization. Requires permission to delete customers."
 ---
 
 # Processing Customer GDPR Requests

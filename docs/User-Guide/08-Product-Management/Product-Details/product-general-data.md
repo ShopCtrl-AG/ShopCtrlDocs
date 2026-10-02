@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 slug: /docs/product-general-data
+description: "The General tab of a ShopCtrl product: short and long descriptions, order row comments, internal notes, fulfillment options and product dimensions."
 ---
 # Product General Data 
 

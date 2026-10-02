@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 slug: /docs/employee-groups
+description: "Create employee groups in ShopCtrl for departments such as Sales, Support and Accounting, and make contact details visible in the Colleagues book."
 ---
 
 # Employee groups

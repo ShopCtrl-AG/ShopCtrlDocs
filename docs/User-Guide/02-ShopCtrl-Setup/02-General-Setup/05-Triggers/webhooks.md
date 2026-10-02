@@ -1,6 +1,7 @@
 ---
-sidebar_position: 1
+sidebar_position: 5
 slug: /docs/webhooks
+description: "Send webhooks from ShopCtrl to external applications when orders, invoices, shipments, products, tickets and other data change, with default JSON payloads per event."
 ---
 
 # Webhooks
@@ -13,25 +14,34 @@ An employee must be assigned to the shop with a **Shop Owner Admin** role to per
 
 ## Overview
 
-**Webhooks** are part of the ShopCtrl **Triggers** functionality. There is a possibility to send webhooks to your external target applications after a certain event in ShopCtrl.
+**Webhooks** are part of the ShopCtrl **Triggers** functionality. With the **Call Webhook** action, ShopCtrl sends a request to your external application when a certain event happens in ShopCtrl.
 
-A trigger could be raised for different events connected with change on:
+A webhook can be sent for events in these areas:
 
-- orders
-- products
-- invoices
-- shipments
-- parcels
-- purchase orders
-- returns
+- Orders
+- Invoices
+- Shipments and parcels
+- Returns
+- Products
+- Purchase orders
+- Stock counts
+- Customers
+- Tickets
+- Service and rental contracts
+- Shops
+- VoIP calls
+
+For the full list, see [Trigger events](/User-Guide/02-ShopCtrl-Setup/02-General-Setup/05-Triggers/trigger-events.md).
 
 Webhook main features:
 
-- Support of basic HTTP authentication
-- Prioritizing webhooks in the queue
-- Customize payload using merge fields
-- There is a possibility to add an HMAC signature and /or Client Certificate
-- Retry mechanism If a webhook response was unsuccessful, it would retry up to 10 times. If the response still returns an error, an alert will be created.
+- **Basic HTTP authentication** with a username and password.
+- **Priority** - webhooks with a higher priority are sent first from the queue.
+- **Custom payload** built with merge fields, or a [default payload](#default-webhook-payloads) for each event.
+- **HMAC signature** - ShopCtrl signs the request body with HMAC-SHA512 using your secret, and sends the signature as a lowercase hex string in the `X-SIGNATURE` header.
+- **Client certificate** added to each request.
+- **Unique queue items** - optionally skip a webhook if the same one is still waiting in the queue.
+- **Retries** - if a webhook fails, ShopCtrl tries again, up to 10 attempts by default. The wait grows with each attempt: 90 seconds after the first failure, 180 seconds after the second, and so on. If the last attempt fails, an alert is created.
 
 ## How to create trigger with call webhook action
 
@@ -68,42 +78,63 @@ For example, to create a trigger action that will call an external target after 
 
 :::info[Please note]
 
-Leave the payload empty to send the default payload in JSON. The default payload depends on the **event** type of the trigger.
-For example, for order type event, the `{"OrderId":"$$Order.ID$$","OrderCode":"$$Order.OrderCode$$"}` of the order on which the trigger fired will be sent.
+Leave the payload empty to send the default payload in JSON. The default payload depends on the **event** type of the trigger, see [Default webhook payloads](#default-webhook-payloads).
 
 :::
 
 ### Default webhook payloads
 
-When webhooks are triggered, the payload sent by our system can vary depending on the type of entity and the event. If the payload configuration is not manually set, the system sends the default JSON payload for the event.
+If you leave the payload empty, ShopCtrl sends a default JSON payload. Every webhook, with a default or a custom payload, is sent in the same wrapper:
 
-Key Notes:
-* Payload fields differ based on the event and entity type.
-* Fields are populated only if the relevant data is available at the time of the event. If not, they will appear as null.
+```json
+{
+  "Trigger": "ShipmentShipped",
+  "TriggerActionId": 123,
+  "Data": {
+    "ParcelId": 4567,
+    "TrackingCode": "3SABCD1234567",
+    "OrderShipmentId": 890,
+    "OrderShipmentCode": "SH-10025",
+    "OrderId": 1234,
+    "OrderCode": "SO-10025"
+  }
+}
+```
 
-Below is a detailed list of the trigger events and their corresponding fields in the entityData object:
+- **Trigger** - the event that fired the trigger, as its system name without spaces, for example `OrderMainStatusChanged` or `ShipmentShipped`.
+- **TriggerActionId** - the ID of the Call Webhook action that sent the request.
+- **Data** - the default fields for the event, listed below. If you set a custom payload, **Data** contains your payload instead.
 
-| Trigger Event | Fields in entityData |
+Fields are filled in only if the data is available when the event happens. A missing ID is sent as `null`. For shipment and return events, a missing code is sent as an empty string (`""`).
+
+| Trigger event | Fields in Data |
 | --- | --- |
-| Product Created<br />Product Changed<br />Product Deleted<br />Product Available Stock Changed<br />Product Locked<br />Product Unlocked<br />Product Dimensions Changed | ProductId<br /> ProductCode<br /> ShopGroupId |
-| Product Package Created<br />Product Package Changed | ProductPackageId<br /> ProductId<br /> ShopGroupId |
-| Product Package Deleted | ProductPackageId<br /> ProductId<br /> ShopGroupId |
-| Product Selection Product Changed<br />Product Selection Product Deleted | ProductId<br /> ProductCode<br /> ProductSelectionProductId<br /> ShopId |
-| Product Group Changed<br />Product Group Deleted | ProductGroupId<br /> ProductGroupName |
-| Order Customer Rating Changed | OrderId<br /> OrderCode<br /> CustomerRating |
-| Order Comment Changed | OrderCommentId<br /> OrderId<br /> OrderCode<br /> TicketId<br /> TicketCode |
-| Invoice Payments Done<br />Order Invoices All Paid<br />Invoice Payments Not Done<br />Invoice Payments Partial Done<br />Non Draft Invoice Saved<br />Non Draft Credit Invoice Saved<br />Order Invoices Created | InvoiceId<br /> InvoiceCode<br /> OrderId<br /> OrderCode |
-| New Shop Saved<br />Init New Shop | ShopId |
-| Purchase Order Created<br />Purchase Order Delivery Provisioned<br />Purchase Order Delivery Received<br />Purchase Order Handed Over<br />Purchase Order Provisioned<br />Purchase Order Received<br />Purchase Order Main Status Changed<br />Purchase Order Submit Status Changed<br />Purchase Order Payment Status Changed<br />Purchase Order Provision Status Changed<br />Purchase Order Custom Status Changed | PurchaseOrderId<br /> PurchaseOrderCode<br /> SupplierId<br /> WarehouseId<br /> OrderId<br /> OrderCode<br /> ShopId |
-| Shipment Created<br />Shipment Delivered<br />Parcel Status Change<br />Parcel Pickup Done<br />New Parcel Added<br />Shipment Picked<br />Shipment Packed<br />Shipment Shipped<br />Order Shipment Status hanged<br />Order Fully Shipped<br />Shipment Handover | ParcelId<br /> TrackingCode<br /> OrderShipmentId<br /> OrderShipmentCode<br /> OrderId<br /> OrderCode |
-| Main Order Return Status Changed<br />Order Return Changed<br />Order Return Created | OrderReturnId<br /> OrderReturnCode<br /> OrderId<br /> OrderCode |
-| Product Property Def Changed<br />Product Property Def Deleted | Id<br /> Code |
-| Product Brand Changed<br />Product Brand Deleted | Id<br /> Name |
-| Voip Call Changed | Id |
-| Ticket Main Status Changed<br />Ticket Created | TicketId<br /> TicketCode<br /> OrderId<br /> OrderCode<br /> ShopId |
-| Ticket Handling Employee Group Changed<br />Ticket Handling Employee Changed | TicketId<br /> TicketCode<br /> OrderId<br /> OrderCode<br /> HandlingEmployeeGroupId<br /> HandlingEmployeeId<br /> OldHandlingEmployeeGroupId<br /> OldHandlingEmployeeId |
-| Ticket Incoming Message<br />Ticket Outcoming Message | TicketId<br /> TicketCode<br /> OrderId<br /> OrderCode<br /> ShopId<br /> TicketMessageDirection |
-| Default (other events) | OrderId<br /> OrderCode |
+| Product created<br />Product changed<br />Product deleted<br />Product available stock changed<br />Product locked<br />Product unlocked<br />Product dimensions changed | ProductId<br />ProductCode<br />ShopGroupId |
+| Product package created<br />Product package changed<br />Product package deleted | ProductPackageId<br />ProductId<br />ShopGroupId |
+| Product selection product changed<br />Product selection product deleted | ProductId<br />ProductCode<br />ProductSelectionProductId<br />ShopId |
+| Product group changed<br />Product group deleted | ProductGroupId<br />ProductGroupName |
+| Product property definition changed<br />Product property definition deleted | Id<br />Code |
+| Product brand changed<br />Product brand deleted | Id<br />Name |
+| Order customer rating changed | OrderId<br />OrderCode<br />CustomerRating |
+| Order comment changed | OrderCommentId<br />OrderId<br />OrderCode<br />TicketId<br />TicketCode |
+| Invoice payments done<br />Invoice payments not done<br />Invoice payments partial done<br />Non-draft invoice saved<br />Non-draft credit invoice saved<br />Order invoices all paid<br />Order invoices partial paid<br />Order invoices created | InvoiceId<br />InvoiceCode<br />OrderId<br />OrderCode |
+| Shipment created<br />Shipment picked<br />Shipment packed<br />Shipment shipped<br />Shipment handover<br />Shipment delivered<br />New parcel added<br />Parcel status change<br />Parcel pickup done<br />Order shipment status changed<br />Order fully shipped | ParcelId<br />TrackingCode<br />OrderShipmentId<br />OrderShipmentCode<br />OrderId<br />OrderCode |
+| Return created<br />Return changed<br />Return main status changed | OrderReturnId<br />OrderReturnCode<br />OrderId<br />OrderCode |
+| Purchase order created<br />Purchase order custom status changed<br />Purchase order delivery provisioned<br />Purchase order delivery received<br />Purchase order handed over<br />Purchase order main status changed<br />Purchase order payment status changed<br />Purchase order provision status changed<br />Purchase order provisioned<br />Purchase order received<br />Purchase order submit status changed | PurchaseOrderId<br />PurchaseOrderCode<br />SupplierId<br />WarehouseId<br />OrderId<br />OrderCode<br />ShopId |
+| Ticket created<br />Ticket main status changed | TicketId<br />TicketCode<br />OrderId<br />OrderCode<br />ShopId |
+| Ticket handling employee group changed | TicketId<br />TicketCode<br />OrderId<br />OrderCode<br />ShopId<br />HandlingEmployeeGroupId<br />OldHandlingEmployeeGroupId |
+| Ticket handling employee changed | TicketId<br />TicketCode<br />OrderId<br />OrderCode<br />ShopId<br />HandlingEmployeeId<br />OldHandlingEmployeeId |
+| Ticket incoming message<br />Ticket outgoing message | TicketId<br />TicketCode<br />OrderId<br />OrderCode<br />ShopId<br />TicketMessageDirection |
+| Ticket satisfaction score changed | TicketId<br />TicketCode<br />OrderId<br />OrderCode<br />ShopId<br />SatisfactionScoreOld<br />SatisfactionScore |
+| Service contract active status changed | ServiceContractId<br />ServiceContractCode<br />ShopId<br />ActiveStatus<br />ActiveStatusName<br />OldActiveStatus<br />OldActiveStatusName |
+| Rental contract active status changed | RentalContractId<br />RentalContractCode<br />ShopId<br />ActiveStatus<br />ActiveStatusName<br />OldActiveStatus<br />OldActiveStatusName |
+| Rental contract order created | RentalContractId<br />RentalContractCode<br />ShopId<br />OrderId<br />OrderCode |
+| Init new shop<br />New shop saved | ShopId |
+| Voip call changed | Id |
+| All other events linked to an order | OrderId<br />OrderCode |
+| All other events without an order | A list of `Id` and `Type` pairs, one for each entity involved in the event |
+
+For the full list of events, see [Trigger events](/User-Guide/02-ShopCtrl-Setup/02-General-Setup/05-Triggers/trigger-events.md).
 
 ## Webhook Queue
 

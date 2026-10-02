@@ -1,6 +1,7 @@
 ---
 sidebar_position: 7
 slug: /docs/backorders-delivery-notification
+description: "Notify backorder customers in ShopCtrl when expected delivery dates change, using mail templates populated from purchase order data."
 ---
 
 # Backorders Delivery Notification

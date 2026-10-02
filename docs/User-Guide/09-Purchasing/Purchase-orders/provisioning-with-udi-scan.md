@@ -1,6 +1,7 @@
 ---
 sidebar_position: 9
 slug: /docs/provisioning-with-udi-scan
+description: "Use UDI barcode scanning during ShopCtrl provisioning to auto-populate stock item fields and cut manual data entry errors."
 ---
 
 # Provisioning with UDI Scan

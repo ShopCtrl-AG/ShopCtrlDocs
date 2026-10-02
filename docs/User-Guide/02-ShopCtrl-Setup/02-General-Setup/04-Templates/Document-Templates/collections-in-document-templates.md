@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 slug: /docs/collections-in-document-templates
+description: "Use Collections in ShopCtrl document templates to loop through repeating merge fields such as order rows and invoice rows."
 ---
 
 # Collections in Document Templates

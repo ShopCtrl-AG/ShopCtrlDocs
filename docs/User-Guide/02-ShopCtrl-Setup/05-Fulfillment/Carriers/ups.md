@@ -1,6 +1,7 @@
 ---
-sidebar_position: 8
+sidebar_position: 9
 slug: /docs/ups
+description: "Set up the UPS integration in ShopCtrl using your user name, password, access license number and shipper account number."
 ---
 
 # UPS 

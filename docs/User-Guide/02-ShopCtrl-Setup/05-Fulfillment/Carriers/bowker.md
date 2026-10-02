@@ -1,6 +1,7 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 slug: /docs/bowker
+description: "Integrate the Bowker Transport carrier with ShopCtrl to send pallet shipments, set delivery time limits and print PDF labels with tracking codes."
 ---
 
 # Bowker 

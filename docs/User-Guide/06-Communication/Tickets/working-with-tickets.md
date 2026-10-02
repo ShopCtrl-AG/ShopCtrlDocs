@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/working-with-tickets
+description: "Work with tickets in ShopCtrl: add them manually, assign colleagues or teams, run bulk actions and open the linked customers and orders."
 ---
 
 # Working with Tickets

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/service-level
+description: "Set the service level per shop in ShopCtrl: customer service opening hours for each weekday and the response time for mail, calls and tickets."
 ---
 
 # Service Level

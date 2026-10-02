@@ -76,7 +76,16 @@ const config = {
 
   plugins: [
     require.resolve("docusaurus-plugin-image-zoom"),
-    require.resolve('docusaurus-lunr-search')],
+    require.resolve('docusaurus-lunr-search'),
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        // Old Virtual Stock (Edge) address, renamed to Virtualstock
+        redirects: [
+          { from: "/docs/edge", to: "/docs/virtualstock" },
+        ],
+      },
+    ]],
   //plugins: [
   //  ['drawio', {}],
   //],

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /docs/setting-up-graph-api-connection-for-your-microsoft-office-365-mailbox-in-shopctrl
+description: "Connect a Microsoft Office 365 mailbox to ShopCtrl through the Microsoft Graph API and OAuth, in four steps. Shared mailboxes are not supported."
 ---
 
 # Setting up Graph API connection for your Microsoft Office 365 mailbox in ShopCtrl

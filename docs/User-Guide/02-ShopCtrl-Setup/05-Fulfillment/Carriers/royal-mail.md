@@ -1,6 +1,7 @@
 ---
-sidebar_position: 7
+sidebar_position: 8
 slug: /docs/royal-mail
+description: "Connect Royal Mail Click & Drop to ShopCtrl to generate shipping labels, with a separate carrier account for each Royal Mail service."
 ---
 # Royal Mail 
 

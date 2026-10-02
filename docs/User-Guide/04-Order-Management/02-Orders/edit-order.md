@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 slug: /docs/edit-order
+description: "Edit an order in ShopCtrl: save changes, mail the customer, invoice manually, start fulfillment, or cancel an order not yet invoiced or shipped."
 ---
 
 # Edit Order

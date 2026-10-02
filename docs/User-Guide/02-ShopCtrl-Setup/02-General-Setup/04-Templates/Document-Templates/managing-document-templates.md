@@ -1,6 +1,7 @@
 ---
 sidebar_position: 5
 slug: /docs/managing-document-templates
+description: "Manage the ShopCtrl document template list: add, copy, edit, search, filter and delete templates under Configuration > Templates."
 ---
 
 # Managing Document Templates

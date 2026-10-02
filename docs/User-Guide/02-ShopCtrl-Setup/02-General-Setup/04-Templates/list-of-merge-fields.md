@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 slug: /docs/list-of-merge-fields
+description: "The full reference of ShopCtrl merge fields for document and email templates, grouped by entity such as Shop, Order and Invoice."
 ---
 
 # List of Merge Fields

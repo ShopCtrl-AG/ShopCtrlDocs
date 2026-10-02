@@ -1,6 +1,7 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 slug: /docs/dhl-parcel-uk
+description: "The ShopCtrl integration with DHL, covering DHL Europlus, Express, For You and Parcel UK, and the functions each API supports."
 ---
 # DHL Parcel UK 
 

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 slug: /docs/ticket-details
+description: "The ShopCtrl ticket detail window: action buttons, communication history, employee assignment, linked products and layout options."
 ---
 
 # Ticket Details
