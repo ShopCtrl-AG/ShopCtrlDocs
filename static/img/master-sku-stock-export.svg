@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" role="img" aria-label="Your own system sends stock 25 for one product, LMP-2048, to ShopCtrl through the API. ShopCtrl sends stock 25 to all three Virtualstock variants: LMP-2048 WH, LMP-2048 BK and LMP-2048 GY">
+  <style>
+    text { font-family: "Segoe UI", Arial, sans-serif; fill: #1d2430; }
+    .mono { font-family: Consolas, "Courier New", monospace; }
+    .small { font-size: 12px; fill: #5d6675; }
+    .label { font-size: 11px; font-weight: 600; letter-spacing: .08em; }
+    .own { fill: #eef0f3; stroke: #5d6675; stroke-width: 1.5; }
+    .own-t { fill: #5d6675; }
+    .sc { fill: #e3edf8; stroke: #2b6cb0; stroke-width: 1.5; }
+    .sc-t { fill: #2b6cb0; }
+    .mp-frame { fill: none; stroke: #c9cfd9; stroke-dasharray: 4 3; }
+    .mp-row { fill: #f6eedf; stroke: #8a5a14; }
+    .mp-t { fill: #8a5a14; }
+    .wire { fill: none; stroke: #2b6cb0; stroke-width: 1.4; opacity: .7; }
+    .arrow { fill: none; stroke: #5d6675; stroke-width: 1.6; }
+    .head { fill: #5d6675; }
+  </style>
+  <rect x="0.5" y="0.5" width="899" height="259" rx="10" fill="#ffffff" stroke="#c9cfd9"/>
+
+  <!-- Your system -->
+  <rect class="own" x="20" y="80" width="160" height="100" rx="8"/>
+  <text class="label own-t" x="34" y="104">YOUR SYSTEM</text>
+  <text class="mono" x="34" y="138" font-size="16" font-weight="600">LMP-2048</text>
+  <text class="small" x="34" y="164">Stock 25</text>
+
+  <!-- API arrow -->
+  <text class="small" x="214" y="120" text-anchor="middle">API</text>
+  <path class="arrow" d="M182 130 H238"/><polygon class="head" points="238,125 246,130 238,135"/>
+
+  <!-- ShopCtrl master -->
+  <rect class="sc" x="250" y="80" width="220" height="100" rx="8"/>
+  <text class="label sc-t" x="266" y="104">SHOPCTRL · MASTER PRODUCT</text>
+  <text class="mono" x="266" y="138" font-size="18" font-weight="600">LMP-2048</text>
+  <text class="small" x="266" y="164">Stock 25</text>
+
+  <!-- fan-out wires -->
+  <path class="wire" d="M470 130 C 560 130, 570 87, 616 87"/>
+  <path class="wire" d="M470 130 C 560 130, 570 132, 616 132"/>
+  <path class="wire" d="M470 130 C 560 130, 570 177, 616 177"/>
+
+  <!-- Marketplace variants -->
+  <rect class="mp-frame" x="600" y="30" width="280" height="200" rx="8"/>
+  <text class="label mp-t" x="616" y="56">VIRTUALSTOCK · VARIANTS</text>
+
+  <rect class="mp-row" x="616" y="72" width="248" height="30" rx="4"/>
+  <text class="mono" x="630" y="92" font-size="14">LMP-2048 WH</text>
+  <text class="small" x="850" y="92" text-anchor="end">stock 25</text>
+
+  <rect class="mp-row" x="616" y="117" width="248" height="30" rx="4"/>
+  <text class="mono" x="630" y="137" font-size="14">LMP-2048 BK</text>
+  <text class="small" x="850" y="137" text-anchor="end">stock 25</text>
+
+  <rect class="mp-row" x="616" y="162" width="248" height="30" rx="4"/>
+  <text class="mono" x="630" y="182" font-size="14">LMP-2048 GY</text>
+  <text class="small" x="850" y="182" text-anchor="end">stock 25</text>
+</svg>
