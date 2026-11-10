@@ -2,9 +2,5 @@
   "label": "Invoices",
   "position": 1,
   "collapsible": true,
-  "collapsed": true,
-  "link": {
-    "type": "generated-index",
-    "description": "Work with invoices in ShopCtrl, including credit invoices and invoice reminders."
-  }
+  "collapsed": true
 }

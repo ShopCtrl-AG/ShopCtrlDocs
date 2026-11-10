@@ -91,6 +91,8 @@ Merge fields that are marked as belonging to a certain collection must be insert
 
 ## Order
 
+Order merge fields always refer to the whole order. For information about a single shipment (for example its package count or preferred ship date), use the [Order Shipment](#order-shipment) merge fields.
+
 <details>
   <summary>Show the list of Order merge fields</summary>
 
@@ -670,6 +672,15 @@ Merge fields that are marked as belonging to a certain collection must be insert
 </details>
 
 ## Order Shipment
+
+:::tip[Package count: order vs. shipment]
+
+- `$$Order.ShipmentsPackageCount$$` – the total number of packages of **all shipments** in the order.
+- `$$OrderShipment.PackageCount$$` – the number of packages of **the current shipment** only.
+
+In mails and documents that are created per shipment, such as dropship purchase order mails, use `$$OrderShipment.PackageCount$$`. Otherwise the count adds up with every new shipment in the same order.
+
+:::
 
 <details>
   <summary> Show the list of Order Shipment merge fields</summary>

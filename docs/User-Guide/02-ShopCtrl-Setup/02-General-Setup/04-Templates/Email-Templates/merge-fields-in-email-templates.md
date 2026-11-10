@@ -25,6 +25,22 @@ To insert a merge field into the mail template:
 
 You can always retrieve the whole list of merge fields by clicking the **Available MergeFields** button. Please see the [List of Merge fields](/User-Guide/02-ShopCtrl-Setup/02-General-Setup/04-Templates/list-of-merge-fields.md) for more information.
 
+### How to check the value of a merge field
+
+If a mail shows an unexpected value, check which merge field gives the value you need before changing the template:
+
+1. Open the mail template.
+2. Click the **Available MergeFields** button and enter the code of an existing item, for example an order, purchase order or shipment.
+3. Generate the file. It lists all merge fields that are available for that item, with the actual values of that item next to them.
+4. Search the file (Ctrl+F) for the merge field used in the template, and for similar merge fields, to compare their values.
+5. Replace the merge field in the template with the one that shows the correct value.
+
+:::tip[Example]
+
+A dropship purchase mail shows a number of pallet places that adds up with every new purchase in the same order. In the generated file for the purchase order, `$$Order.ShipmentsPackageCount$$` shows the packages of all shipments in the order, while `$$OrderShipment.PackageCount$$` shows only the packages of the current shipment. Using `$$OrderShipment.PackageCount$$` in the template solves the issue. See [Order Shipment merge fields](/User-Guide/02-ShopCtrl-Setup/02-General-Setup/04-Templates/list-of-merge-fields.md#order-shipment).
+
+:::
+
 ### How to apply numeric merge field formatting
 
 To configure the output format of the numeric merge field in the mail template:

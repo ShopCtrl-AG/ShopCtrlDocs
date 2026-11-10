@@ -58,7 +58,7 @@ Learn more in [Invoice reminders](/User-Guide/05-Financial/Invoices/invoice-remi
 
 :::info[]
 
-If the above fields would not be set, the defaults set on shopowner and shop will be used.
+If these fields are not set, the defaults from the shop settings are used.
 
 :::
 
