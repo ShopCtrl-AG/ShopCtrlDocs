@@ -122,7 +122,7 @@ Report parameters:
   <summary> Order credit overview </summary>
 
 Order credit overview report prints out a list of credited orders for a given shop(s) and period. Provided that the credit reasons are used while creating returns/refunds, the reasons are also displayed.
-[How to configure return and credit reasons](/docs/User-Guide/07-Fulfillment/Returns/configure-returns.md#return-reasons)
+[How to configure return and credit reasons](/User-Guide/07-Fulfillment/Returns/configure-returns.md#return-reasons)
 Report parameters:
 
 - Shop
@@ -532,7 +532,7 @@ Report parameters:
 <details id="product-stock-expiration-report">
   <summary> Product stock expiration report </summary>
  
-The **Product stock expiration** report is a part of the [Adwanced warehouse]/User-Guide/09-Purchasing/advanced-warehouse.md functionality. Products are grouped based on the time left before expiry.
+The **Product stock expiration** report is a part of the [Adwanced warehouse](/User-Guide/09-Purchasing/advanced-warehouse.md) functionality. Products are grouped based on the time left before expiry.
 
 ![Product_stock_Expiration_report(1)](/img/Product_stock_Expiration_report.png)
 
@@ -551,4 +551,4 @@ Please check [Understanding Employee Roles and Permissions](/User-Guide/02-ShopC
 </details>
 
 
-For advanced reporting capabilities, see our dedicated [Report Developer Resources](/docs/User-Guide/03-Basic-Functions/Advanced-reporting-hidden/advanced-reporting.md)
+For advanced reporting capabilities, see our dedicated [Report Developer Resources](/User-Guide/03-Basic-Functions/Advanced-reporting-hidden/advanced-reporting.md)

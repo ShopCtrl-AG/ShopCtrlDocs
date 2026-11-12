@@ -1,3 +1,4 @@
+import Translate from '@docusaurus/Translate';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
@@ -28,7 +29,9 @@ function CarrierCard({name, logo, services, guide}) {
       {services && <div className={styles.services}>{services}</div>}
       {guide && (
         <Link className={styles.guide} to={guide}>
-          Setup guide →
+          <Translate id="carrierGrid.setupGuide" description="Link from a carrier card to its setup guide">
+            Setup guide →
+          </Translate>
         </Link>
       )}
     </div>

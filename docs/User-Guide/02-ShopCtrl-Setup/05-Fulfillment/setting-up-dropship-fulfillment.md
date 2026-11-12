@@ -63,7 +63,7 @@ If you have your **auto-allocation** flows set up, and would like dropship order
 ### Step 5. Create and configure carrier accounts for dropship suppliers
 
 This step is optional. But if you would like to generate a shipping label and send it, along with the other purchase order documents to your supplier, create and configure carrier accounts to be used for your dropship orders. 
-Please check [Carriers]/User-Guide/07-Fulfillment/Carriers/index.md for more information about available carriers integrations and ways to determine the best carrier to ship the parcel.
+Please check [Carriers](/User-Guide/02-ShopCtrl-Setup/05-Fulfillment/Carriers/index.md) for more information about available carriers integrations and ways to determine the best carrier to ship the parcel.
 
 ### Step 6. Create and publish products
 

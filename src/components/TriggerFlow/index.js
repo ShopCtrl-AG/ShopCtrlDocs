@@ -1,3 +1,4 @@
+import {translate} from '@docusaurus/Translate';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
@@ -90,11 +91,11 @@ export default function TriggerFlow({examplesUrl = ''}) {
       <div className={styles.legend}>
         <span className={styles.legendItem}>
           <span className={styles.legendBadge}>⚡ TRIGGER</span>
-          Runs automatically in ShopCtrl. Click a trigger to see its setup.
+          {translate({id: 'triggerFlow.legend.trigger', message: 'Runs automatically in ShopCtrl. Click a trigger to see its setup.'})}
         </span>
         <span className={styles.legendItem}>
           <span className={styles.legendStep} />
-          Step in your order process
+          {translate({id: 'triggerFlow.legend.step', message: 'Step in your order process'})}
         </span>
       </div>
       <div className={styles.scroll}>
@@ -103,12 +104,9 @@ export default function TriggerFlow({examplesUrl = ''}) {
           viewBox="0 0 760 664"
           role="img"
           aria-labelledby="trigger-flow-title trigger-flow-desc">
-          <title id="trigger-flow-title">Typical order flow with triggers</title>
+          <title id="trigger-flow-title">{translate({id: 'triggerFlow.title', message: 'Typical order flow with triggers'})}</title>
           <desc id="trigger-flow-desc">
-            The customer pays, trigger 1 allocates stock. If all order rows are in stock,
-            trigger 2 creates the shipment. If not, trigger 3 creates a backorder alert,
-            and trigger 2 creates the shipment once the stock arrives. After the warehouse
-            ships the order, trigger 4 creates the invoice and emails it.
+            {translate({id: 'triggerFlow.description', message: 'The customer pays, trigger 1 allocates stock. If all order rows are in stock, trigger 2 creates the shipment. If not, trigger 3 creates a backorder alert, and trigger 2 creates the shipment once the stock arrives. After the warehouse ships the order, trigger 4 creates the invoice and emails it.'})}
           </desc>
           <defs>
             <marker
@@ -123,7 +121,7 @@ export default function TriggerFlow({examplesUrl = ''}) {
             </marker>
           </defs>
 
-          <Step cx={cx} y={10} w={220} text="Customer pays the order" />
+          <Step cx={cx} y={10} w={220} text={translate({id: 'triggerFlow.step.customerPays', message: 'Customer pays the order'})} />
           <Arrow d={`M${cx} 46 V68`} />
 
           <TriggerCard
@@ -141,13 +139,13 @@ export default function TriggerFlow({examplesUrl = ''}) {
 
           <path className={styles.decision} d={`M${cx} 200 L${cx + 120} 242 L${cx} 284 L${cx - 120} 242 Z`} />
           <text className={styles.decisionText} x={cx} y={238} textAnchor="middle">
-            All order rows
+            {translate({id: 'triggerFlow.decision.line1', message: 'All order rows'})}
           </text>
           <text className={styles.decisionText} x={cx} y={256} textAnchor="middle">
-            in stock?
+            {translate({id: 'triggerFlow.decision.line2', message: 'in stock?'})}
           </text>
 
-          <Arrow d={`M${cx + 120} 242 H${SIDE_X - 4}`} label="No" lx={cx + 150} ly={234} />
+          <Arrow d={`M${cx + 120} 242 H${SIDE_X - 4}`} label={translate({id: 'triggerFlow.no', message: 'No'})} lx={cx + 150} ly={234} />
           <TriggerCard
             n={3}
             x={SIDE_X}
@@ -160,7 +158,7 @@ export default function TriggerFlow({examplesUrl = ''}) {
             ]}
           />
 
-          <Arrow d={`M${cx} 284 V312`} label="Yes" lx={cx + 10} ly={302} />
+          <Arrow d={`M${cx} 284 V312`} label={translate({id: 'triggerFlow.yes', message: 'Yes'})} lx={cx + 10} ly={302} />
           <TriggerCard
             n={2}
             x={MAIN_X}
@@ -176,13 +174,13 @@ export default function TriggerFlow({examplesUrl = ''}) {
           <Arrow
             dashed
             d={`M${SIDE_X + SIDE_W / 2} 304 V376 H${MAIN_X + CARD_W + 4}`}
-            label="Stock arrives"
+            label={translate({id: 'triggerFlow.stockArrives', message: 'Stock arrives'})}
             lx={SIDE_X + SIDE_W / 2 + 10}
             ly={346}
           />
 
           <Arrow d={`M${cx} 440 V464`} />
-          <Step cx={cx} y={468} w={280} text="Warehouse picks, packs and ships" />
+          <Step cx={cx} y={468} w={280} text={translate({id: 'triggerFlow.step.warehouseShips', message: 'Warehouse picks, packs and ships'})} />
           <Arrow d={`M${cx} 504 V526`} />
 
           <TriggerCard

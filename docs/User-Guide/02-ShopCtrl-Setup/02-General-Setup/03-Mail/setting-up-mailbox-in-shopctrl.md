@@ -59,25 +59,25 @@ Once the connection is established, mark the **Check mail** checkbox to start re
 ## Setting up outcoming mail server
 
 ![setup-mailbox-outcoming-smtp](/img/setup-mailbox-outcoming-smtp.png)
+<img src={require("/img/setup-mail-smtp-basic-auth.png").default} height="" width="400" />
 
 1. On the sales channels panel, click the designated **Shop icon** and select **Settings** from the list.
 2. In the topic menu go to **Communication > E-mail > Sending email**.
 3. Provide the **Mail address** to be used as **Sent From** on this shop.
 4. Choose the event to raise on replying to an email:
-     1. Do not warn
-     2. Warn when newer unread mail is available
-     3. Warn only when mails are assigned to the same order
-   5. Click **Add** to create a new SMTP connection.
-   <img src={require("/img/setup-mail-smtp-basic-auth.png").default} height="" width="400" />
-5. Select **Protocol:** SMTP.
-6. (Optional) If you are using several smtp servers, set the **priority** to determine which server to use first.
-7. Provide the SMTP **Server** for your mail account.
-8. Enter the SMTP **Port** to use for connecting to the mail server.
-9. Mark the **Use SSL** checkbox.
-10. Expand the **Auth parameters** pane and select **Basic** Auth method.
-11. Enter the **Login** and **Password** for your mail account.
-12. Click **Ok** to save settings.
-13. Click **Save** to apply changes to the shop.
+    1. Do not warn
+    2. Warn when newer unread mail is available
+    3. Warn only when mails are assigned to the same order
+5. Click **Add** to create a new SMTP connection.
+6. Select **Protocol:** SMTP.
+7. (Optional) If you are using several smtp servers, set the **priority** to determine which server to use first.
+8. Provide the SMTP **Server** for your mail account.
+9. Enter the SMTP **Port** to use for connecting to the mail server.
+10. Mark the **Use SSL** checkbox.
+11. Expand the **Auth parameters** pane and select **Basic** Auth method.
+12. Enter the **Login** and **Password** for your mail account.
+13. Click **Ok** to save settings.
+14. Click **Save** to apply changes to the shop.
 
 #### Disable Chunking setting
 

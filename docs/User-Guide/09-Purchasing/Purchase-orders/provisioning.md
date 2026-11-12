@@ -47,7 +47,7 @@ Click any **Provision** button, and a new provision purchase order window will o
 | --- | --- |
 | Save and Close | Saves provision and closes the page |
 | Save | Saves provision |
-| Save, Close and Print Labels | Saves provision, closes the page, and opens a new window to print labels for each advanced stock item. Please check [Advanced Warehouse]/User-Guide/09-Purchasing/advanced-warehouse.md for more information |
+| Save, Close and Print Labels | Saves provision, closes the page, and opens a new window to print labels for each advanced stock item. Please check [Advanced Warehouse](/User-Guide/09-Purchasing/advanced-warehouse.md) for more information |
 | Finalize provisioning | This option is available for purchase orders with provision status "Partially received". |
 | Cancel provisioning | Cancells provision and changes the main status of the purchase order to "Cancelled". |
 | Print PO | Prints the respective purchase order |
@@ -92,7 +92,7 @@ Suppose the purchase order will be delivered by the supplier with two shipments.
 
 After receipt of the **first** part, please proceed to provision:
 1. Open the provisioning page.
-2. Manually amend the quantity received or specify with a barcode scanner the [Advanced Stock Items]/User-Guide/09-Purchasing/advanced-warehouse.md.
+2. Manually amend the quantity received or specify with a barcode scanner the [Advanced Stock Items](/User-Guide/09-Purchasing/advanced-warehouse.md).
 
 <img src={require("/img/provision_private_warehouse_first_part_amend_qty.png").default} height="" width="800" />
 
@@ -100,7 +100,7 @@ After receipt of the **first** part, please proceed to provision:
 
 <img src={require("/img/provision_private_warehouse_first_part_select_location.png").default} height="" width="800" />
 
-4. Click **Save** or **Save and Close** to finish the provision process of the basic stock items. Click **Save, Close and Print Labels** to finish the registration process to storing the [Advanced Stock Items]/User-Guide/09-Purchasing/advanced-warehouse.md.
+4. Click **Save** or **Save and Close** to finish the provision process of the basic stock items. Click **Save, Close and Print Labels** to finish the registration process to storing the [Advanced Stock Items](/User-Guide/09-Purchasing/advanced-warehouse.md).
 
 5. ShopCtrl automatically creates a delivery for the received shipment. It could be viewed in the topic menu of the purchase order. 
 The provision status of the purchase order is changed to "Partially provisioned".

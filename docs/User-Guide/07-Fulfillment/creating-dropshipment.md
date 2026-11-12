@@ -9,7 +9,7 @@ description: "Create a dropshipment in ShopCtrl so a supplier ships an order dir
 
 :::info[Before you start]
 
-Please make sure that the [Dropship Suppliers]/User-Guide/09-Purchasing/Suppliers/dropship-supplier.md settings are configured, and purchase prices are provided for the products. 
+Please make sure that the [Dropship Suppliers](/User-Guide/09-Purchasing/Suppliers/dropship-supplier.md) settings are configured, and purchase prices are provided for the products. 
 
 :::
 

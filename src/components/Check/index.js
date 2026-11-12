@@ -1,6 +1,9 @@
+import {translate} from '@docusaurus/Translate';
 import styles from './styles.module.css';
 
-export default function Check({label = 'Supported'}) {
+export default function Check({
+  label = translate({id: 'check.supported', message: 'Supported', description: 'Accessible label of the check mark icon'}),
+}) {
   return (
     <svg
       className={styles.check}

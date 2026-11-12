@@ -6,7 +6,7 @@ description: "Scan and manage stock items in ShopCtrl, review the stock counts p
 # Warehouse Operations 
 
 
-The warehouse operations module is part of the [Advanced Warehouse]/User-Guide/09-Purchasing/advanced-warehouse.md.
+The warehouse operations module is part of the [Advanced Warehouse](/User-Guide/09-Purchasing/advanced-warehouse.md).
 To open this page go to **Product Management > Warehouse Operations** tab. 
 From these page, you can:
 * scan and manage stock item

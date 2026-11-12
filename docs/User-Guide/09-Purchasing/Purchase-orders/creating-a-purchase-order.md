@@ -33,18 +33,18 @@ A new order window will be opened in a new tab
 3. Optional fields:
 **Expected Date** select the date supplier is going to deliver the goods.
 **Discount** for a purchase order could be specified in **%** and is applied to the whole order, including the shipping cost. Once the discount is calculated, the corresponding sum will be displayed in the discount filed below: 
-<img src={require("/img/new_po_discount.png").default} height="150" width="" />
+    <img src={require("/img/new_po_discount.png").default} height="150" width="" />
 
 4. Start adding products by clicking the **Add** button. The products menu similar to the one from the sales order will appear.  
-<img src={require("/img/New_po_add_products.png").default} height="" width="400" />
+    <img src={require("/img/New_po_add_products.png").default} height="" width="400" />
 
 5. If the purchase order will be delivered in several parts, set an **Expected delivery date** for each product row. 
-<img src={require("/img/new_regular_po_set_expected_date_row.png").default} height="" width="800" />
+    <img src={require("/img/new_regular_po_set_expected_date_row.png").default} height="" width="800" />
 
 There is an easier and faster way to distinguish which product will be delivered when. Please view [Deliveries](/User-Guide/09-Purchasing/Purchase-orders/creating-deliveries.md) for details. 
 
 6. In order to preview the purchase order Invoice, you could click on the **Preview PDF** button. 
-<img src={require("/img/new_regular_po_1.png").default} height="" width="800" />
+    <img src={require("/img/new_regular_po_1.png").default} height="" width="800" />
 
 :::info[**Note:**]
 
@@ -53,7 +53,7 @@ The moment you click the **Preview PDF** button, the newly created purchase orde
 :::
 
 7. There are several options for **Saving** the purchase order. 
-<img src={require("/img/new_regular_po_3.png").default} height="" width="400" />
+    <img src={require("/img/new_regular_po_3.png").default} height="" width="400" />
 
     * **Save and Close** - Saves the purchase order and closes the tab.
     * **Save** - Saves the purchase order.
@@ -65,7 +65,7 @@ The moment you click the **Preview PDF** button, the newly created purchase orde
 
 :::
 
-<img src={require("/img/PO_email_autogenerate_03.png").default} height="" width="800" />
+    <img src={require("/img/PO_email_autogenerate_03.png").default} height="" width="800" />
 
 The **References** pane displays the supplier to which this particular purchase order is linked.
 The purchase order document is automatically attached to the email and is visible within an attachments pane.

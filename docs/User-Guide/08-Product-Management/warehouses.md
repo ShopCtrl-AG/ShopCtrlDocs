@@ -22,7 +22,7 @@ You can also set the priority of the warehouse that will be taken into account w
 
 ### Private type warehouse
 **Private** type is your warehouse, where you store your goods, receive and provision stock items, and pack and ship orders from. The private warehouse supports an inventory control system, creating locations and pinpointing where the product is stored down to the bin on the shelf.
-It is also possible to enlarge its functionality by enabling the [Advanced Warehouse]/User-Guide/09-Purchasing/advanced-warehouse.md option, which will make each of the stock items unique for inventory control.
+It is also possible to enlarge its functionality by enabling the [Advanced Warehouse](/User-Guide/09-Purchasing/advanced-warehouse.md) option, which will make each of the stock items unique for inventory control.
 
 #### Location types
 The default is a **Pick** type location, where you can store, allocate and pick your products. You can break it down by aisle, bay, shelf, and bin.

@@ -18,10 +18,10 @@ To start using offers you need to create mail templates in each language you are
 
 Create and save **offer type** mail templates from **Configuration > Templates > Mail templates**. With the help of the merge fields, you can set up a universal template for one language that could be used in different shops.
 These mail templates will be loaded to the list of available templates when mailing an offer to a customer.
-Learn more in [Email templates](/docs/User-Guide/02-ShopCtrl-Setup/02-General-Setup/04-Templates/Email-Templates/index.md).
+Learn more in [Email templates](/User-Guide/02-ShopCtrl-Setup/02-General-Setup/04-Templates/Email-Templates/index.md).
 
 ## Document templates
-Default offer document template is provided by ShopCtrl. You can customize it to your needs, and create translated copies of templates in a language used in your shop. Learn more in [Document templates](/docs/User-Guide/02-ShopCtrl-Setup/02-General-Setup/04-Templates/Document-Templates/index.md).
+Default offer document template is provided by ShopCtrl. You can customize it to your needs, and create translated copies of templates in a language used in your shop. Learn more in [Document templates](/User-Guide/02-ShopCtrl-Setup/02-General-Setup/04-Templates/Document-Templates/index.md).
 
 To set an offer document template:
 

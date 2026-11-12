@@ -18,9 +18,9 @@ Overview of the purchase order details page
 | Save and Close | Saves the opened purchase order and closes the tab. |
 | Save | Saves opened purchase order. |
 | Save, close & mail... | Saves the newly created purchase order. Closes the tab and opens a new email window with a predefined email template. |
-| Template | Here the default [template for the purchase order document](/docs/User-Guide/02-ShopCtrl-Setup/02-General-Setup/04-Templates/Document-Templates/index.md) is defined. |
+| Template | Here the default [template for the purchase order document](/User-Guide/02-ShopCtrl-Setup/02-General-Setup/04-Templates/Document-Templates/index.md) is defined. |
 | Preview PDF | Click this button and provide a purchase order code to preview the auto-generated purchase order document. |
-| Mail Supplier | Clicking the arrow will show the list of [email templates](/docs/User-Guide/02-ShopCtrl-Setup/02-General-Setup/04-Templates/Email-Templates/index.md) available for the purchase order. By clicking one of them, a new email to the supplier is opened in a new tab, generated based on the specified template. |
+| Mail Supplier | Clicking the arrow will show the list of [email templates](/User-Guide/02-ShopCtrl-Setup/02-General-Setup/04-Templates/Email-Templates/index.md) available for the purchase order. By clicking one of them, a new email to the supplier is opened in a new tab, generated based on the specified template. |
 | Provision | Opens a provision purchase order page in a new tab. The provision button is enabled only for saved purchase orders without deliveries. |
 | Delete | Deletes opened purchase order. |
 :::info

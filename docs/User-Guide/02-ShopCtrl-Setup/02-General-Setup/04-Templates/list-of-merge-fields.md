@@ -14,7 +14,7 @@ An employee must be assigned to the Shop with a **Power User** role or higher to
 
 Use **Merge Fields** to auto-populate your [Document](./Document-Templates/index.md) and [Email](./Email-Templates/index.md) templates with the applicable data retrieved from ShopCtrl the moment the template will be generated.
 
-A dynamic merge fields list applicable for the specific document or mail template type will be auto-generated when clicking the **Available MergeFields** button and providing an item code. Please check [Creating and Editing Document Templates]/User-Guide/02-ShopCtrl-Setup/02-General-Setup/04-Templates/Document-Templates/creating-and-editing-document-templates.md and [Creating and Editing Email Templates](./Email-Templates/creating-and-editing-email-templates.md) for more information.
+A dynamic merge fields list applicable for the specific document or mail template type will be auto-generated when clicking the **Available MergeFields** button and providing an item code. Please check [Creating and Editing Document Templates](/User-Guide/02-ShopCtrl-Setup/02-General-Setup/04-Templates/Document-Templates/creating-and-editing-document-templates.md) and [Creating and Editing Email Templates](./Email-Templates/creating-and-editing-email-templates.md) for more information.
 
 :::info[**Note:**]
 

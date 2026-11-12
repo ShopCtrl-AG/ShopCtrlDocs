@@ -101,6 +101,23 @@
   background: #0d494a;
 }
 
+/* Dropdown links (e.g. language switcher) on the teal menu background */
+.dropdown__menu .dropdown__link {
+  color: white;
+}
+
+.dropdown__menu .dropdown__link:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.dropdown__menu .dropdown__link--active,
+.dropdown__menu .dropdown__link--active:hover {
+  color: white;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.25);
+}
+
 .navbar__search input {
   background: rgba(255, 255, 255, 0.2);
   color: white;

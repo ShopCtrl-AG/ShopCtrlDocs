@@ -12,7 +12,7 @@ When a shipment is part of a group shipment, ShopCtrl lets you record **where ea
 To adjust placement you need both the **Shipments > Edit Shipments** and the **Group Shipments > Manage Placement Structure** permissions. Without them the placement controls are either hidden or read-only.
 :::
 
-Placement is what turns a flat list of goods into the pack information that is consolidated into the group shipment and sent to Amazon in the [Advanced Shipment Notification (ASN)](/docs/amazon-1p-group-shipment). If your warehouse sends pack files through the [Pack integration](/docs/User-Guide/02-ShopCtrl-Setup/05-Fulfillment/integration-with-wms-via-ftp.md), that structure is built automatically — the placement tools described below let you build or correct it by hand.
+Placement is what turns a flat list of goods into the pack information that is consolidated into the group shipment and sent to Amazon in the [Advanced Shipment Notification (ASN)](/docs/amazon-1p-group-shipment). If your warehouse sends pack files through the [Pack integration](/User-Guide/02-ShopCtrl-Setup/05-Fulfillment/integration-with-wms-via-ftp.md), that structure is built automatically — the placement tools described below let you build or correct it by hand.
 
 ## How to Pack and Place a Shipment Manually
 

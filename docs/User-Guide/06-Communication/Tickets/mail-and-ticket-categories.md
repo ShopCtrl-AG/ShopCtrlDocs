@@ -10,10 +10,10 @@ Mail categories are shared between mail and tickets. Once the ticketing system i
 
 The appropriate tickets and mail categorization can help your support agents more efficiently respond to each issue based on categories and in order of priority.
 
-Set up the [automatic filtering](/docs/User-Guide/06-Communication/Tickets/ticket-configuration.md#ticket-filter) to distribute incoming mail requests automatically and assign tickets with a certain categories to ease the workflow.
+Set up the [automatic filtering](/User-Guide/06-Communication/Tickets/ticket-configuration.md#ticket-filter) to distribute incoming mail requests automatically and assign tickets with a certain categories to ease the workflow.
 
 By using ticket and mail categorization, you can identify repeat issues – whether they are incidents, requests, complaints, or anything else.
-This consistent categorization also enables the ticketing system to generate meaningful [Reporting](/docs/User-Guide/03-Basic-Functions/reporting.md) on tickets and performance levels.
+This consistent categorization also enables the ticketing system to generate meaningful [Reporting](/User-Guide/03-Basic-Functions/reporting.md) on tickets and performance levels.
 
 ### Create category
 

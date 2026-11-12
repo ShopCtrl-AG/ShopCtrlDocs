@@ -26,7 +26,7 @@ To set up the integration, you first need to create an API key for your producti
 
 :::warning[Before start]
 
-Before enabling synchronization with Mirakl, please set up the corresponding shop currency, VAT tariffs, and payment types for your [ShopCtrl shop](/docs/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/create-shop.md).
+Before enabling synchronization with Mirakl, please set up the corresponding shop currency, VAT tariffs, and payment types for your [ShopCtrl shop](/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/create-shop.md).
 
 :::
 
@@ -62,7 +62,7 @@ To set up synchronization with pre-prod Mirakl environment in ShopCtrl:
 
 ## Stock and price export
 
-To compare ShopCtrl stock/price against the current Mirakl offers and push corrections in bulk or per row, see [Mirakl Stock & Price Export](/docs/User-Guide/08-Product-Management/Product-Export/mirakl-stock-price-export.md).
+To compare ShopCtrl stock/price against the current Mirakl offers and push corrections in bulk or per row, see [Mirakl Stock & Price Export](/User-Guide/08-Product-Management/Product-Export/mirakl-stock-price-export.md).
 
 ## Master-SKU Map
 

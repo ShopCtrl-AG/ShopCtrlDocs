@@ -64,7 +64,7 @@ These settings will override the shop owner settings.
 
 :::
 
-Please view [Creating and editing document templates]/User-Guide/02-ShopCtrl-Setup/02-General-Setup/04-Templates/Document-Templates/creating-and-editing-document-templates.md and [Managing document templates]/User-Guide/02-ShopCtrl-Setup/02-General-Setup/04-Templates/Document-Templates/managing-document-templates.md for more information.
+Please view [Creating and editing document templates](/User-Guide/02-ShopCtrl-Setup/02-General-Setup/04-Templates/Document-Templates/creating-and-editing-document-templates.md) and [Managing document templates](/User-Guide/02-ShopCtrl-Setup/02-General-Setup/04-Templates/Document-Templates/managing-document-templates.md) for more information.
 
 ## Purchasing advanced products
 

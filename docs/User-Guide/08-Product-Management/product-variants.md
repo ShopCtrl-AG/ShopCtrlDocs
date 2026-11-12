@@ -43,4 +43,4 @@ Created product variants will be displayed in the products grid and could be ope
 
 To edit the parent variant product details, click on the parameters link in the name column.
 The parent product details will be opened for editing in a new tab.
-You can add new and bulk edit the existing product variants from the Topic menu > Product Variant tab. Please see [Product Variants](/docs/User-Guide/08-Product-Management/Product-Details/product-general-data.md#product-variants) for more information.
+You can add new and bulk edit the existing product variants from the Topic menu > Product Variant tab. Please see [Product Variants](/User-Guide/08-Product-Management/Product-Details/product-general-data.md#product-variants) for more information.

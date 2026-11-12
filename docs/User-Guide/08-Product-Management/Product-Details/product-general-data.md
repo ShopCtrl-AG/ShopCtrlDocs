@@ -71,7 +71,7 @@ In this tab, you can manage all of the product-related files, materials, and lin
 ## Product group
 
 Here all the product groups the product is assigned to are listed. You can change the assignment by activating or deactivating the checkboxes.
-See more on [Product Groups](/docs/User-Guide/08-Product-Management/product-groups.md).
+See more on [Product Groups](/User-Guide/08-Product-Management/product-groups.md).
 <img src={require("/img/product-details-product-group.png").default} height="" width="800" />
 
 ## SEO
@@ -83,7 +83,7 @@ An icon at the end of the field identifies the culture of the metadata you are e
 
 ## Properties
 
-Here you can manage all of the properties assigned to a product. [Properties](/docs/User-Guide/08-Product-Management/product-properties.md) could be assigned as a part of the properties set, independently, or both. 
+Here you can manage all of the properties assigned to a product. [Properties](/User-Guide/08-Product-Management/product-properties.md) could be assigned as a part of the properties set, independently, or both. 
 You can combine a set of properties with any number of extra properties, that could be both independent or part of a different property set. 
 
 <img src={require("/img/product-details-properties.png").default} height="" width="800" />
@@ -103,7 +103,7 @@ You can edit the relation type, its sequence, product quantity or delete the rel
 ## Variant properties
 
 This tab is present in the topic menu only if you edit a product with no variants or a parent product for a variant. It contains the properties that can be used for the generation of variants.
-If there were no orders created for a product, you could turn it into a parent for product variants. Please see [Product Variants](/docs/User-Guide/08-Product-Management/product-variants.md) for more details.
+If there were no orders created for a product, you could turn it into a parent for product variants. Please see [Product Variants](/User-Guide/08-Product-Management/product-variants.md) for more details.
 
 Once the product is added to stock and shipped to the customer, it is no longer possible to change it into a product variant. In this case, this tab will be disabled, and a warning message will be displayed.
 

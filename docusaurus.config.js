@@ -47,7 +47,11 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
-    locales: ["en"],
+    locales: ["en", "nl"],
+    localeConfigs: {
+      en: { label: "English", htmlLang: "en" },
+      nl: { label: "Nederlands", htmlLang: "nl" },
+    },
   },
 
   presets: [
@@ -76,7 +80,7 @@ const config = {
 
   plugins: [
     require.resolve("docusaurus-plugin-image-zoom"),
-    require.resolve('docusaurus-lunr-search'),
+    [require.resolve('docusaurus-lunr-search'), { languages: ['en', 'nl'] }],
     [
       "@docusaurus/plugin-client-redirects",
       {
@@ -113,6 +117,10 @@ const config = {
             href: "https://api.demo.shopctrl.com/",
             label: "API docs",
             position: "left",
+          },
+          {
+            type: "localeDropdown",
+            position: "right",
           },
           {
             href: "https://shopctrl.com",

@@ -1,0 +1,326 @@
+{
+  "version.label": {
+    "message": "Volgende",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.User Guide": {
+    "message": "Gebruikershandleiding",
+    "description": "The label for category User Guide in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.User Guide.link.generated-index.description": {
+    "message": "De complete ShopCtrl-gebruikershandleiding: configuratie, orderbeheer, fulfilment, productbeheer, inkoop, financiën en communicatie.",
+    "description": "The generated-index page description for category User Guide in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.ShopCtrl Basics": {
+    "message": "Basisprincipes van ShopCtrl",
+    "description": "The label for category ShopCtrl Basics in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Tips & Tricks": {
+    "message": "Tips en trucs",
+    "description": "The label for category Tips & Tricks in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.ShopCtrl Setup": {
+    "message": "ShopCtrl instellen",
+    "description": "The label for category ShopCtrl Setup in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Authentication and Employee Management": {
+    "message": "Authenticatie en medewerkersbeheer",
+    "description": "The label for category Authentication and Employee Management in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Authentication and Employee Management.link.generated-index.description": {
+    "message": "Stel medewerkersaccounts, groepen, rollen en rechten in, en beveilig het inloggen bij uw ShopCtrl-organisatie.",
+    "description": "The generated-index page description for category Authentication and Employee Management in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Employees": {
+    "message": "Medewerkers",
+    "description": "The label for category Employees in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Employees.link.generated-index.description": {
+    "message": "Voeg medewerkers toe aan ShopCtrl, deel ze in groepen in, beheer hun accounts en schakel tweestapsverificatie in.",
+    "description": "The generated-index page description for category Employees in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Roles and Permissions": {
+    "message": "Rollen en rechten",
+    "description": "The label for category Roles and Permissions in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Roles and Permissions.link.generated-index.description": {
+    "message": "Lees hoe rollen en rechten in ShopCtrl werken, en bepaal wat elke medewerker mag zien en doen.",
+    "description": "The generated-index page description for category Roles and Permissions in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.General Setup": {
+    "message": "Algemene instellingen",
+    "description": "The label for category General Setup in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.General Setup.link.generated-index.description": {
+    "message": "Algemene configuratie van uw ShopCtrl-organisatie: organisatie-instellingen, valuta, mailboxen, sjablonen en triggers.",
+    "description": "The generated-index page description for category General Setup in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Organization Settings": {
+    "message": "Organisatie-instellingen",
+    "description": "The label for category Organization Settings in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Organization Settings.link.generated-index.description": {
+    "message": "Configureer organisatiebrede instellingen in ShopCtrl: nummerreeksen, serviceniveaus en service level agreements.",
+    "description": "The generated-index page description for category Organization Settings in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Currencies": {
+    "message": "Valuta",
+    "description": "The label for category Currencies in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Currencies.link.generated-index.description": {
+    "message": "Stel valuta in ShopCtrl in en houd wisselkoersen actueel.",
+    "description": "The generated-index page description for category Currencies in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Mail": {
+    "message": "E-mail",
+    "description": "The label for category Mail in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Mail.link.generated-index.description": {
+    "message": "Koppel een mailbox aan ShopCtrl, inclusief Google- en Microsoft Office 365-accounts, app-wachtwoorden en e-mailprotocollen.",
+    "description": "The generated-index page description for category Mail in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Setting up your Microsoft Office 365 mailbox in ShopCtrl": {
+    "message": "Uw Microsoft Office 365-mailbox instellen in ShopCtrl",
+    "description": "The label for category Setting up your Microsoft Office 365 mailbox in ShopCtrl in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Templates": {
+    "message": "Sjablonen",
+    "description": "The label for category Templates in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Templates.link.generated-index.description": {
+    "message": "Maak en bewerk document- en e-mailsjablonen in ShopCtrl, en zoek de beschikbare merge fields op.",
+    "description": "The generated-index page description for category Templates in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Document Templates": {
+    "message": "Document Templates",
+    "description": "The label for category Document Templates in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Email Templates": {
+    "message": "Email Templates",
+    "description": "The label for category Email Templates in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Triggers": {
+    "message": "Triggers",
+    "description": "The label for category Triggers in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Sales Channel Setup": {
+    "message": "Sales Channels instellen",
+    "description": "The label for category Sales Channel Setup in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Connectors": {
+    "message": "Connectors",
+    "description": "The label for category Connectors in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Amazon": {
+    "message": "Amazon",
+    "description": "The label for category Amazon in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Amazon 1P": {
+    "message": "Amazon 1P",
+    "description": "The label for category Amazon 1P in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Setting up Integration with Amazon 1P": {
+    "message": "Integratie met Amazon 1P instellen",
+    "description": "The label for category Setting up Integration with Amazon 1P in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Setting up Direct Fulfillment": {
+    "message": "Direct Fulfillment instellen",
+    "description": "The label for category Setting up Direct Fulfillment in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Amazon 3P": {
+    "message": "Amazon 3P",
+    "description": "The label for category Amazon 3P in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Virtualstock": {
+    "message": "Virtualstock",
+    "description": "The label for category Virtualstock in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Customers": {
+    "message": "Klanten",
+    "description": "The label for category Customers in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Customers.link.generated-index.description": {
+    "message": "Maak en beheer klanten en klantgroepen in ShopCtrl, verwerk AVG-verzoeken (GDPR) en obfusceer klantgegevens.",
+    "description": "The generated-index page description for category Customers in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Fulfillment": {
+    "message": "Fulfilment",
+    "description": "The label for category Fulfillment in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Fulfillment.link.generated-index.description": {
+    "message": "Verzend orders vanuit ShopCtrl: maak zendingen, pakketten en dropshipments aan, verstuur trackingupdates en verwerk retouren.",
+    "description": "The generated-index page description for category Fulfillment in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Carriers": {
+    "message": "Vervoerders",
+    "description": "The label for category Carriers in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Basic Functions": {
+    "message": "Basisfuncties",
+    "description": "The label for category Basic Functions in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Basic Functions.link.generated-index.description": {
+    "message": "Dagelijkse functies van ShopCtrl: meldingen, rapportages en de interne wiki.",
+    "description": "The generated-index page description for category Basic Functions in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Wiki": {
+    "message": "Wiki",
+    "description": "The label for category Wiki in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Wiki.link.generated-index.description": {
+    "message": "Gebruik de ShopCtrl-wiki om interne kennis vast te leggen, en beheer wikipagina's en wikicategorieën.",
+    "description": "The generated-index page description for category Wiki in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Report Developer Resources": {
+    "message": "Resources voor rapportontwikkelaars",
+    "description": "The label for category Report Developer Resources in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Report Developer Resources.link.generated-index.description": {
+    "message": "Geavanceerde rapportagebronnen voor rapportontwikkelaars, waaronder het bouwen van dynamische rapporten met deeplinks naar gefilterde weergaven.",
+    "description": "The generated-index page description for category Report Developer Resources in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Order Management": {
+    "message": "Orderbeheer",
+    "description": "The label for category Order Management in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Order Management.link.generated-index.description": {
+    "message": "Beheer de volledige orderstroom in ShopCtrl: offertes, orders, contracten, voorraadtoewijzing en Bulk Operations.",
+    "description": "The generated-index page description for category Order Management in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Offers": {
+    "message": "Offertes",
+    "description": "The label for category Offers in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Offers.link.generated-index.description": {
+    "message": "Configureer, maak en beheer offertes in ShopCtrl.",
+    "description": "The generated-index page description for category Offers in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Orders": {
+    "message": "Orders",
+    "description": "The label for category Orders in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Orders.link.generated-index.description": {
+    "message": "Werk met orders in ShopCtrl: orderdetails, orders bewerken, bulkacties, affiliates en meldingen over levering van backorders.",
+    "description": "The generated-index page description for category Orders in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Create Orders": {
+    "message": "Orders aanmaken",
+    "description": "The label for category Create Orders in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Create Orders.link.generated-index.description": {
+    "message": "Maak orders aan in ShopCtrl door ze handmatig toe te voegen, een bestaande order te dupliceren of orders in bulk te importeren.",
+    "description": "The generated-index page description for category Create Orders in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Allocation of Orders": {
+    "message": "Toewijzing van orders",
+    "description": "The label for category Allocation of Orders in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Allocation of Orders.link.generated-index.description": {
+    "message": "Hoe ShopCtrl voorraad aan orders toewijst, inclusief het werken met Parked Stock.",
+    "description": "The generated-index page description for category Allocation of Orders in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Bulk Operations": {
+    "message": "Bulk Operations",
+    "description": "The label for category Bulk Operations in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Financial": {
+    "message": "Financieel",
+    "description": "The label for category Financial in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Financial.link.generated-index.description": {
+    "message": "Financiële functies in ShopCtrl: facturatie en connectors naar boekhoud- en betaalproviders.",
+    "description": "The generated-index page description for category Financial in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Invoices": {
+    "message": "Facturen",
+    "description": "The label for category Invoices in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Connectors.link.generated-index.description": {
+    "message": "Koppel ShopCtrl aan financiële diensten zoals Exact Online en de MultiSafepay-betaalpagina.",
+    "description": "The generated-index page description for category Connectors in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Communication": {
+    "message": "Communicatie",
+    "description": "The label for category Communication in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Messaging": {
+    "message": "Berichten",
+    "description": "The label for category Messaging in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Messaging.link.generated-index.description": {
+    "message": "Stel berichten in ShopCtrl in en gebruik ze: configuratie, de berichteninterface en het afhandelen van inkomende berichten.",
+    "description": "The generated-index page description for category Messaging in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Tickets": {
+    "message": "Tickets",
+    "description": "The label for category Tickets in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Tickets.link.generated-index.description": {
+    "message": "Behandel klantenservicetickets in ShopCtrl: ticketconfiguratie, typen en statussen, de Ticket AI Assistant en NPS-feedback.",
+    "description": "The generated-index page description for category Tickets in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Returns": {
+    "message": "Retouren",
+    "description": "The label for category Returns in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Returns.link.generated-index.description": {
+    "message": "Configureer en verwerk retouren in ShopCtrl, maak retourlabels aan en verstuur kosteloze vervangende leveringen.",
+    "description": "The generated-index page description for category Returns in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Amazon 1P Order Fulfillment Workflow": {
+    "message": "Amazon 1P-workflow voor orderfulfilment",
+    "description": "The label for category Amazon 1P Order Fulfillment Workflow in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Product Management": {
+    "message": "Productbeheer",
+    "description": "The label for category Product Management in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Product Management.link.generated-index.description": {
+    "message": "Beheer uw productcatalogus in ShopCtrl: producten, varianten, eigenschappen, merken, groepen, magazijnen en voorraadtellingen.",
+    "description": "The generated-index page description for category Product Management in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Product Details": {
+    "message": "Productdetails",
+    "description": "The label for category Product Details in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Product Import": {
+    "message": "Productimport",
+    "description": "The label for category Product Import in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Product Import.link.generated-index.description": {
+    "message": "Importeer producten in ShopCtrl via Excel en verrijk ze met ASIN- en EAN-codes.",
+    "description": "The generated-index page description for category Product Import in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Product Export": {
+    "message": "Productexport",
+    "description": "The label for category Product Export in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Product Export.link.generated-index.description": {
+    "message": "Exporteer productgegevens en voorraad vanuit ShopCtrl, inclusief productexports naar Amazon en voorraad- en prijsexports naar Mirakl.",
+    "description": "The generated-index page description for category Product Export in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Purchasing": {
+    "message": "Inkoop",
+    "description": "The label for category Purchasing in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Purchasing.link.generated-index.description": {
+    "message": "Inkoop in ShopCtrl: leveranciers, inkooporders, leveringen en Advanced Warehouse.",
+    "description": "The generated-index page description for category Purchasing in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Purchase Orders": {
+    "message": "Inkooporders",
+    "description": "The label for category Purchase Orders in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Purchase Orders.link.generated-index.description": {
+    "message": "Maak en beheer inkooporders in ShopCtrl, registreer leveringen, voer Provisioning uit en bereken prijzen en winstmarges.",
+    "description": "The generated-index page description for category Purchase Orders in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Suppliers": {
+    "message": "Leveranciers",
+    "description": "The label for category Suppliers in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Suppliers.link.generated-index.description": {
+    "message": "Maak en beheer leveranciers in ShopCtrl, importeer leveranciersproducten en beheer gestaffelde inkoopprijzen.",
+    "description": "The generated-index page description for category Suppliers in sidebar tutorialSidebar"
+  }
+}

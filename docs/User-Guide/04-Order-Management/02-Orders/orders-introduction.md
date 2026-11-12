@@ -16,7 +16,7 @@ The system features a complete order management cycle from an order, printing in
 One of the system's unique features is the ability to link order management to your inventory control. Whenever the order is placed and processed, the stock level will be modified accordingly and then pushed back to all of the other channels that you sell the same item on, therefore reducing the risk of overselling.
 ___
 ## Incoming orders
-ShopCtrl imports orders from all your [sales channels](/docs/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/Connectors/index.md). Examples of sales channels are:
+ShopCtrl imports orders from all your [sales channels](/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/Connectors/index.md). Examples of sales channels are:
 
   + Marketplaces like eBay and Amazon
   + Shopping platforms (i.e., Shopify, Magento, BigCommerce etc.)

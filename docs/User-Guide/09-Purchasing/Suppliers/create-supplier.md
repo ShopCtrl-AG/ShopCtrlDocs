@@ -80,7 +80,7 @@ The top action menu contains all the necessary controls for text editing. It is 
 
 ### Set purchasing email and document templates for a supplier
 
-Go to the **Purchasing** tab to set the purchase order email and documents templates. Please make sure that the required mail and document templates were created and saved first. View [Email](/docs/User-Guide/02-ShopCtrl-Setup/02-General-Setup/04-Templates/Email-Templates/index.md) and [Document](/docs/User-Guide/02-ShopCtrl-Setup/02-General-Setup/04-Templates/Document-Templates/index.md) templates for more information.
+Go to the **Purchasing** tab to set the purchase order email and documents templates. Please make sure that the required mail and document templates were created and saved first. View [Email](/User-Guide/02-ShopCtrl-Setup/02-General-Setup/04-Templates/Email-Templates/index.md) and [Document](/User-Guide/02-ShopCtrl-Setup/02-General-Setup/04-Templates/Document-Templates/index.md) templates for more information.
 
 <img src={require("/img/supplier_details_topic_menu_purchasing_0.png").default} height="" width="800" />
 
@@ -99,13 +99,13 @@ Otherwise, the default purchase order mail template set in purchasing shop setti
 
 :::warning[Please note]
 
-The dropship email and document templates are set in a dropship tab and on a shop level. Please view [Dropship Supplier]/User-Guide/09-Purchasing/Suppliers/dropship-supplier.md for more information
+The dropship email and document templates are set in a dropship tab and on a shop level. Please view [Dropship Supplier](/User-Guide/09-Purchasing/Suppliers/dropship-supplier.md) for more information
 
 :::
 
 ### Create dropship supplier 
 
-To configure the dropship settings for a specific supplier, first, create a supplier. Then follow the dropship configuration steps. For more information please view the [Dropship Supplier]/User-Guide/09-Purchasing/Suppliers/dropship-supplier.md.
+To configure the dropship settings for a specific supplier, first, create a supplier. Then follow the dropship configuration steps. For more information please view the [Dropship Supplier](/User-Guide/09-Purchasing/Suppliers/dropship-supplier.md).
 
 ### Manually create supplier purchase products
 

@@ -63,7 +63,7 @@ Please view [.NET Custom numeric format strings](https://docs.microsoft.com/en-u
 
 ### How to apply date merge field formatting
 
-To configure the output format of the date merge field in the Word document template:
+To configure the output format of the date merge field in the mail template:
 
 1. Select the **Date and Time Merge Field** you would like to edit.
 2. Before the closing dollar signs, type `#` and the format you would like the date to be displayed. For example, `yyyy-MM-dd`.

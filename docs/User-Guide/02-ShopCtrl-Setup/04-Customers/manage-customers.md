@@ -61,7 +61,7 @@ You can get an overview of all customer-related tickets from this tab, as well a
 
 ### View customer export info
 
-Keeps log data about the export to external accounting services like [Exact](/docs/User-Guide/05-Financial/Connectors/exact-online.md) and Twinfield.
+Keeps log data about the export to external accounting services like [Exact](/User-Guide/05-Financial/Connectors/exact-online.md) and Twinfield.
 
 ![customer-details-export-info](/img/customer-details-export-info.png)
 

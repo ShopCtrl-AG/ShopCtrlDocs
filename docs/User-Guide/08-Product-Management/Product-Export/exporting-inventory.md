@@ -9,7 +9,7 @@ This article describes ways to update the product stock level to different sales
 
 ## Updating Shopify inventory
 
-Update of the product stock is a separate feature of the Shopify synchronization module and can be enabled apart from product synchronization in Shop Settings > Shopify Synchronization tab of the designated shop. Please check the [Setup your Shopify synchronization in ShopCtrl](/docs/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/Connectors/shopify.md#setup-your-shopify-synchronization-in-shopctrl) for more information.
+Update of the product stock is a separate feature of the Shopify synchronization module and can be enabled apart from product synchronization in Shop Settings > Shopify Synchronization tab of the designated shop. Please check the [Setup your Shopify synchronization in ShopCtrl](/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/Connectors/shopify.md#setup-your-shopify-synchronization-in-shopctrl) for more information.
 
 
 For more information about Shopify Locations, please visit [Shopify Locations](https://help.shopify.com/en/manual/locations).
@@ -33,7 +33,7 @@ If a new location is created in Shopify, but not mapped to a warehouse in ShopCt
 
 ## Updating Amazon inventory
 
-Update of the product stock is a separate feature of the Amazon synchronization module and can be enabled apart from product synchronization in Shop Settings > Amazon Synchronization tab of the designated shop. Please check the [Setting up Amazon shop synchronization in ShopCtrl](/docs/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/Connectors/Amazon/Amazon-3P/index.md#2-setting-up-amazon-shop-synchronization-in-shopctrl) for more information.
+Update of the product stock is a separate feature of the Amazon synchronization module and can be enabled apart from product synchronization in Shop Settings > Amazon Synchronization tab of the designated shop. Please check the [Setting up Amazon shop synchronization in ShopCtrl](/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/Connectors/Amazon/Amazon-3P/index.md#2-setting-up-amazon-shop-synchronization-in-shopctrl) for more information.
 
 Export of stock levels is performed automatically in the background, with scheduled requests. After the change in available product stock is registered, the corresponding Amazon inventory listing is updated with a new value. 
 

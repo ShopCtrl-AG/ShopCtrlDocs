@@ -15,7 +15,7 @@ In order to view content or perform actions referred to in this article, you nee
 
 You can configure per shop which days of the week and at what hours there will be a customer service team. And set a response time for handling inbound mail, phone calls, and tickets.
 
-See also: [Ticket Configuration](/docs/User-Guide/06-Communication/Tickets/ticket-configuration.md) and [Working with Tickets](/docs/User-Guide/06-Communication/Tickets/working-with-tickets.md) for more information.
+See also: [Ticket Configuration](/User-Guide/06-Communication/Tickets/ticket-configuration.md) and [Working with Tickets](/User-Guide/06-Communication/Tickets/working-with-tickets.md) for more information.
 
 ## How to set service level for a shop
 

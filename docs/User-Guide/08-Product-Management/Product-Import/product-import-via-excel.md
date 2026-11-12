@@ -27,7 +27,7 @@ You can import product details per shop group and translation. Update existing p
 :::warning[**Before you start**]
 
 **Properties** and **Property sets** should be pre-created in ShopCtrl, to update the properties correctly. 
-Please check [Product Properties](/docs/User-Guide/08-Product-Management/product-properties.md) for more information.
+Please check [Product Properties](/User-Guide/08-Product-Management/product-properties.md) for more information.
 **Product brands** and  **Product groups** should be pre-created in ShopCtrl as well.
 
 :::

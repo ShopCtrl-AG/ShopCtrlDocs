@@ -151,4 +151,4 @@ Workflow configuration allows for flexible adjustments based on existing trigger
 
 Group shipment auto-creation is a standard part of the workflow. To pack items and create a group shipment, single orders should already have shipments created and picked before the pack file arrives.
 
-For further details on ASN submission to Amazon, refer to the article: [Amazon 1P Order Fulfillment Workflow](/docs/User-Guide/07-Fulfillment/Amazon-1P-Order-Fulfillment-Workflow/index.md).
+For further details on ASN submission to Amazon, refer to the article: [Amazon 1P Order Fulfillment Workflow](/User-Guide/07-Fulfillment/Amazon-1P-Order-Fulfillment-Workflow/index.md).

@@ -158,7 +158,7 @@ The **Merge Field** used for generating a barcode should contain data. Otherwise
 To configure the output format of the **QR code Merge Field**:
 
 1. Enter the opening tag `<qrcode Height=0 Width=0>`.
-2. Specify the barcode size in pixels and follow by inserting the **Merge Field** wrapped in dollar signs that you want to display as a barcode.
+2. Specify the QR code size in pixels and follow by inserting the **Merge Field** wrapped in dollar signs that you want to display as a QR code.
 3. Finally, add a closing tag `</qrcode>`.
 
 For example:

@@ -15,9 +15,9 @@ The upcoming releases will introduce this new version of the Service Level Agree
 The **Service Level Agreement (SLA)** is configured per communication channel at the shop level.
 You can configure for each shop, the specific days of the week and hours during which a customer service team will be available. The SLA includes a set response time for each communication channel, as well as a specified time zone for each shop. Customer support statistics is gathered automatically, including the time spent on handling inbound mail, phone calls, and tickets per employees and employee groups.
 
-Service level agreement performance data can be viewed and analyzed through a variety of reports - [Service Level Reporting](/docs/User-Guide/03-Basic-Functions/reporting.md#service-level-reporting).
+Service level agreement performance data can be viewed and analyzed through a variety of reports - [Service Level Reporting](/User-Guide/03-Basic-Functions/reporting.md#service-level-reporting).
 
-For additional information, please refer to: [Ticket Configuration](/docs/User-Guide/06-Communication/Tickets/ticket-configuration.md) and [Working with Tickets](/docs/User-Guide/06-Communication/Tickets/working-with-tickets.md).
+For additional information, please refer to: [Ticket Configuration](/User-Guide/06-Communication/Tickets/ticket-configuration.md) and [Working with Tickets](/User-Guide/06-Communication/Tickets/working-with-tickets.md).
 
 ## How to set Service Level Agreement for a shop
 

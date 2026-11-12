@@ -44,12 +44,12 @@ There is a number of **Contract Merge Fields** available for use as part of cust
 :::
 8. Click **Add Product**, find and select a **Product** that will be added to the contract.
 9. After the product was added, you can proceed with specifiing the product price settings. Click **Edit Row** to open the contract product row for editing.
-<img src={require("/img/edit-contract-row.png").default} height="" width="400" />
+    <img src={require("/img/edit-contract-row.png").default} height="" width="400" />
     * Choose a **Price mode**:
         * Actual price - the order will be generated using an actual price set at the shop.
         * Fixed tier price - specify a price per 1 item based on a quantity ordered.
         *On the example below, the price will differ depending on the number of products ordered. For the quantity three and above, the latest quoted price will be used.*
-    <img src={require("/img/edit-contract-row-tierprice.png").default} height="" width="400" />
+          <img src={require("/img/edit-contract-row-tierprice.png").default} height="" width="400" />
         * Stacked tier price - specify a price per tier range. The total quantity is distributed across tiers and each tier produces its own order row. For example, with tiers at 1+ (€0.50), 51+ (€0.35), and 101+ (€0.20), a quantity of 133 would generate three order rows: 50 × €0.50, 50 × €0.35, and 33 × €0.20.
         * Flat-fee tier price - specify a fixed fee per tier range. The total quantity determines which tier applies, and a single order row is created with quantity 1 at that tier's price. For example, with tiers at 1+ (€50), 51+ (€75), and 101+ (€100), a quantity of 133 would generate one order row: 1 × €100.
     * Choose a **Quantity mode**:
@@ -58,12 +58,12 @@ There is a number of **Contract Merge Fields** available for use as part of cust
     * (Optional) Enter a **Comment** that will be added to the corresponding order row. You can also use contract-specific merge fields: `$$PeriodFrom$$`, `$$PeriodUntil$$`. When using Stacked or Flat-fee tier price modes, additional merge fields are available: `$$TierQtyFrom$$`, `$$TierQtyTill$$`, `$$TierRange$$`, `$$TierQty$$`, `$$TierPriceExVat$$`, `$$TierPriceIncVat$$`.
     *  (Optional) Enter an **Internal Comment** visible only within a contract details page.
     * Specify on which **Conditions** contract row will be added to the generated order:
-<img src={require("/img/edit-contract-row-conditions.png").default} height="" width="400" />
+      <img src={require("/img/edit-contract-row-conditions.png").default} height="" width="400" />
         * **Always** - default. Always add to the order.
         * **Specified date is in the billing period**. In this case, you can set the start period date, select **Repeat** period (monthly or yearly, each 1, 2-18 months), and set when the period will end: never, after a certain amount of occurrences, or on a set date. The settings preview will be auto-generated and displayed at the bottom of the window.
     * Click **Ok** to save the product row settings. The product row will be updated with the configuration set.
 10. Repeat with adding other products to the contract. Once all of the products were added, you can change the contract row sequence by clicking the **Move** buttons controls on each of the rows.
-<img src={require("/img/contract-row-products.png").default} height="" width="800" />
+    <img src={require("/img/contract-row-products.png").default} height="" width="800" />
 11. Save the contract by clicking the **Save** or **Save and Close** button on the top action menu.
 
 ### Automatic order generation

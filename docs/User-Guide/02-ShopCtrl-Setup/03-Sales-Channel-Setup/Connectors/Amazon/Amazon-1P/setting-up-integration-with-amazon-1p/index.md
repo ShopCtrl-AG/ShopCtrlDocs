@@ -19,9 +19,9 @@ Amazon integration connector lets you import purchase orders from your Amazon se
 With the Amazon 1P module you can:
 
 - Import Amazon Purchase Orders
-- Go through all stages of internal approval to respond to [Amazon Bulk Buy Offers](/docs/User-Guide/07-Fulfillment/Amazon-1P-Order-Fulfillment-Workflow/amazon-bulk-buy-offers-approval.md) requests
+- Go through all stages of internal approval to respond to [Amazon Bulk Buy Offers](/User-Guide/07-Fulfillment/Amazon-1P-Order-Fulfillment-Workflow/amazon-bulk-buy-offers-approval.md) requests
 - Track which Purchase Orders are based on previously approved Bulk Buy Offers
-- Pick and [Pack shipments](/docs/User-Guide/07-Fulfillment/Amazon-1P-Order-Fulfillment-Workflow/amazon-1p-group-shipment.md) heading to Amazon fulfillment centers.
+- Pick and [Pack shipments](/User-Guide/07-Fulfillment/Amazon-1P-Order-Fulfillment-Workflow/amazon-1p-group-shipment.md) heading to Amazon fulfillment centers.
 - Configure manual or automatic acknowledgement of orders back to Amazon based on your warehouse pick data.
 - Create compliant shipping labels and generate documents for these shipments directly from ShopCtrl.
 - Automatically submit ASNs to Amazon to inform them of the shipment's structure, contents, and future delivery date.

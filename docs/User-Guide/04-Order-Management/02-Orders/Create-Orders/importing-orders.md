@@ -7,7 +7,7 @@ description: "How ShopCtrl imports orders from each sales channel, which data is
 # Importing Orders
 
 
-ShopCtrl imports orders from various [Platforms](/docs/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/index.md). This article describes the specifics of order import from different sales channels.
+ShopCtrl imports orders from various [Platforms](/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/index.md). This article describes the specifics of order import from different sales channels.
 
 :::warning[Please note]
 

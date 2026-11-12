@@ -77,7 +77,7 @@ The AI Assistant panel sits directly below the ticket header. It automatically a
 Use the **refresh button** in the panel header to regenerate the AI analysis. The panel is collapsible — click the collapse/expand arrows to toggle its visibility.
 
 :::tip
-The AI Assistant requires configuration. See [Ticket AI Assistant](/docs/User-Guide/06-Communication/Tickets/ticket-ai-assistant.md) for setup instructions including API key configuration and category training.
+The AI Assistant requires configuration. See [Ticket AI Assistant](/User-Guide/06-Communication/Tickets/ticket-ai-assistant.md) for setup instructions including API key configuration and category training.
 :::
 
 ## Tabs

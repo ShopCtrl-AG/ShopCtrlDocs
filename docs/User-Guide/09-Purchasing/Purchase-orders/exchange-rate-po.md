@@ -11,7 +11,7 @@ ShopCtrl manages purchase prices for stock items differently based on whether pr
 
 ## How Purchase Prices Are Determined
 
-Inventory puchasing costs are calculated differently based on the provisioning method. Products added through ShopCtrl's integrated purchasing system have purchase prices automatically determined by purchase order data. If products are added outside of ShopCtrl—for example, manually or through another system—the purchase price is taken from the [supplier price](/docs/User-Guide/08-Product-Management/Product-Details/product-purchasing.md) entered on the product details tab.
+Inventory puchasing costs are calculated differently based on the provisioning method. Products added through ShopCtrl's integrated purchasing system have purchase prices automatically determined by purchase order data. If products are added outside of ShopCtrl—for example, manually or through another system—the purchase price is taken from the [supplier price](/User-Guide/08-Product-Management/Product-Details/product-purchasing.md) entered on the product details tab.
 
 When a purchase order is in shopowner’s base currency, prices are recorded as-is. But if the PO is in a foreign currency, prices are converted to shopowner base currency using the exchange rate at the time the stock is provisioned.
 

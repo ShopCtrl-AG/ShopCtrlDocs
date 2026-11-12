@@ -60,17 +60,17 @@ A button **Add new location** adds stock to a different location from the one li
 Without a purchase order or specifying the purchase price (it takes the purchase price of the preferred supplier), you can create a new simple product stock item at the warehouse.
 **Stock update** - enables editing stock on a specific location.
 **Stock move** - moves stock from one location to another.
-You can also [**Park**](/docs/User-Guide/04-Order-Management/03-Allocation-of-orders/parked-stock.md) stock by clicking the shopping cart button at the end of the location row.
+You can also [**Park**](/User-Guide/04-Order-Management/03-Allocation-of-orders/parked-stock.md) stock by clicking the shopping cart button at the end of the location row.
 
 #### Advanced warehousing
 After the product is turned into an advanced product, each stock item receives a unique barcode label. It won't be possible to add a product to stock without a purchase order and specifying the required details for each stock item. 
-Some additional operations, like stock move can be done from the [Warehouse operations](/docs/User-Guide/08-Product-Management/warehouse-operations.md) page.
+Some additional operations, like stock move can be done from the [Warehouse operations](/User-Guide/08-Product-Management/warehouse-operations.md) page.
 
 ### Supplier stock
 
 <img src={require("/img/product-details-stock-supplier-stock.png").default} height="" width="800" />
 
-Here the information about the availability of this product in your supplier's warehouses is accumulated. You can update the stock balance directly on this page by clicking the update button. Or upload an Excel file with price and stock data on the supplier's details page. Please see [Import Supplier Products](docs/User-Guide/09-Purchasing/Suppliers/import-supplier-products.md) for more details.
+Here the information about the availability of this product in your supplier's warehouses is accumulated. You can update the stock balance directly on this page by clicking the update button. Or upload an Excel file with price and stock data on the supplier's details page. Please see [Import Supplier Products](/User-Guide/09-Purchasing/Suppliers/import-supplier-products.md) for more details.
 
 ### Parked stock
 
@@ -88,7 +88,7 @@ From this page, you can view how many stock items of the product were parked and
 **Stock move** - opens a new window offering to move stock from the current location to the other. 
 
 
-Please see [Parked Stock](/docs/User-Guide/04-Order-Management/03-Allocation-of-orders/parked-stock.md) to learn more on how to park and allocate reserved stock.
+Please see [Parked Stock](/User-Guide/04-Order-Management/03-Allocation-of-orders/parked-stock.md) to learn more on how to park and allocate reserved stock.
  
 ### Stock history
 
@@ -104,7 +104,7 @@ You can change the period and the warehouse for which you want to view the chart
 From this tab you can track movement of the particular product stock items at your warehouse. Use search to filter by warehouse, location or reason for stock movement.
 <img src={require("/img/product-details-stock-transactions.png").default} height="" width="800" />
 
-Stock transactions  track not only the transactions of your private or fulfillment warehouses but also the purchase products transactions linked to this product on your supplier warehouse. So if you update the supplier price list through the [supplier import](docs/User-Guide/09-Purchasing/Suppliers/import-supplier-products.md), the change in stock will be reflected on this page as well.
+Stock transactions  track not only the transactions of your private or fulfillment warehouses but also the purchase products transactions linked to this product on your supplier warehouse. So if you update the supplier price list through the [supplier import](/User-Guide/09-Purchasing/Suppliers/import-supplier-products.md), the change in stock will be reflected on this page as well.
 
 ### Stock settings
 
@@ -151,4 +151,4 @@ After the advanced warehousing mode is turned on for the system and simple produ
 
 <img src={require("/img/product-details-stock-stock-items.png").default} height="" width="800" />
 
-For more details on the data display, please see: [Advanced Warehouse](/docs/User-Guide/09-Purchasing/advanced-warehouse.md#stock-items-overview-for-an-advanced-product).
+For more details on the data display, please see: [Advanced Warehouse](/User-Guide/09-Purchasing/advanced-warehouse.md#stock-items-overview-for-an-advanced-product).

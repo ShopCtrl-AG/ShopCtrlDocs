@@ -79,7 +79,7 @@ To retrieve shipping labels from Amazon, ShopCtrl provides the contact informati
 
 First, we need to select a default carrier for Amazon Prime orders.
 On the **PRIME Settings** pane, select a pre-created **Prime Carrier Account** to be used for this shop.
-Carriers for orders with lower priority will be selected based on basic ShopCtrl [carrier distribution]/User-Guide/07-Fulfillment/Carriers/index.md. Please configure it separately.
+Carriers for orders with lower priority will be selected based on basic ShopCtrl [carrier distribution](/User-Guide/02-ShopCtrl-Setup/05-Fulfillment/Carriers/index.md). Please configure it separately.
 
 
 On the **Prime Shipping Service Preferences** pane, create preference rules for selecting a carrier. The rules could be defined for all of the products (**Default**) or for a specific **Product group**. 

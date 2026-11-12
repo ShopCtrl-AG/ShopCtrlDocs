@@ -12,7 +12,7 @@ An employee must be assigned to the shop with a **Shop Owner Admin** role to per
 
 :::
 
-For the connection and synchronization setup, see [Mirakl](/docs/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/Connectors/mirakl.md). 
+For the connection and synchronization setup, see [Mirakl](/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/Connectors/mirakl.md). 
 
 On a regular basis ShopCtrl sends stock and price updates to a marketplace **only when something changes on the product**. Over time, though, offers can drift out of sync: products are created at different moments in ShopCtrl and on Mirakl, some are not mapped, and some are inactive.
 

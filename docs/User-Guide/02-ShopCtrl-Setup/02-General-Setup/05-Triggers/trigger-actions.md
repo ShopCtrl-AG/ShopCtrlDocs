@@ -39,7 +39,7 @@ You can select a mail template to use, decide whether a mail needs attachment (l
 ![trigger-action-send-email](/img/trigger-action-send-email.png)
 
 For example, you can set up an order confirmation email that will be sent after the order was imported or created manually.
-You can use any shop, customer, or order-related merge fields to populate the mail with relevant data. See more on [Email templates](/docs/User-Guide/02-ShopCtrl-Setup/02-General-Setup/04-Templates/Email-Templates/creating-and-editing-email-templates.md).
+You can use any shop, customer, or order-related merge fields to populate the mail with relevant data. See more on [Email templates](/User-Guide/02-ShopCtrl-Setup/02-General-Setup/04-Templates/Email-Templates/creating-and-editing-email-templates.md).
 
 ## Call Webhook
 

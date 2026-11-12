@@ -13,7 +13,7 @@ This guide provides step-by-step instructions for integrating your eBay shop wit
 
 1. **Register with eBay**: [Join the eBay Developers Program](https://developer.ebay.com/api-docs/static/gs_join-the-ebay-developers-program.html).
    *Note: Processing time may vary for eBay registrations.*
-2. **Create an eBay Shop in ShopCtrl**: [Set up your eBay shop](/docs/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/create-shop.md) before proceeding.
+2. **Create an eBay Shop in ShopCtrl**: [Set up your eBay shop](/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/create-shop.md) before proceeding.
 
 ## Step 1: Prepare for Integration - Obtain eBay API Keys.
 

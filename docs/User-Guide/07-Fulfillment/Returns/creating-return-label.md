@@ -13,7 +13,7 @@ A return label is a regular [Parcel](/User-Guide/07-Fulfillment/creating-parcel.
 
 Make sure the following is configured:
 
-* The **carrier account** used for the return supports return labels. Not every carrier integration can create a return label through a third party tool - check the [Carrier](/docs/User-Guide/02-ShopCtrl-Setup/05-Fulfillment/Carriers/index.md) documentation for your carrier.
+* The **carrier account** used for the return supports return labels. Not every carrier integration can create a return label through a third party tool - check the [Carrier](/User-Guide/02-ShopCtrl-Setup/05-Fulfillment/Carriers/index.md) documentation for your carrier.
 * A **Default ship from address** is filled in for the shop (**Shop Settings > Shipping > Default ship from address**). This address is used as the return destination when you create a parcel manually.
 * (Optional) A dedicated **Return label template** is selected on the carrier account (**Fulfillment > Carriers > carrier account**). When no return template is set, the regular shipping label template is used.
 

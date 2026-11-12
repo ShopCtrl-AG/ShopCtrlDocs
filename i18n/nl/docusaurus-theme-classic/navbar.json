@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "ShopCtrl",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "ShopCtrl-logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Docs": {
+    "message": "Documentatie",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.API docs": {
+    "message": "API-documentatie",
+    "description": "Navbar item with label API docs"
+  },
+  "item.label.ShopCtrl Homepage": {
+    "message": "ShopCtrl-website",
+    "description": "Navbar item with label ShopCtrl Homepage"
+  }
+}

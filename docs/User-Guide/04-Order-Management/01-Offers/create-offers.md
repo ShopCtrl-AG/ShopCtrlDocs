@@ -47,7 +47,7 @@ To email an offer to a customer:
     2.    Search for a template.
     3.    Or click an arrow next to culture and select needed culture. The list of templates will update accordingly.
     4.    Click the template to select it for auto-generating email
-<img src={require("/img/offer-select-template.png").default} height="" width="" />
+        <img src={require("/img/offer-select-template.png").default} height="" width="" />
 3. New auto-generated based on the selected template draft email will be opened on a new tab. The offer document will be enclosed as well.
 4. Edit the email if needed.
 5. Click **Send** when ready.

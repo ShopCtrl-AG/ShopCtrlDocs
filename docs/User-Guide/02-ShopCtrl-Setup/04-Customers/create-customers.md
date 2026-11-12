@@ -79,6 +79,6 @@ Parameters are customer-specific parameters that could be used for orders proces
 
 ## Create contracts
 
-Contracts created for a customer are listed within this tab. You can manage existing, add new, and delete no longer active contracts. Learn more in [Contracts](/docs/User-Guide/04-Order-Management/contracts.md).
+Contracts created for a customer are listed within this tab. You can manage existing, add new, and delete no longer active contracts. Learn more in [Contracts](/User-Guide/04-Order-Management/contracts.md).
 
 ![customer-details-contracts-list](/img/customer-details-contracts-list.png)

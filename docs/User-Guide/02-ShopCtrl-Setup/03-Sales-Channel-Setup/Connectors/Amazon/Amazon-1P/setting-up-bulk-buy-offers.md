@@ -32,15 +32,15 @@ Here is a list of permissions related to the Bulk Buy offers approval process:
 
 ### Modifying Existing Roles to Include Bulk Buy Offers Permissions
 
-Within the default setup, ShopCtrl offers a range of pre-configured roles. You can find more details about these roles in our documentation on [Understanding Employee Roles and Permissions](/docs/User-Guide/02-ShopCtrl-Setup/01-Authentication-and-Employee-Management/02-Roles-and-Permissions/understanding-employee-roles-and-permissions.md).
+Within the default setup, ShopCtrl offers a range of pre-configured roles. You can find more details about these roles in our documentation on [Understanding Employee Roles and Permissions](/User-Guide/02-ShopCtrl-Setup/01-Authentication-and-Employee-Management/02-Roles-and-Permissions/understanding-employee-roles-and-permissions.md).
 To grant an employee specific permissions for Bulk Buy Offers approval in the Amazon 1P shop within the ShopCtrl environment, you may need to edit the existing default role to which the employee is assigned.
-Amazon 1P Bulk Buy Offers permissions are self-contained. However, users might also require permissions to edit products in order to effectively utilize the Bulk Buy feature. Please refer to the instructions on [How to modify role permissions](/docs/User-Guide/02-ShopCtrl-Setup/01-Authentication-and-Employee-Management/02-Roles-and-Permissions/manage-roles-and-permissions.md#how-to-modify-role-permissions) for guidance.
+Amazon 1P Bulk Buy Offers permissions are self-contained. However, users might also require permissions to edit products in order to effectively utilize the Bulk Buy feature. Please refer to the instructions on [How to modify role permissions](/User-Guide/02-ShopCtrl-Setup/01-Authentication-and-Employee-Management/02-Roles-and-Permissions/manage-roles-and-permissions.md#how-to-modify-role-permissions) for guidance.
 
 It's possible for an employee to possess permissions for both commerce, manufacture, and warehouse roles, allowing them to represent multiple departments simultaneously.
 
 ### Creating Custom Roles for Various Departments
 
-On the other hand, to create a clear distinction between the three departments, it's advisable to establish three distinct roles: Commerce, Manufacturing, and Warehouse. To do this, Please follow the instructions on [How to create a new role](/docs/User-Guide/02-ShopCtrl-Setup/01-Authentication-and-Employee-Management/02-Roles-and-Permissions/manage-roles-and-permissions.md#how-to-create-a-new-role).
+On the other hand, to create a clear distinction between the three departments, it's advisable to establish three distinct roles: Commerce, Manufacturing, and Warehouse. To do this, Please follow the instructions on [How to create a new role](/User-Guide/02-ShopCtrl-Setup/01-Authentication-and-Employee-Management/02-Roles-and-Permissions/manage-roles-and-permissions.md#how-to-create-a-new-role).
 Depending on the additional permissions required for employees, you may need to duplicate the user, power user or admin role and then assign these duplicated roles with the supplementary bulk buy permissions.
 
 ![authorization-bulk-buy-roles](/img/authorization-bulk-buy-roles.png)
@@ -54,7 +54,7 @@ After creating the roles, the next step is to assign an employee to the Amazon 1
 3. Assign the employee to the shop with the appropriate role (Commerce, Manufacture, or Warehouse) based on their responsibilities.
 4. Save employee profile.
 
-If an employee has previously been assigned to the shop with a different role, you will need to [adjust their role](/docs/User-Guide/02-ShopCtrl-Setup/01-Authentication-and-Employee-Management/01-Employees/manage-employees.md#change-the-employee-role-on-the-shop) to the chosen one.
+If an employee has previously been assigned to the shop with a different role, you will need to [adjust their role](/User-Guide/02-ShopCtrl-Setup/01-Authentication-and-Employee-Management/01-Employees/manage-employees.md#change-the-employee-role-on-the-shop) to the chosen one.
 
 
 
@@ -62,7 +62,7 @@ If an employee has previously been assigned to the shop with a different role, y
 
 Notifications regarding the expiration of bulk buy offers are configured one time for all employees who are assigned to the shop with integrated Amazon 1P functionality.
 
-Notifications are facilitated through the ShopCtrl [Alerts](/docs/User-Guide/03-Basic-Functions/alerts.md) system. This implies that alerts regarding potential expirations are generated at the shop level for all employees assigned to the Amazon 1P shop. As an employee, you also have the option to set up [alert notifications](/docs/User-Guide/03-Basic-Functions/alerts.md#configure-alert-notifications-via-email) to be delivered to your email address.
+Notifications are facilitated through the ShopCtrl [Alerts](/User-Guide/03-Basic-Functions/alerts.md) system. This implies that alerts regarding potential expirations are generated at the shop level for all employees assigned to the Amazon 1P shop. As an employee, you also have the option to set up [alert notifications](/User-Guide/03-Basic-Functions/alerts.md#configure-alert-notifications-via-email) to be delivered to your email address.
 
 Bulk buy offers are typically valid for a week, and you can set up notifications to alert shop administrators when these offers are about to expire and/or have already expired.
 
@@ -87,4 +87,4 @@ To configure Bulk Buy offers notifications and timeframe for mapping, follow the
 
 Continuing with the setup of Bulk Buy Offers, the next crucial step is to add ASIN and EAN to your products. During the Bulk Buy Offers import, products are mapped by **EAN** and **ASIN** since these are the primary identifiers provided by Amazon in the Bulk Buy Offer export file.
 
-This step is essential for enhancing the accuracy and efficiency of the Bulk Buy Offers process. For a detailed guide on how to perform this step, please refer to the [Adding ASIN and EAN to Your Products](/docs/User-Guide/08-Product-Management/Product-Import/how-to-add-asin-and-ean-to-your-products.md) article.
+This step is essential for enhancing the accuracy and efficiency of the Bulk Buy Offers process. For a detailed guide on how to perform this step, please refer to the [Adding ASIN and EAN to Your Products](/User-Guide/08-Product-Management/Product-Import/how-to-add-asin-and-ean-to-your-products.md) article.

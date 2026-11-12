@@ -16,8 +16,8 @@ To create a product:
 4. Type the **Name** of the product in global culture.
 5. (Optional) Enter product **EAN**.
 6. Select whether you want to **publish** the product.
-7. Proceed to the Topic menu to add other [Product details](/docs/User-Guide/08-Product-Management/Product-Details/index.md).
-8. Set the product default **price excluding VAT** on the [Retail price tab](/docs/User-Guide/08-Product-Management/Product-Details/product-general-data.md#retail-price).
+7. Proceed to the Topic menu to add other [Product details](/User-Guide/08-Product-Management/Product-Details/index.md).
+8. Set the product default **price excluding VAT** on the [Retail price tab](/User-Guide/08-Product-Management/Product-Details/product-general-data.md#retail-price).
 9. The **VAT tariff** applied for the new product is a default VAT tariff set for the shop. You can change it on the **Retail Price** tab as well.
 10. Click **Save** or **Save and Close** to create a new product.
 
@@ -30,6 +30,6 @@ To edit a product:
 4. From the topic menu, select a tab you would like to edit and modify it accordingly.
 5. Click **Save** or **Save and Close** to apply changes.
 
-You can change the product details, update the product purchase price, monitor the reserved stock and backorders, and many more from the [Product Details page](/docs/User-Guide/08-Product-Management/Product-Details/index.md).
+You can change the product details, update the product purchase price, monitor the reserved stock and backorders, and many more from the [Product Details page](/User-Guide/08-Product-Management/Product-Details/index.md).
 
 After the product is published, you can prevent unwanted changes to the product details by enabling the **Is locked** checkbox. Permission to change this setting could be granted only to certain user roles.
