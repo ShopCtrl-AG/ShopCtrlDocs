@@ -12,7 +12,7 @@ Het is ook mogelijk de trackinginformatie terug te sturen naar het verkoopkanaal
 
 ## Orders afhandelen en trackinginformatie exporteren naar Shopify {#fulfilling-orders-and-exporting-tracking-info-to-shopify}
 
-Om zendingen die in ShopCtrl voor de order zijn aangemaakt terug te synchroniseren naar Shopify, schakelt u de functie **Send Track&Trace info to Shopify** in. Let op: voor de shop in ShopCtrl moet de [koppeling van locaties en vervoerders](/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/Connectors/shopify.md#setup-your-shopify-synchronization-in-shopctrl) zijn ingesteld.
+Om zendingen die in ShopCtrl voor de order zijn aangemaakt terug te synchroniseren naar Shopify, schakelt u de functie **Send Track&Trace info to Shopify** in. Let op: voor de shop in ShopCtrl moet de [koppeling van locaties en vervoerders](/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/Connectors/Shopify/synchronization-settings.md#configure-track-and-trace-export) zijn ingesteld.
 In Shopify moet de **Automatic fulfillment** voor uw shop zijn uitgeschakeld.
 Hoe u Automatic fulfillment uitschakelt, leest u op de helppagina's van Shopify: [Configure your order fulfillment settings](https://help.shopify.com/en/manual/checkout-settings/order-processing#configure-your-order-fulfillment-settings)
 

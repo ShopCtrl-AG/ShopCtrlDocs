@@ -9,7 +9,7 @@ Dit artikel beschrijft hoe u de voorraadniveaus van producten in verschillende v
 
 ## Voorraad in Shopify bijwerken {#updating-shopify-inventory}
 
-Het bijwerken van de productvoorraad is een aparte functie van de Shopify-synchronisatiemodule. U kunt deze los van de productsynchronisatie inschakelen op het tabblad Shop Settings > Shopify Synchronization van de betreffende shop. Zie [Uw Shopify-synchronisatie instellen in ShopCtrl](/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/Connectors/shopify.md#setup-your-shopify-synchronization-in-shopctrl) voor meer informatie.
+Het bijwerken van de productvoorraad is een aparte functie van de Shopify-synchronisatiemodule. U kunt deze los van de productsynchronisatie inschakelen op het tabblad Shop Settings > Shopify Synchronization van de betreffende shop. Zie [synchronisatie-instellingen voor Shopify](/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/Connectors/Shopify/synchronization-settings.md#configure-product-stock-export) voor meer informatie.
 
 
 Meer informatie over locaties in Shopify vindt u op [Shopify Locations](https://help.shopify.com/en/manual/locations).

@@ -202,3 +202,87 @@ h1, h2, h3, h4, h5, h6 {
 .connectors-table .connector-logo--small {
   object-fit: scale-down;
 }
+
+/* Copyable value lists (```text blocks, e.g. Shopify API scopes):
+   wrap long lines so the whole value is visible, and always show the copy button. */
+.theme-code-block.language-text code {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  padding-right: 3.5rem;
+}
+
+.theme-code-block.language-text [class*='buttonGroup'] button {
+  opacity: 1;
+}
+
+/* Small routing diagram (Shopify markets -> ShopCtrl shops) */
+.markets-diagram {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+  font-size: 0.9rem;
+}
+
+.markets-diagram__box {
+  display: flex;
+  flex-direction: column;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-global-radius);
+  background: var(--ifm-background-surface-color);
+}
+
+.markets-diagram__box span {
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.85em;
+}
+
+.markets-diagram__source {
+  flex: 0 0 auto;
+  border-color: var(--ifm-color-primary);
+}
+
+.markets-diagram__routes {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.markets-diagram__route {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.markets-diagram__arrow {
+  flex: 0 0 6.5rem;
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.markets-diagram__route .markets-diagram__box {
+  flex: 1 1 auto;
+}
+
+.markets-diagram__route--skipped .markets-diagram__box {
+  border-style: dashed;
+  background: transparent;
+}
+
+.markets-diagram__route--skipped .markets-diagram__arrow {
+  color: var(--ifm-color-emphasis-600);
+}
+
+@media (max-width: 600px) {
+  .markets-diagram {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .markets-diagram__arrow {
+    flex-basis: 5rem;
+  }
+}

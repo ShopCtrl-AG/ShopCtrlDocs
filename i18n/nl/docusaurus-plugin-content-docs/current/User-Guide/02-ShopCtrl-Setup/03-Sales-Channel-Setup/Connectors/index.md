@@ -18,7 +18,7 @@ ShopCtrl biedt een aantal integraties met bekende e-commerceplatforms en marktpl
 
 | Platform | Orderimport | Import van annuleringen | Export van track & trace | Voorraadexport | Prijsexport | Productimport |
 | --- | :-: | :-: | :-: | :-: | :-: | :-: |
-| <img className="connector-logo" src={require("/img/Shopify-Logo.jpg").default} alt="" /> [Shopify](/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/Connectors/shopify.md) | <Check /> | <Check /> | <Check /> | <Check /> | <Check /> | <Check /> |
+| <img className="connector-logo" src={require("/img/Shopify-Logo.jpg").default} alt="" /> [Shopify](/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/Connectors/Shopify/index.md) | <Check /> | <Check /> | <Check /> | <Check /> | <Check /> | <Check /> |
 | <img className="connector-logo" src={require("/img/WooCommerce_logo.svg.png").default} alt="" /> [Woocommerce](/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/Connectors/woocommerce.md) | <Check /> |  |  | <Check /> |  | <Check /> |
 | <img className="connector-logo" src={require("/img/magento.png").default} alt="" /> [Magento v2](/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/Connectors/magento-2.md) | <Check /> |  | <Check /> | <Check /> |  | <Check /> |
 | <img className="connector-logo" src={require("/img/shopware.png").default} alt="" /> [Shopware](/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/Connectors/shopware-6.md) | <Check /> |  |  |  | <Check /> | <Check /> |

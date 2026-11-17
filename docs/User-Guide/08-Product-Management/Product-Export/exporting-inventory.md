@@ -9,7 +9,7 @@ This article describes ways to update the product stock level to different sales
 
 ## Updating Shopify inventory
 
-Update of the product stock is a separate feature of the Shopify synchronization module and can be enabled apart from product synchronization in Shop Settings > Shopify Synchronization tab of the designated shop. Please check the [Setup your Shopify synchronization in ShopCtrl](/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/Connectors/shopify.md#setup-your-shopify-synchronization-in-shopctrl) for more information.
+Update of the product stock is a separate feature of the Shopify synchronization module and can be enabled apart from product synchronization in Shop Settings > Shopify Synchronization tab of the designated shop. Please check the [Shopify synchronization settings](/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/Connectors/Shopify/synchronization-settings.md#configure-product-stock-export) for more information.
 
 
 For more information about Shopify Locations, please visit [Shopify Locations](https://help.shopify.com/en/manual/locations).

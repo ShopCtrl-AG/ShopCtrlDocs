@@ -12,7 +12,7 @@ It is also possible to update tracking information back to the Sales Channel it 
 
 ## Fulfilling orders and exporting tracking info to Shopify
 
-To synchronize shipments created for the order in ShopCtrl back to Shopify, we need to enable **Send Track&Trace info to Shopify** feature. Please note, that [Location and Carrier mapping](/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/Connectors/shopify.md#setup-your-shopify-synchronization-in-shopctrl) should be set up for the shop in ShopCtrl. 
+To synchronize shipments created for the order in ShopCtrl back to Shopify, we need to enable **Send Track&Trace info to Shopify** feature. Please note, that [Location and Carrier mapping](/User-Guide/02-ShopCtrl-Setup/03-Sales-Channel-Setup/Connectors/Shopify/synchronization-settings.md#configure-track-and-trace-export) should be set up for the shop in ShopCtrl. 
 The required setup at Shopify implies that the **Automatic fulfillment** is disabled for your shop. 
 For more information on how to disable Automatic fulfillment, please check Shopify help pages - [Configure your order fulfillment settings](https://help.shopify.com/en/manual/checkout-settings/order-processing#configure-your-order-fulfillment-settings)
 
